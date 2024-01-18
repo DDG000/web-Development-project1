@@ -1,0 +1,1466 @@
+<!doctype html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# product: http://ogp.me/ns/product#">
+<script>
+    var BASE_URL = 'https://www.healthguard.lk/';
+    var require = {
+        "baseUrl": "https://www.healthguard.lk/pub/static/version1668449764/frontend/Antyra/antyra/en_US"
+    };
+</script>
+<meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:["bam.nr-data.net"]},distributed_tracing:{enabled:true}};(window.NREUM||(NREUM={})).loader_config={agentID:"568727477",accountID:"3267752",trustKey:"3267752",xpid:"VwQBVlFWChAFUllWBgkPU1w=",licenseKey:"NRJS-93bf9b0831430eaf4c8",applicationID:"568418858"};;/*! For license information please see nr-loader-spa-1.249.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={234:(e,t,r)=>{"use strict";r.d(t,{P_:()=>m,Mt:()=>b,C5:()=>s,DL:()=>A,OP:()=>N,lF:()=>j,Yu:()=>E,Dg:()=>v,CX:()=>c,GE:()=>x,sU:()=>R});var n=r(8632),i=r(9567);const o={beacon:n.ce.beacon,errorBeacon:n.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.D)(t,o);const r=(0,n.ek)(e);r&&(r.info=a[e])}const u=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(7056),l=r(50);const f="[data-nr-mask]",h=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{feature_flags:[],proxy:{assets:void 0,beacon:void 0},privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:d.oD,inactiveMs:d.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},metrics:{enabled:!0,autoStart:!0},page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},harvest:{tooManyRequestsDelay:60},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,sampling_rate:50,error_sampling_rate:50,collect_fonts:!1,inline_images:!1,inline_stylesheet:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){u(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,l.Z)("An invalid session_replay.mask_selector was provided. '*' will be used.",t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){u(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.Z)("An invalid session_replay.block_selector was provided and will not be used",t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.Z)("An invalid session_replay.mask_input_option was provided and will not be used",t)}},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0}}},p={},g="All configuration objects require an agent identifier!";function m(e){if(!e)throw new Error(g);if(!p[e])throw new Error("Configuration for ".concat(e," was never set"));return p[e]}function v(e,t){if(!e)throw new Error(g);p[e]=(0,i.D)(t,h());const r=(0,n.ek)(e);r&&(r.init=p[e])}function b(e,t){if(!e)throw new Error(g);var r=m(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}const y={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},w={};function A(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!w[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return w[e]}function x(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");w[e]=(0,i.D)(t,y);const r=(0,n.ek)(e);r&&(r.loader_config=w[e])}const E=(0,n.mF)().o;var _=r(385),T=r(6818);const S={buildEnv:T.Re,customTransaction:void 0,disabled:!1,distMethod:T.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(_._A?.performance?.timeOrigin||_._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+_._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:"function"==typeof _._A.XMLHttpRequest?.prototype?.addEventListener,version:T.q4,denyList:void 0},D={};function N(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!D[e])throw new Error("Runtime for ".concat(e," was never set"));return D[e]}function R(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");D[e]=(0,i.D)(t,S);const r=(0,n.ek)(e);r&&(r.runtime=D[e])}function j(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,r)=>{"use strict";r.d(t,{D:()=>i});var n=r(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,n.Z)("Setting a Configurable requires a model to set its initial properties");const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(r).length?e:r;for(let a in o)if(void 0!==e[a])try{Array.isArray(e[a])&&Array.isArray(t[a])?r[a]=Array.from(new Set([...e[a],...t[a]])):"object"==typeof e[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){(0,n.Z)("An error occurred while setting a property of a Configurable",e)}return r}catch(e){(0,n.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,r)=>{"use strict";r.d(t,{Re:()=>i,gF:()=>o,lF:()=>a,q4:()=>n});const n="1.249.0",i="PROD",o="CDN",a="2.0.0-alpha.11"},385:(e,t,r)=>{"use strict";r.d(t,{FN:()=>c,IF:()=>l,LW:()=>a,Nk:()=>h,Tt:()=>u,_A:()=>o,cv:()=>p,iS:()=>s,il:()=>n,ux:()=>d,v6:()=>i,w1:()=>f});const n="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=n?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a="complete"===o?.document?.readyState,s=Boolean("hidden"===o?.document?.visibilityState),c=""+o?.location,u=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),d=u&&"undefined"==typeof SharedWorker,l=(()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);return Array.isArray(e)&&e.length>=2?+e[1]:0})(),f=Boolean(n&&window.document.documentMode),h=!!o.navigator?.sendBeacon,p=Math.floor(o?.performance?.timeOrigin||o?.performance?.timing?.navigationStart||Date.now())},1117:(e,t,r)=>{"use strict";r.d(t,{w:()=>o});var n=r(50);const i={agentIdentifier:"",ee:void 0};class o{constructor(e){try{if("object"!=typeof e)return(0,n.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,r]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=r)}))}catch(e){(0,n.Z)("An error occured while setting SharedContext",e)}}}},8e3:(e,t,r)=>{"use strict";r.d(t,{L:()=>d,R:()=>c});var n=r(8325),i=r(1284),o=r(4322),a=r(3325);const s={};function c(e,t){const r={staged:!1,priority:a.p[t]||0};u(e),s[e].get(t)||s[e].set(t,r)}function u(e){e&&(s[e]||(s[e]=new Map))}function d(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature";if(u(e),!e||!s[e].get(t))return a(t);s[e].get(t).staged=!0;const r=[...s[e]];function a(t){const r=e?n.ee.get(e):n.ee,a=o.X.handlers;if(r.backlog&&a){var s=r.backlog[t],c=a[t];if(c){for(var u=0;s&&u<s.length;++u)l(s[u],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,r){r[0].on(e,r[1])}))}))}delete a[t],r.backlog[t]=null,r.emit("drain-"+t,[])}}r.every((e=>{let[t,r]=e;return r.staged}))&&(r.sort(((e,t)=>e[1].priority-t[1].priority)),r.forEach((t=>{let[r]=t;s[e].delete(r),a(r)})))}function l(e,t){var r=e[1];(0,i.D)(t[r],(function(t,r){var n=e[0];if(r[0]===n){var i=r[1],o=e[3],a=e[2];i.apply(o,a)}}))}},8325:(e,t,r)=>{"use strict";r.d(t,{A:()=>c,ee:()=>u});var n=r(8632),i=r(2210),o=r(234);class a{constructor(e){this.contextId=e}}var s=r(3117);const c="nr@context:".concat(s.a),u=function e(t,r){var n={},s={},d={},f=!1;try{f=16===r.length&&(0,o.OP)(r).isolatedBacklog}catch(e){}var h={on:g,addEventListener:g,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,o){!1!==o&&(o=!0);if(u.aborted&&!i)return;t&&o&&t.emit(e,r,n);for(var a=p(n),c=m(e),d=c.length,l=0;l<d;l++)c[l].apply(a,r);var f=b()[s[e]];f&&f.push([h,e,r,a]);return a},get:v,listeners:m,context:p,buffer:function(e,t){const r=b();if(t=t||"feature",h.aborted)return;Object.entries(e||{}).forEach((e=>{let[n,i]=e;s[i]=t,t in r||(r[t]=[])}))},abort:l,aborted:!1,isBuffering:function(e){return!!b()[s[e]]},debugId:r,backlog:f?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return h;function p(e){return e&&e instanceof a?e:e?(0,i.X)(e,c,(()=>new a(c))):new a(c)}function g(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function v(t){return d[t]=d[t]||e(h,t)}function b(){return h.backlog}}(void 0,"globalEE"),d=(0,n.fP)();function l(){u.aborted=!0,u.backlog={}}d.ee||(d.ee=u)},5546:(e,t,r)=>{"use strict";r.d(t,{E:()=>n,p:()=>i});var n=r(8325).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},4322:(e,t,r)=>{"use strict";r.d(t,{X:()=>o});var n=r(5546);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.E,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.E);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},3239:(e,t,r)=>{"use strict";r.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var n=r(385);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};n._A.addEventListener("test",null,e),n._A.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,a(r,n))}function c(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,a(r,n))}},3117:(e,t,r)=>{"use strict";r.d(t,{a:()=>n});const n=(0,r(4402).Rl)()},4402:(e,t,r)=>{"use strict";r.d(t,{Ht:()=>u,M:()=>c,Rl:()=>a,ky:()=>s});var n=r(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n._A?.crypto||n._A?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map((e=>"x"===e?o(t,r++).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=n._A?.crypto||n._A?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const a=[];for(var s=0;s<e;s++)a.push(o(r,++i).toString(16));return a.join("")}function c(){return s(16)}function u(){return s(32)}},7056:(e,t,r)=>{"use strict";r.d(t,{Bq:()=>n,Hb:()=>o,oD:()=>i});const n="NRBA",i=144e5,o=18e5},7894:(e,t,r)=>{"use strict";function n(){return Math.round(performance.now())}r.d(t,{z:()=>n})},7243:(e,t,r)=>{"use strict";r.d(t,{e:()=>i});var n=r(385);function i(e){if(0===(e||"").indexOf("data:"))return{protocol:"data"};try{const t=new URL(e,location.href),r={port:t.port,hostname:t.hostname,pathname:t.pathname,search:t.search,protocol:t.protocol.slice(0,t.protocol.indexOf(":")),sameOrigin:t.protocol===n._A?.location?.protocol&&t.host===n._A?.location?.host};return r.port&&""!==r.port||("http:"===t.protocol&&(r.port="80"),"https:"===t.protocol&&(r.port="443")),r.pathname&&""!==r.pathname?r.pathname.startsWith("/")||(r.pathname="/".concat(r.pathname)):r.pathname="/",r}catch(e){return{}}}},50:(e,t,r)=>{"use strict";function n(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}r.d(t,{Z:()=>n})},2825:(e,t,r)=>{"use strict";r.d(t,{N:()=>d,T:()=>l});var n=r(8325),i=r(5546),o=r(3325),a=r(385);const s="newrelic";const c={stn:[o.D.sessionTrace],err:[o.D.jserrors,o.D.metrics],ins:[o.D.pageAction],spa:[o.D.spa],sr:[o.D.sessionReplay,o.D.sessionTrace]},u=new Set;function d(e,t){const r=n.ee.get(t);e&&"object"==typeof e&&(u.has(t)||(Object.entries(e).forEach((e=>{let[t,n]=e;c[t]?c[t].forEach((e=>{n?(0,i.p)("feat-"+t,[],void 0,e,r):(0,i.p)("block-"+t,[],void 0,e,r),(0,i.p)("rumresp-"+t,[Boolean(n)],void 0,e,r)})):n&&(0,i.p)("feat-"+t,[],void 0,void 0,r),l[t]=Boolean(n)})),Object.keys(c).forEach((e=>{void 0===l[e]&&(c[e]?.forEach((t=>(0,i.p)("rumresp-"+e,[!1],void 0,t,r))),l[e]=!1)})),u.add(t),function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};try{a._A.dispatchEvent(new CustomEvent(s,{detail:e}))}catch(e){}}({loaded:!0})))}const l={}},2210:(e,t,r)=>{"use strict";r.d(t,{X:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},1284:(e,t,r)=>{"use strict";r.d(t,{D:()=>n});const n=(e,t)=>Object.entries(e||{}).map((e=>{let[r,n]=e;return t(r,n)}))},4351:(e,t,r)=>{"use strict";r.d(t,{P:()=>o});var n=r(8325);const i=()=>{const e=new WeakSet;return(t,r)=>{if("object"==typeof r&&null!==r){if(e.has(r))return;e.add(r)}return r}};function o(e){try{return JSON.stringify(e,i())}catch(e){try{n.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,r)=>{"use strict";r.d(t,{KB:()=>a,b2:()=>o});var n=r(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.bP)("load",e,t)}function a(e){if(i())return e();(0,n.iz)("DOMContentLoaded",e)}},8632:(e,t,r)=>{"use strict";r.d(t,{EZ:()=>d,ce:()=>o,ek:()=>u,fP:()=>a,gG:()=>l,h5:()=>c,mF:()=>s});var n=r(7894),i=r(385);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t){let r=a();r.initializedAgents??={},t.initializedAt={ms:(0,n.z)(),date:new Date},r.initializedAgents[e]=t}function u(e){let t=a();return t.initializedAgents?.[e]}function d(e,t){a()[e]=t}function l(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},7956:(e,t,r)=>{"use strict";r.d(t,{N:()=>i});var n=r(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],r=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;(0,n.iz)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},1214:(e,t,r)=>{"use strict";r.d(t,{em:()=>b,u5:()=>D,QU:()=>j,_L:()=>I,Gm:()=>H,Lg:()=>L,BV:()=>G,Kf:()=>Y});var n=r(8325),i=r(3117);const o="nr@original:".concat(i.a);var a=Object.prototype.hasOwnProperty,s=!1;function c(e,t){return e||(e=n.ee),r.inPlace=function(e,t,n,i,o){n||(n="");const a="-"===n.charAt(0);for(let s=0;s<t.length;s++){const c=t[s],u=e[c];d(u)||(e[c]=r(u,a?c+n:n,i,c,o))}},r.flag=o,r;function r(t,r,n,s,c){return d(t)?t:(r||(r=""),nrWrapper[o]=t,function(e,t,r){if(Object.defineProperty&&Object.keys)try{return Object.keys(e).forEach((function(r){Object.defineProperty(t,r,{get:function(){return e[r]},set:function(t){return e[r]=t,t}})})),t}catch(e){u([e],r)}for(var n in e)a.call(e,n)&&(t[n]=e[n])}(t,nrWrapper,e),nrWrapper);function nrWrapper(){var o,a,d,l;try{a=this,o=[...arguments],d="function"==typeof n?n(o,a):n||{}}catch(t){u([t,"",[o,a,s],d],e)}i(r+"start",[o,a,s],d,c);try{return l=t.apply(a,o)}catch(e){throw i(r+"err",[o,a,e],d,c),e}finally{i(r+"end",[o,a,l],d,c)}}}function i(r,n,i,o){if(!s||t){var a=s;s=!0;try{e.emit(r,n,i,t,o)}catch(t){u([t,r,n,i],e)}s=a}}}function u(e,t){t||(t=n.ee);try{t.emit("internal-error",e)}catch(e){}}function d(e){return!(e&&"function"==typeof e&&e.apply&&!e[o])}var l=r(2210),f=r(385);const h={},p=f._A.XMLHttpRequest,g="addEventListener",m="removeEventListener",v="nr@wrapped:".concat(n.A);function b(e){var t=function(e){return(e||n.ee).get("events")}(e);if(h[t.debugId]++)return t;h[t.debugId]=1;var r=c(t,!0);function i(e){r.inPlace(e,[g,m],"-",o)}function o(e,t){return e[1]}return"getPrototypeOf"in Object&&(f.il&&y(document,i),y(f._A,i),y(p.prototype,i)),t.on(g+"-start",(function(e,t){var n=e[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var i=(0,l.X)(n,v,(function(){var e={object:function(){if("function"!=typeof n.handleEvent)return;return n.handleEvent.apply(n,arguments)},function:n}[typeof n];return e?r(e,"fn-",null,e.name||"anonymous"):n}));this.wrapped=e[1]=i}})),t.on(m+"-start",(function(e){e[1]=this.wrapped||e[1]})),t}function y(e,t){let r=e;for(;"object"==typeof r&&!Object.prototype.hasOwnProperty.call(r,g);)r=Object.getPrototypeOf(r);for(var n=arguments.length,i=new Array(n>2?n-2:0),o=2;o<n;o++)i[o-2]=arguments[o];r&&t(r,...i)}var w="fetch-",A=w+"body-",x=["arrayBuffer","blob","json","text","formData"],E=f._A.Request,_=f._A.Response,T="prototype";const S={};function D(e){const t=function(e){return(e||n.ee).get("fetch")}(e);if(!(E&&_&&f._A.fetch))return t;if(S[t.debugId]++)return t;function r(e,r,i){var o=e[r];"function"==typeof o&&(e[r]=function(){var e,r=[...arguments],a={};t.emit(i+"before-start",[r],a),a[n.A]&&a[n.A].dt&&(e=a[n.A].dt);var s=o.apply(this,r);return t.emit(i+"start",[r,e],s),s.then((function(e){return t.emit(i+"end",[null,e],s),e}),(function(e){throw t.emit(i+"end",[e],s),e}))})}return S[t.debugId]=1,x.forEach((e=>{r(E[T],e,A),r(_[T],e,A)})),r(f._A,"fetch",w),t.on(w+"end",(function(e,r){var n=this;if(r){var i=r.headers.get("content-length");null!==i&&(n.rxSize=i),t.emit(w+"done",[null,r],n)}else t.emit(w+"done",[e],n)})),t}const N={},R=["pushState","replaceState"];function j(e){const t=function(e){return(e||n.ee).get("history")}(e);return!f.il||N[t.debugId]++||(N[t.debugId]=1,c(t).inPlace(window.history,R,"-")),t}var C=r(3239);const O={},P=["appendChild","insertBefore","replaceChild"];function I(e){const t=function(e){return(e||n.ee).get("jsonp")}(e);if(!f.il||O[t.debugId])return t;O[t.debugId]=!0;var r=c(t),i=/[?&](?:callback|cb)=([^&#]+)/,o=/(.*)\.([^.]+)/,a=/^(\w+)(\.|$)(.*)$/;function s(e,t){if(!e)return t;const r=e.match(a),n=r[1];return s(r[3],t[n])}return r.inPlace(Node.prototype,P,"dom-"),t.on("dom-start",(function(e){!function(e){if(!e||"string"!=typeof e.nodeName||"script"!==e.nodeName.toLowerCase())return;if("function"!=typeof e.addEventListener)return;var n=(a=e.src,c=a.match(i),c?c[1]:null);var a,c;if(!n)return;var u=function(e){var t=e.match(o);if(t&&t.length>=3)return{key:t[2],parent:s(t[1],window)};return{key:e,parent:window}}(n);if("function"!=typeof u.parent[u.key])return;var d={};function l(){t.emit("jsonp-end",[],d),e.removeEventListener("load",l,(0,C.m$)(!1)),e.removeEventListener("error",f,(0,C.m$)(!1))}function f(){t.emit("jsonp-error",[],d),t.emit("jsonp-end",[],d),e.removeEventListener("load",l,(0,C.m$)(!1)),e.removeEventListener("error",f,(0,C.m$)(!1))}r.inPlace(u.parent,[u.key],"cb-",d),e.addEventListener("load",l,(0,C.m$)(!1)),e.addEventListener("error",f,(0,C.m$)(!1)),t.emit("new-jsonp",[e.src],d)}(e[0])})),t}const k={};function H(e){const t=function(e){return(e||n.ee).get("mutation")}(e);if(!f.il||k[t.debugId])return t;k[t.debugId]=!0;var r=c(t),i=f._A.MutationObserver;return i&&(window.MutationObserver=function(e){return this instanceof i?new i(r(e,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype),t}const M={};function L(e){const t=function(e){return(e||n.ee).get("promise")}(e);if(M[t.debugId])return t;M[t.debugId]=!0;var r=t.context,i=c(t),a=f._A.Promise;return a&&function(){function e(r){var n=t.context(),o=i(r,"executor-",n,null,!1);const s=Reflect.construct(a,[o],e);return t.context(s).getCtx=function(){return n},s}f._A.Promise=e,Object.defineProperty(e,"name",{value:"Promise"}),e.toString=function(){return a.toString()},Object.setPrototypeOf(e,a),["all","race"].forEach((function(r){const n=a[r];e[r]=function(e){let i=!1;[...e||[]].forEach((e=>{this.resolve(e).then(a("all"===r),a(!1))}));const o=n.apply(this,arguments);return o;function a(e){return function(){t.emit("propagate",[null,!i],o,!1,!1),i=i||!e}}}})),["resolve","reject"].forEach((function(r){const n=a[r];e[r]=function(e){const r=n.apply(this,arguments);return e!==r&&t.emit("propagate",[e,!0],r,!1,!1),r}})),e.prototype=a.prototype;const n=a.prototype.then;a.prototype.then=function(){var e=this,o=r(e);o.promise=e;for(var a=arguments.length,s=new Array(a),c=0;c<a;c++)s[c]=arguments[c];s[0]=i(s[0],"cb-",o,null,!1),s[1]=i(s[1],"cb-",o,null,!1);const u=n.apply(this,s);return o.nextPromise=u,t.emit("propagate",[e,!0],u,!1,!1),u},a.prototype.then[o]=n,t.on("executor-start",(function(e){e[0]=i(e[0],"resolve-",this,null,!1),e[1]=i(e[1],"resolve-",this,null,!1)})),t.on("executor-err",(function(e,t,r){e[1](r)})),t.on("cb-end",(function(e,r,n){t.emit("propagate",[n,!0],this.nextPromise,!1,!1)})),t.on("propagate",(function(e,r,n){this.getCtx&&!r||(this.getCtx=function(){if(e instanceof Promise)var r=t.context(e);return r&&r.getCtx?r.getCtx():this})}))}(),t}const z={},B="setTimeout",F="setInterval",U="clearTimeout",Z="-start",V="-",q=[B,"setImmediate",F,U,"clearImmediate"];function G(e){const t=function(e){return(e||n.ee).get("timer")}(e);if(z[t.debugId]++)return t;z[t.debugId]=1;var r=c(t);return r.inPlace(f._A,q.slice(0,2),B+V),r.inPlace(f._A,q.slice(2,3),F+V),r.inPlace(f._A,q.slice(3),U+V),t.on(F+Z,(function(e,t,n){e[0]=r(e[0],"fn-",null,n)})),t.on(B+Z,(function(e,t,n){this.method=n,this.timerDuration=isNaN(e[1])?0:+e[1],e[0]=r(e[0],"fn-",this,n)})),t}var W=r(50);const X={},K=["open","send"];function Y(e){var t=e||n.ee;const r=function(e){return(e||n.ee).get("xhr")}(t);if(X[r.debugId]++)return r;X[r.debugId]=1,b(t);var i=c(r),o=f._A.XMLHttpRequest,a=f._A.MutationObserver,s=f._A.Promise,u=f._A.setInterval,d="readystatechange",l=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],h=[],p=f._A.XMLHttpRequest=function(e){const t=new o(e),n=r.context(t);try{r.emit("new-xhr",[t],n),t.addEventListener(d,(a=n,function(){var e=this;e.readyState>3&&!a.resolved&&(a.resolved=!0,r.emit("xhr-resolved",[],e)),i.inPlace(e,l,"fn-",A)}),(0,C.m$)(!1))}catch(e){(0,W.Z)("An error occurred while intercepting XHR",e);try{r.emit("internal-error",[e])}catch(e){}}var a;return t};function g(e,t){i.inPlace(t,["onreadystatechange"],"fn-",A)}if(function(e,t){for(var r in e)t[r]=e[r]}(o,p),p.prototype=o.prototype,i.inPlace(p.prototype,K,"-xhr-",A),r.on("send-xhr-start",(function(e,t){g(e,t),function(e){h.push(e),a&&(m?m.then(w):u?u(w):(v=-v,y.data=v))}(t)})),r.on("open-xhr-start",g),a){var m=s&&s.resolve();if(!u&&!s){var v=1,y=document.createTextNode(v);new a(w).observe(y,{characterData:!0})}}else t.on("fn-end",(function(e){e[0]&&e[0].type===d||w()}));function w(){for(var e=0;e<h.length;e++)g(0,h[e]);h.length&&(h=[])}function A(e,t){return t}return r}},7825:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.ajax},6660:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.jserrors},3081:(e,t,r)=>{"use strict";r.d(t,{gF:()=>o,mY:()=>i,t9:()=>n,vz:()=>s,xS:()=>a});const n=r(3325).D.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},4649:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageAction},7633:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewEvent},9251:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewTiming},7144:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.sessionReplay},3614:(e,t,r)=>{"use strict";r.d(t,{BST_RESOURCE:()=>i,END:()=>s,FEATURE_NAME:()=>n,FN_END:()=>u,FN_START:()=>c,PUSH_STATE:()=>d,RESOURCE:()=>o,START:()=>a});const n=r(3325).D.sessionTrace,i="bstResource",o="resource",a="-start",s="-end",c="fn"+a,u="fn"+s,d="pushState"},7836:(e,t,r)=>{"use strict";r.d(t,{BODY:()=>x,CB_END:()=>E,CB_START:()=>u,END:()=>A,FEATURE_NAME:()=>i,FETCH:()=>T,FETCH_BODY:()=>v,FETCH_DONE:()=>m,FETCH_START:()=>g,FN_END:()=>c,FN_START:()=>s,INTERACTION:()=>f,INTERACTION_API:()=>d,INTERACTION_EVENTS:()=>o,JSONP_END:()=>b,JSONP_NODE:()=>p,JS_TIME:()=>_,MAX_TIMER_BUDGET:()=>a,REMAINING:()=>l,SPA_NODE:()=>h,START:()=>w,originalSetTimeout:()=>y});var n=r(234);const i=r(3325).D.spa,o=["click","submit","keypress","keydown","keyup","change"],a=999,s="fn-start",c="fn-end",u="cb-start",d="api-ixn-",l="remaining",f="interaction",h="spaNode",p="jsonpNode",g="fetch-start",m="fetch-done",v="fetch-body-",b="jsonp-end",y=n.Yu.ST,w="-start",A="-end",x="-body",E="cb"+A,_="jsTime",T="fetch"},5938:(e,t,r)=>{"use strict";r.d(t,{W:()=>i});var n=r(8325);class i{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=n.ee.get(e),this.featureName=r,this.blocked=!1}}},7530:(e,t,r)=>{"use strict";r.d(t,{j:()=>b});var n=r(3325),i=r(234),o=r(5546),a=r(8325),s=r(7894),c=r(8e3),u=r(3960),d=r(385),l=r(50),f=r(3081),h=r(8632);function p(){const e=(0,h.gG)();["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start","recordReplay","pauseReplay"].forEach((t=>{e[t]=function(){for(var r=arguments.length,n=new Array(r),i=0;i<r;i++)n[i]=arguments[i];return function(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];let o=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&o.push(e.api[t](...n))})),o.length>1?o:o[0]}(t,...n)}}))}var g=r(2825);const m=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};let v=!1;function b(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},b=arguments.length>2?arguments[2]:void 0,y=arguments.length>3?arguments[3]:void 0,{init:w,info:A,loader_config:x,runtime:E={loaderType:b},exposed:_=!0}=t;const T=(0,h.gG)();A||(w=T.init,A=T.info,x=T.loader_config),(0,i.Dg)(e.agentIdentifier,w||{}),(0,i.GE)(e.agentIdentifier,x||{}),A.jsAttributes??={},d.v6&&(A.jsAttributes.isWorker=!0),(0,i.CX)(e.agentIdentifier,A);const S=(0,i.P_)(e.agentIdentifier),D=[A.beacon,A.errorBeacon];v||(S.proxy.assets&&(m(S.proxy.assets),D.push(S.proxy.assets)),S.proxy.beacon&&D.push(S.proxy.beacon),p(),(0,h.EZ)("activatedFeatures",g.T)),E.denyList=[...S.ajax.deny_list||[],...S.ajax.block_internal?D:[]],(0,i.sU)(e.agentIdentifier,E),void 0===e.api&&(e.api=function(e,t){t||(0,c.R)(e,"api");const h={};var p=a.ee.get(e),g=p.get("tracer"),m="api-",v=m+"ixn-";function b(t,r,n,o){const a=(0,i.C5)(e);return null===r?delete a.jsAttributes[t]:(0,i.CX)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:r}}),A(m,n,!0,o||null===r?"session":void 0)(t,r)}function y(){}["setErrorHandler","finished","addToTrace","addRelease"].forEach((e=>{h[e]=A(m,e,!0,"api")})),h.addPageAction=A(m,"addPageAction",!0,n.D.pageAction),h.setCurrentRouteName=A(m,"routeName",!0,n.D.spa),h.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(r||"http://custom.transaction")+t,A(m,"setPageViewName",!0)()},h.setCustomAttribute=function(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number","boolean"].includes(typeof t)||null===t)return b(e,t,"setCustomAttribute",r);(0,l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string, number or boolean type, but a type of <".concat(typeof t,"> was provided."))}else(0,l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},h.setUserId=function(e){if("string"==typeof e||null===e)return b("enduser.id",e,"setUserId",!0);(0,l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},h.setApplicationVersion=function(e){if("string"==typeof e||null===e)return b("application.version",e,"setApplicationVersion",!1);(0,l.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e,">."))},h.start=e=>{try{const t=e?"defined":"undefined";(0,o.p)(f.xS,["API/start/".concat(t,"/called")],void 0,n.D.metrics,p);const r=Object.values(n.D);if(void 0===e)e=r;else{if((e=Array.isArray(e)&&e.length?e:[e]).some((e=>!r.includes(e))))return(0,l.Z)("Invalid feature name supplied. Acceptable feature names are: ".concat(r));e.includes(n.D.pageViewEvent)||e.push(n.D.pageViewEvent)}e.forEach((e=>{p.emit("".concat(e,"-opt-in"))}))}catch(e){(0,l.Z)("An unexpected issue occurred",e)}},h.recordReplay=function(){(0,o.p)(f.xS,["API/recordReplay/called"],void 0,n.D.metrics,p),(0,o.p)("recordReplay",[],void 0,n.D.sessionReplay,p)},h.pauseReplay=function(){(0,o.p)(f.xS,["API/pauseReplay/called"],void 0,n.D.metrics,p),(0,o.p)("pauseReplay",[],void 0,n.D.sessionReplay,p)},h.interaction=function(){return(new y).get()};var w=y.prototype={createTracer:function(e,t){var r={},i=this,a="function"==typeof t;return(0,o.p)(f.xS,["API/createTracer/called"],void 0,n.D.metrics,p),(0,o.p)(v+"tracer",[(0,s.z)(),e,r],i,n.D.spa,p),function(){if(g.emit((a?"":"no-")+"fn-start",[(0,s.z)(),i,a],r),a)try{return t.apply(this,arguments)}catch(e){throw g.emit("fn-err",[arguments,this,e],r),e}finally{g.emit("fn-end",[(0,s.z)()],r)}}}};function A(e,t,r,i){return function(){return(0,o.p)(f.xS,["API/"+t+"/called"],void 0,n.D.metrics,p),i&&(0,o.p)(e+t,[(0,s.z)(),...arguments],r?null:this,i,p),r?void 0:this}}function x(){r.e(111).then(r.bind(r,7438)).then((t=>{let{setAPI:r}=t;r(e),(0,c.L)(e,"api")})).catch((()=>(0,l.Z)("Downloading runtime APIs failed...")))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{w[e]=A(v,e,void 0,n.D.spa)})),h.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,o.p)(f.xS,["API/noticeError/called"],void 0,n.D.metrics,p),(0,o.p)("err",[e,(0,s.z)(),!1,t],void 0,n.D.jserrors,p)},d.il?(0,u.b2)((()=>x()),!0):x(),h}(e.agentIdentifier,y)),void 0===e.exposed&&(e.exposed=_),v=!0}},1926:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},3325:(e,t,r)=>{"use strict";r.d(t,{D:()=>n,p:()=>i});const n={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.ajax]:5,[n.sessionTrace]:6,[n.pageAction]:7,[n.spa]:8,[n.sessionReplay]:9}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>({111:"nr-spa",164:"nr-spa-compressor",433:"nr-spa-recorder"}[e]+"-1.249.0.min.js"),i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.249.0.PROD:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+o){s=l;break}}if(!s){c=!0;var f={111:"sha512-rcwC3TQKAe2v/8lLef/QtCPf7aXHaINQK4rrQfRSqEniSzjfHKp2puNRiDg83LlvldPaSMD6aDSwKPMP36tEEg==",433:"sha512-JeWgZm97pm4zAk+MvNNodtuNUNFe082xN5Zj2RU/N/yCAq3qZMnaiENIF3swHo/Ae+Ju06jx3VeGAH/rqoAEoA==",164:"sha512-yrd1XMobAelLE0xAoM/hP3axL+jcB+V8KhqdTQItU7063qODLZOtgHB/y5KPY0H0Cev/2f7LVwp1KY0//grUmg=="};(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[a]&&(s.integrity=f[a])}e[r]=[n];var h=(t,n)=>{s.onerror=s.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},p=setTimeout(h.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=h.bind(null,s.onerror),s.onload=h.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={801:0,92:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,u=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<a.length;u++)o=a[u],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=self["webpackChunk:NRBA-1.249.0.PROD"]=self["webpackChunk:NRBA-1.249.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(1926);var e=i(50);class t{#e(e){return"Call to agent api ".concat(e," failed. The agent is not currently initialized.")}addPageAction(t,r){(0,e.Z)(this.#e("addPageAction"))}setPageViewName(t,r){(0,e.Z)(this.#e("setPageViewName"))}setCustomAttribute(t,r,n){(0,e.Z)(this.#e("setCustomAttribute"))}noticeError(t,r){(0,e.Z)(this.#e("noticeError"))}setUserId(t){(0,e.Z)(this.#e("setUserId"))}setApplicationVersion(t){(0,e.Z)(this.#e("setApplicationVersion"))}setErrorHandler(t){(0,e.Z)(this.#e("setErrorHandler"))}finished(t){(0,e.Z)(this.#e("finished"))}addRelease(t,r){(0,e.Z)(this.#e("addRelease"))}start(t){(0,e.Z)(this.#e("start"))}recordReplay(){(0,e.Z)(this.#e("recordReplay"))}pauseReplay(){(0,e.Z)(this.#e("pauseReplay"))}}var r=i(3325),n=i(234);const o=Object.values(r.D);function a(e){const t={};return o.forEach((r=>{t[r]=function(e,t){return!1!==(0,n.Mt)(t,"".concat(e,".enabled"))}(r,e)})),t}var s=i(7530);var c=i(8e3),u=i(5938),d=i(3960),l=i(385);class f extends u.W{constructor(e,t,r){let i=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,r),this.auto=i,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,n.Mt)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto&&(0,c.R)(e,r)}importAggregator(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate)return;if(!this.auto)return void this.ee.on("".concat(this.featureName,"-opt-in"),(()=>{(0,c.R)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()}));const r=l.il&&!0===(0,n.Mt)(this.agentIdentifier,"privacy.cookies_enabled");let o;this.onAggregateImported=new Promise((e=>{o=e}));const a=async()=>{let n;try{if(r){const{setupAgentSession:e}=await i.e(111).then(i.bind(i,3228));n=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t)}try{if(!this.shouldImportAgg(this.featureName,n))return(0,c.L)(this.agentIdentifier,this.featureName),void o(!1);const{lazyFeatureLoader:e}=await i.e(111).then(i.bind(i,8582)),{Aggregate:r}=await e(this.featureName,"aggregate");this.featAggregate=new r(this.agentIdentifier,this.aggregator,t),o(!0)}catch(t){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),t),this.abortHandler?.(),(0,c.L)(this.agentIdentifier,this.featureName),o(!1)}};l.il?(0,d.b2)((()=>a()),!0):a()}shouldImportAgg(e,t){return e!==r.D.sessionReplay||!!n.Yu.MO&&(!1!==(0,n.Mt)(this.agentIdentifier,"session_trace.enabled")&&(!!t?.isNew||!!t?.state.sessionReplayMode))}}var h=i(7633);class p extends f{static featureName=h.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,h.t,r),this.importAggregator()}}var g=i(1117),m=i(1284);class v extends g.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,i){var o=this.getBucket(e,t,r,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,m.D)(e,(function(e,r){t[e]=b(r,t[e])})),t}(n,o.metrics),o}merge(e,t,r,n,i){var o=this.getBucket(e,t,n,i);if(o.metrics){var a=o.metrics;a.count+=r.count,(0,m.D)(r,(function(e,t){if("count"!==e){var n=a[e],i=r[e];i&&!i.c?a[e]=b(i.t,n):a[e]=function(e,t){if(!t)return e;t.c||(t=y(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=r}storeMetric(e,t,r,n){var i=this.getBucket(e,t,r);return i.stats=b(n,i.stats),i}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:r||{}},n&&(i.custom=n)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,i=0;i<e.length;i++)t[r=e[i]]=w(this.aggregatedData[r]),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function b(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=y(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function y(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function w(e){return"object"!=typeof e?[]:(0,m.D)(e,A)}function A(e,t){return t}var x=i(8632),E=i(4402),_=i(4351);var T=i(5546),S=i(7956),D=i(3239),N=i(7894),R=i(9251);class j extends f{static featureName=R.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,R.t,r),l.il&&((0,S.N)((()=>(0,T.p)("docHidden",[(0,N.z)()],void 0,R.t,this.ee)),!0),(0,D.bP)("pagehide",(()=>(0,T.p)("winPagehide",[(0,N.z)()],void 0,R.t,this.ee))),this.importAggregator())}}var C=i(3081);class O extends f{static featureName=C.t9;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,C.t9,r),this.importAggregator()}}var P=i(6660);class I{constructor(e,t,r,n){this.name="UncaughtError",this.message=e,this.sourceURL=t,this.line=r,this.column=n}}class k extends f{static featureName=P.t;#t=new Set;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,P.t,n);try{this.removeOnAbort=new AbortController}catch(e){}this.ee.on("fn-err",((e,t,n)=>{this.abortHandler&&!this.#t.has(n)&&(this.#t.add(n),(0,T.p)("err",[this.#r(n),(0,N.z)()],void 0,r.D.jserrors,this.ee))})),this.ee.on("internal-error",(e=>{this.abortHandler&&(0,T.p)("ierr",[this.#r(e),(0,N.z)(),!0],void 0,r.D.jserrors,this.ee)})),l._A.addEventListener("unhandledrejection",(e=>{this.abortHandler&&(0,T.p)("err",[this.#n(e),(0,N.z)(),!1,{unhandledPromiseRejection:1}],void 0,r.D.jserrors,this.ee)}),(0,D.m$)(!1,this.removeOnAbort?.signal)),l._A.addEventListener("error",(e=>{this.abortHandler&&(this.#t.has(e.error)?this.#t.delete(e.error):(0,T.p)("err",[this.#i(e),(0,N.z)()],void 0,r.D.jserrors,this.ee))}),(0,D.m$)(!1,this.removeOnAbort?.signal)),this.abortHandler=this.#o,this.importAggregator()}#o(){this.removeOnAbort?.abort(),this.#t.clear(),this.abortHandler=void 0}#r(e){return e instanceof Error?e:void 0!==e?.message?new I(e.message,e.filename||e.sourceURL,e.lineno||e.line,e.colno||e.col):new I("string"==typeof e?e:(0,_.P)(e))}#n(e){let t="Unhandled Promise Rejection: ";if(e?.reason instanceof Error)try{return e.reason.message=t+e.reason.message,e.reason}catch(t){return e.reason}if(void 0===e.reason)return new I(t);const r=this.#r(e.reason);return r.message=t+r.message,r}#i(e){return e.error instanceof Error?e.error:new I(e.message,e.filename,e.lineno,e.colno)}}var H=i(2210);let M=1;const L="nr@id";function z(e){const t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===l._A?0:(0,H.X)(e,L,(function(){return M++}))}function B(e){if("string"==typeof e&&e.length)return e.length;if("object"==typeof e){if("undefined"!=typeof ArrayBuffer&&e instanceof ArrayBuffer&&e.byteLength)return e.byteLength;if("undefined"!=typeof Blob&&e instanceof Blob&&e.size)return e.size;if(!("undefined"!=typeof FormData&&e instanceof FormData))try{return(0,_.P)(e).length}catch(e){return}}}var F=i(1214),U=i(7243);class Z{constructor(e){this.agentIdentifier=e}generateTracePayload(e){if(!this.shouldGenerateTrace(e))return null;var t=(0,n.DL)(this.agentIdentifier);if(!t)return null;var r=(t.accountID||"").toString()||null,i=(t.agentID||"").toString()||null,o=(t.trustKey||"").toString()||null;if(!r||!i)return null;var a=(0,E.M)(),s=(0,E.Ht)(),c=Date.now(),u={spanId:a,traceId:s,timestamp:c};return(e.sameOrigin||this.isAllowedOrigin(e)&&this.useTraceContextHeadersForCors())&&(u.traceContextParentHeader=this.generateTraceContextParentHeader(a,s),u.traceContextStateHeader=this.generateTraceContextStateHeader(a,c,r,i,o)),(e.sameOrigin&&!this.excludeNewrelicHeader()||!e.sameOrigin&&this.isAllowedOrigin(e)&&this.useNewrelicHeaderForCors())&&(u.newrelicHeader=this.generateTraceHeader(a,s,c,r,i,o)),u}generateTraceContextParentHeader(e,t){return"00-"+t+"-"+e+"-01"}generateTraceContextStateHeader(e,t,r,n,i){return i+"@nr=0-1-"+r+"-"+n+"-"+e+"----"+t}generateTraceHeader(e,t,r,n,i,o){if(!("function"==typeof l._A?.btoa))return null;var a={v:[0,1],d:{ty:"Browser",ac:n,ap:i,id:e,tr:t,ti:r}};return o&&n!==o&&(a.d.tk=o),btoa((0,_.P)(a))}shouldGenerateTrace(e){return this.isDtEnabled()&&this.isAllowedOrigin(e)}isAllowedOrigin(e){var t=!1,r={};if((0,n.Mt)(this.agentIdentifier,"distributed_tracing")&&(r=(0,n.P_)(this.agentIdentifier).distributed_tracing),e.sameOrigin)t=!0;else if(r.allowed_origins instanceof Array)for(var i=0;i<r.allowed_origins.length;i++){var o=(0,U.e)(r.allowed_origins[i]);if(e.hostname===o.hostname&&e.protocol===o.protocol&&e.port===o.port){t=!0;break}}return t}isDtEnabled(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.enabled}excludeNewrelicHeader(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.exclude_newrelic_header}useNewrelicHeaderForCors(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!1!==e.cors_use_newrelic_header}useTraceContextHeadersForCors(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.cors_use_tracecontext_headers}}var V=i(7825),q=["load","error","abort","timeout"],G=q.length,W=n.Yu.REQ,X=n.Yu.XHR;class K extends f{static featureName=V.t;constructor(e,t){let i=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if(super(e,t,V.t,i),(0,n.OP)(e).xhrWrappable){this.dt=new Z(e),this.handler=(e,t,r,n)=>(0,T.p)(e,t,r,n,this.ee);try{const e={xmlhttprequest:"xhr",fetch:"fetch",beacon:"beacon"};l._A?.performance?.getEntriesByType("resource").forEach((t=>{if(t.initiatorType in e&&0!==t.responseStatus){const n={status:t.responseStatus},i={rxSize:t.transferSize,duration:Math.floor(t.duration),cbTime:0};Y(n,t.name),this.handler("xhr",[n,i,t.startTime,t.responseEnd,e[t.initiatorType]],void 0,r.D.ajax)}}))}catch(e){}(0,F.u5)(this.ee),(0,F.Kf)(this.ee),function(e,t,i,o){function a(e){var t=this;t.totalCbs=0,t.called=0,t.cbTime=0,t.end=x,t.ended=!1,t.xhrGuids={},t.lastSize=null,t.loadCaptureCalled=!1,t.params=this.params||{},t.metrics=this.metrics||{},e.addEventListener("load",(function(r){E(t,e)}),(0,D.m$)(!1)),l.IF||e.addEventListener("progress",(function(e){t.lastSize=e.loaded}),(0,D.m$)(!1))}function s(e){this.params={method:e[0]},Y(this,e[1]),this.metrics={}}function c(t,r){var i=(0,n.DL)(e);i.xpid&&this.sameOrigin&&r.setRequestHeader("X-NewRelic-ID",i.xpid);var a=o.generateTracePayload(this.parsedOrigin);if(a){var s=!1;a.newrelicHeader&&(r.setRequestHeader("newrelic",a.newrelicHeader),s=!0),a.traceContextParentHeader&&(r.setRequestHeader("traceparent",a.traceContextParentHeader),a.traceContextStateHeader&&r.setRequestHeader("tracestate",a.traceContextStateHeader),s=!0),s&&(this.dt=a)}}function u(e,r){var n=this.metrics,i=e[0],o=this;if(n&&i){var a=B(i);a&&(n.txSize=a)}this.startTime=(0,N.z)(),this.body=i,this.listener=function(e){try{"abort"!==e.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==e.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof r.onload)&&"function"==typeof o.end)&&o.end(r)}catch(e){try{t.emit("internal-error",[e])}catch(e){}}};for(var s=0;s<G;s++)r.addEventListener(q[s],this.listener,(0,D.m$)(!1))}function d(e,t,r){this.cbTime+=e,t?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof r.onload||"function"!=typeof this.end||this.end(r)}function f(e,t){var r=""+z(e)+!!t;this.xhrGuids&&!this.xhrGuids[r]&&(this.xhrGuids[r]=!0,this.totalCbs+=1)}function h(e,t){var r=""+z(e)+!!t;this.xhrGuids&&this.xhrGuids[r]&&(delete this.xhrGuids[r],this.totalCbs-=1)}function p(){this.endTime=(0,N.z)()}function g(e,r){r instanceof X&&"load"===e[0]&&t.emit("xhr-load-added",[e[1],e[2]],r)}function m(e,r){r instanceof X&&"load"===e[0]&&t.emit("xhr-load-removed",[e[1],e[2]],r)}function v(e,t,r){t instanceof X&&("onload"===r&&(this.onload=!0),("load"===(e[0]&&e[0].type)||this.onload)&&(this.xhrCbStart=(0,N.z)()))}function b(e,r){this.xhrCbStart&&t.emit("xhr-cb-time",[(0,N.z)()-this.xhrCbStart,this.onload,r],r)}function y(e){var t,r=e[1]||{};if("string"==typeof e[0]?0===(t=e[0]).length&&l.il&&(t=""+l._A.location.href):e[0]&&e[0].url?t=e[0].url:l._A?.URL&&e[0]&&e[0]instanceof URL?t=e[0].href:"function"==typeof e[0].toString&&(t=e[0].toString()),"string"==typeof t&&0!==t.length){t&&(this.parsedOrigin=(0,U.e)(t),this.sameOrigin=this.parsedOrigin.sameOrigin);var n=o.generateTracePayload(this.parsedOrigin);if(n&&(n.newrelicHeader||n.traceContextParentHeader))if(e[0]&&e[0].headers)s(e[0].headers,n)&&(this.dt=n);else{var i={};for(var a in r)i[a]=r[a];i.headers=new Headers(r.headers||{}),s(i.headers,n)&&(this.dt=n),e.length>1?e[1]=i:e.push(i)}}function s(e,t){var r=!1;return t.newrelicHeader&&(e.set("newrelic",t.newrelicHeader),r=!0),t.traceContextParentHeader&&(e.set("traceparent",t.traceContextParentHeader),t.traceContextStateHeader&&e.set("tracestate",t.traceContextStateHeader),r=!0),r}}function w(e,t){this.params={},this.metrics={},this.startTime=(0,N.z)(),this.dt=t,e.length>=1&&(this.target=e[0]),e.length>=2&&(this.opts=e[1]);var r,n=this.opts||{},i=this.target;"string"==typeof i?r=i:"object"==typeof i&&i instanceof W?r=i.url:l._A?.URL&&"object"==typeof i&&i instanceof URL&&(r=i.href),Y(this,r);var o=(""+(i&&i instanceof W&&i.method||n.method||"GET")).toUpperCase();this.params.method=o,this.body=n.body,this.txSize=B(n.body)||0}function A(e,t){var n;this.endTime=(0,N.z)(),this.params||(this.params={}),this.params.status=t?t.status:0,"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var o={txSize:this.txSize,rxSize:n,duration:(0,N.z)()-this.startTime};i("xhr",[this.params,o,this.startTime,this.endTime,"fetch"],this,r.D.ajax)}function x(e){var t=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var o=0;o<G;o++)e.removeEventListener(q[o],this.listener,!1);t.aborted||(n.duration=(0,N.z)()-this.startTime,this.loadCaptureCalled||4!==e.readyState?null==t.status&&(t.status=0):E(this,e),n.cbTime=this.cbTime,i("xhr",[t,n,this.startTime,this.endTime,"xhr"],this,r.D.ajax))}}function E(e,t){e.params.status=t.status;var r=function(e,t){var r=e.responseType;return"json"===r&&null!==t?t:"arraybuffer"===r||"blob"===r||"json"===r?B(e.response):"text"===r||""===r||void 0===r?B(e.responseText):void 0}(t,e.lastSize);if(r&&(e.metrics.rxSize=r),e.sameOrigin){var n=t.getResponseHeader("X-NewRelic-App-Data");n&&(e.params.cat=n.split(", ").pop())}e.loadCaptureCalled=!0}t.on("new-xhr",a),t.on("open-xhr-start",s),t.on("open-xhr-end",c),t.on("send-xhr-start",u),t.on("xhr-cb-time",d),t.on("xhr-load-added",f),t.on("xhr-load-removed",h),t.on("xhr-resolved",p),t.on("addEventListener-end",g),t.on("removeEventListener-end",m),t.on("fn-end",b),t.on("fetch-before-start",y),t.on("fetch-start",w),t.on("fn-start",v),t.on("fetch-done",A)}(e,this.ee,this.handler,this.dt),this.importAggregator()}}}function Y(e,t){var r=(0,U.e)(t),n=e.params||e;n.hostname=r.hostname,n.port=r.port,n.protocol=r.protocol,n.host=r.hostname+":"+r.port,n.pathname=r.pathname,e.parsedOrigin=r,e.sameOrigin=r.sameOrigin}var J=i(3614);const{BST_RESOURCE:Q,RESOURCE:ee,START:te,END:re,FEATURE_NAME:ne,FN_END:ie,FN_START:oe,PUSH_STATE:ae}=J;var se=i(7144);class ce extends f{static featureName=se.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,se.t,r),this.importAggregator()}}var ue=i(7836);const{FEATURE_NAME:de,START:le,END:fe,BODY:he,CB_END:pe,JS_TIME:ge,FETCH:me,FN_START:ve,CB_START:be,FN_END:ye}=ue;var we=i(4649);class Ae extends f{static featureName=we.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,we.t,r),this.importAggregator()}}new class extends t{constructor(t){let r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,E.ky)(16);super(),l._A?(this.agentIdentifier=r,this.sharedAggregator=new v({agentIdentifier:this.agentIdentifier}),this.features={},(0,x.h5)(r,this),this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(p),(0,s.j)(this,t,t.loaderType||"agent"),this.run()):(0,e.Z)("Failed to initial the agent. Could not determine the runtime environment.")}get config(){return{info:(0,n.C5)(this.agentIdentifier),init:(0,n.P_)(this.agentIdentifier),loader_config:(0,n.DL)(this.agentIdentifier),runtime:(0,n.OP)(this.agentIdentifier)}}run(){try{const t=a(this.agentIdentifier),n=[...this.desiredFeatures];n.sort(((e,t)=>r.p[e.featureName]-r.p[t.featureName])),n.forEach((n=>{if(t[n.featureName]||n.featureName===r.D.pageViewEvent){const i=function(e){switch(e){case r.D.ajax:return[r.D.jserrors];case r.D.sessionTrace:return[r.D.ajax,r.D.pageViewEvent];case r.D.sessionReplay:return[r.D.sessionTrace];case r.D.pageViewTiming:return[r.D.pageViewEvent];default:return[]}}(n.featureName);i.every((e=>t[e]))||(0,e.Z)("".concat(n.featureName," is enabled but one or more dependent features has been disabled (").concat((0,_.P)(i),"). This may cause unintended consequences or missing data...")),this.features[n.featureName]=new n(this.agentIdentifier,this.sharedAggregator)}}))}catch(t){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",t);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,x.fP)();return delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator,r.ee?.abort(),delete r.ee?.get(this.agentIdentifier),!1}}addToTrace(t){(0,e.Z)("Call to agent api addToTrace failed. The session trace feature is not currently initialized.")}setCurrentRouteName(t){(0,e.Z)("Call to agent api setCurrentRouteName failed. The spa feature is not currently initialized.")}interaction(){(0,e.Z)("Call to agent api interaction failed. The spa feature is not currently initialized.")}}({features:[K,p,j,class extends f{static featureName=ne;constructor(e,t){if(super(e,t,ne,!(arguments.length>2&&void 0!==arguments[2])||arguments[2]),!l.il)return;const n=this.ee;let i;(0,F.QU)(n),this.eventsEE=(0,F.em)(n),this.eventsEE.on(oe,(function(e,t){this.bstStart=(0,N.z)()})),this.eventsEE.on(ie,(function(e,t){(0,T.p)("bst",[e[0],t,this.bstStart,(0,N.z)()],void 0,r.D.sessionTrace,n)})),n.on(ae+te,(function(e){this.time=(0,N.z)(),this.startPath=location.pathname+location.hash})),n.on(ae+re,(function(e){(0,T.p)("bstHist",[location.pathname+location.hash,this.startPath,this.time],void 0,r.D.sessionTrace,n)}));try{i=new PerformanceObserver((e=>{const t=e.getEntries();(0,T.p)(Q,[t],void 0,r.D.sessionTrace,n)})),i.observe({type:ee,buffered:!0})}catch(e){}this.importAggregator({resourceObserver:i})}},ce,O,Ae,k,class extends f{static featureName=de;constructor(e,t){if(super(e,t,de,!(arguments.length>2&&void 0!==arguments[2])||arguments[2]),!l.il)return;if(!(0,n.OP)(e).xhrWrappable)return;try{this.removeOnAbort=new AbortController}catch(e){}let r,i=0;const o=this.ee.get("tracer"),a=(0,F._L)(this.ee),s=(0,F.Lg)(this.ee),c=(0,F.BV)(this.ee),u=(0,F.Kf)(this.ee),d=this.ee.get("events"),f=(0,F.u5)(this.ee),h=(0,F.QU)(this.ee),p=(0,F.Gm)(this.ee);function g(e,t){h.emit("newURL",[""+window.location,t])}function m(){i++,r=window.location.hash,this[ve]=(0,N.z)()}function v(){i--,window.location.hash!==r&&g(0,!0);var e=(0,N.z)();this[ge]=~~this[ge]+e-this[ve],this[ye]=e}function b(e,t){e.on(t,(function(){this[t]=(0,N.z)()}))}this.ee.on(ve,m),s.on(be,m),a.on(be,m),this.ee.on(ye,v),s.on(pe,v),a.on(pe,v),this.ee.buffer([ve,ye,"xhr-resolved"],this.featureName),d.buffer([ve],this.featureName),c.buffer(["setTimeout"+fe,"clearTimeout"+le,ve],this.featureName),u.buffer([ve,"new-xhr","send-xhr"+le],this.featureName),f.buffer([me+le,me+"-done",me+he+le,me+he+fe],this.featureName),h.buffer(["newURL"],this.featureName),p.buffer([ve],this.featureName),s.buffer(["propagate",be,pe,"executor-err","resolve"+le],this.featureName),o.buffer([ve,"no-"+ve],this.featureName),a.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"],this.featureName),b(f,me+le),b(f,me+"-done"),b(a,"new-jsonp"),b(a,"jsonp-end"),b(a,"cb-start"),h.on("pushState-end",g),h.on("replaceState-end",g),window.addEventListener("hashchange",g,(0,D.m$)(!0,this.removeOnAbort?.signal)),window.addEventListener("load",g,(0,D.m$)(!0,this.removeOnAbort?.signal)),window.addEventListener("popstate",(function(){g(0,i>1)}),(0,D.m$)(!0,this.removeOnAbort?.signal)),this.abortHandler=this.#o,this.importAggregator()}#o(){this.removeOnAbort?.abort(),this.abortHandler=void 0}}],loaderType:"spa"})})()})();</script>
+<meta name="description" content="BASICARE NAIL SCISSER-CURVED 1021" />
+<meta name="keywords" content="BASICARE NAIL SCISSER-CURVED 1021
+" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<meta name="title" content="BASICARE NAIL SCISSER-CURVED 1021" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+<meta name="format-detection" content="telephone=no" />
+<title>BASICARE NAIL SCISSER-CURVED 1021</title>
+<link rel="stylesheet" type="text/css" media="all" href="https://www.healthguard.lk/pub/static/version1668449764/_cache/merged/083656cceeee218e8514ea56737c08f2.min.css" />
+<link rel="stylesheet" type="text/css" media="print" href="https://www.healthguard.lk/pub/static/version1668449764/frontend/Antyra/antyra/en_US/css/print.min.css" />
+<link rel="stylesheet" type="text/css" media="all" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+<link rel="stylesheet" type="text/css" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+<link rel="stylesheet" type="text/css" media="all" href="https://www.healthguard.lk/pub/static/version1668449764/frontend/Antyra/antyra/en_US/css/gallery.min.css" />
+<link rel="stylesheet" type="text/css" media="all" href="https://www.healthguard.lk/pub/static/version1668449764/frontend/Antyra/antyra/en_US/css/custom-l.min.css" />
+<script type="text/javascript" src="https://www.healthguard.lk/pub/static/version1668449764/_cache/merged/9866b494b2921e79b6a77c410d05e5ce.min.js"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Barlow:400,500,700" />
+<link rel="icon" type="image/x-icon" href="https://www.healthguard.lk/pub/media/favicon/stores/1/fav.png" />
+<link rel="shortcut icon" type="image/x-icon" href="https://www.healthguard.lk/pub/media/favicon/stores/1/fav.png" />
+<link rel="canonical" href="https://www.healthguard.lk/basicare-nail-scisser-curved-1021" />
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TWPSZ29');</script>
+
+
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2287381564672402'); 
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" 
+src="https://www.facebook.com/tr?id=2287381564672402&ev=PageView
+&noscript=1"/>
+</noscript>
+
+<style>
+.my-account-mobile {
+display:none;
+}
+
+.owl-item .item.product.product-item {
+    padding: 0 10px;
+}
+
+.owl-item .item.product.product-item .img-holder {
+height: auto;
+}
+
+@media (max-width: 1200px) {
+.header .menu-container #inner .top-menu .whatsapp {
+display:none;
+}
+}
+
+.cms-page-view .page-main .row {
+    margin: 0;
+}
+
+.review-and-rating .review-toolbar {
+display: none;
+}
+.product-individual .rating-wrapper .count {
+    display: none;
+}
+noscript .content {
+display: none;
+}
+</style>
+
+<script type="text/x-magento-init">
+{
+    "*": {
+        "Magento_GoogleAnalytics/js/google-analytics": {
+            "isCookieRestrictionModeEnabled": 0,
+            "currentWebsite": 1,
+            "cookieName": "user_allowed_save_cookie",
+            "ordersTrackingData": [],
+            "pageTrackingData": {"optPageUrl":"","isAnonymizedIpActive":"0","accountId":"UA-70952500-2"}        }
+    }
+}
+</script>
+
+<link rel="stylesheet" type="text/css" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+<meta property="og:type" content="product" />
+<meta property="og:title" content="BASICARE&#x20;NAIL&#x20;SCISSER-CURVED&#x20;1021&#x0A;" />
+<meta property="og:image" content="https://www.healthguard.lk/pub/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/i/m/img_5133_copy.jpg" />
+<meta property="og:description" content="BASICARE&#x20;NAIL&#x20;SCISSER-CURVED&#x20;1021" />
+<meta property="og:url" content="https://www.healthguard.lk/basicare-nail-scisser-curved-1021" />
+<meta property="product:price:amount" content="690" />
+<meta property="product:price:currency" content="LKR" />
+</head>
+<body data-container="body" data-mage-init="{&quot;loaderAjax&quot;: {}, &quot;loader&quot;: { &quot;icon&quot;: &quot;https://www.healthguard.lk/pub/static/version1668449764/frontend/Antyra/antyra/en_US/images/loader-2.gif&quot;}}" itemtype="http://schema.org/Product" itemscope="itemscope" class="catalog-product-view product- categorypath-all-products-personal-care-hand-foot-care category-hand-foot-care page-layout-1column">
+<script type="text/x-magento-init">
+        {
+            "*": {
+                "mage/translate-init": {
+                    "dictionaryFile": "text!js\u002Dtranslation.json",
+                    "version": "d64fa9ae409fd43efd8e1cd9858500ac999bbc8d"
+                }
+            }
+        }
+    </script>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "mage/cookies": {
+                "expires": null,
+                "path": "/",
+                "domain": ".www.healthguard.lk",
+                "secure": false,
+                "lifetime": "3600"
+            }
+        }
+    }
+</script>
+<script>
+    require.config({
+        map: {
+            '*': {
+                wysiwygAdapter: 'mage/adminhtml/wysiwyg/tiny_mce/tinymce4Adapter'
+            }
+        }
+    });
+</script>
+<script id="searchAutocompletePlaceholder" type="text/x-custom-template">
+    <div class="mst-searchautocomplete__autocomplete">
+        <div class="mst-searchautocomplete__spinner">
+            <div class="spinner-item spinner-item-1"></div>
+            <div class="spinner-item spinner-item-2"></div>
+            <div class="spinner-item spinner-item-3"></div>
+            <div class="spinner-item spinner-item-4"></div>
+            <div class="spinner-item spinner-item-5"></div>
+            <div class="spinner-item spinner-item-6"></div>
+            <div class="spinner-item spinner-item-7"></div>
+            <div class="spinner-item spinner-item-8"></div>
+        </div>
+
+        <div class="mst-searchautocomplete__close">
+            &times;
+        </div>
+    </div>
+</script>
+<script id="searchAutocompleteWrapper" type="text/x-custom-template">
+    <div class="mst-searchautocomplete__wrapper">
+        <div data-bind="visible: result.noResults == false">
+            <div data-bind="visible: result.isMisspelled" class="mst-searchautocomplete__misspelled_text">
+                <span data-bind="text: result.textMisspelled"></span>
+            </div>
+            <div class="mst-searchautocomplete__container" data-bind="foreach: { data: result.indices, as: 'index' }">
+                <div data-bind="visible: index.totalItems, attr: {class: 'mst-searchautocomplete__index ' + index.identifier}">
+                    <div class="mst-searchautocomplete__index-title">
+                        <span data-bind="text: index.title"></span>
+                        <span data-bind="visible: index.isShowTotals">
+                            (<span data-bind="text: index.totalItems"></span>)
+                        </span>
+                    </div>
+
+                    <ul data-bind="foreach: { data: index.items, as: 'item' }">
+                        <li data-bind="
+                            template: { name:index.identifier, data: item },
+                            attr: {class: 'mst-searchautocomplete__item ' + index.identifier},
+                            event: { mouseover: $parents[1].onMouseOver, mouseout: $parents[1].onMouseOut, mousedown: $parents[1].onClick },
+                            css: {_active: $data.isActive}">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mst-searchautocomplete__show-all" data-bind="visible: result.urlAll && result.totalItems > 0">
+                <a data-bind="attr: { href: result.urlAll }">
+                    <span data-bind="text: result.textAll"></span>
+                </a>
+            </div>
+        </div>
+
+        <div class="mst-searchautocomplete__empty-result" data-bind="visible: result.noResults == true && !loading">
+            <span data-bind="text: result.textEmpty"></span>
+        </div>
+    </div>
+</script>
+<script id="popular" type="text/x-custom-template">
+    <a class="title" data-bind="text: query"></a>
+</script>
+<script id="magento_catalog_category" type="text/x-custom-template">
+    <a class="title" data-bind="text: name, attr: {href: url}, highlight"></a>
+</script>
+<script id="magento_catalog_product" type="text/x-custom-template">
+    <!-- ko if: optimize -->
+    <a class="title" rel="noreferrer" data-bind="html: name, attr: {href: url}, highlight"></a>
+
+    <div data-bind="html: price" class="price"></div>
+    <!-- /ko -->
+
+    <!-- ko if: !optimize -->
+    <!-- ko if: image -->
+    <a rel="noreferrer" data-bind="attr: {href: url}">
+        <div class="mst-product-image-wrapper"><img data-bind="attr: {src: image}"/></div>
+    </a>
+    <!-- /ko -->
+
+    <div class="meta">
+        <div class="title">
+            <a rel="noreferrer" data-bind="html: name, attr: {href: url}, highlight"></a>
+
+            <!-- ko if: sku -->
+            <span class="sku" data-bind="text: sku, highlight"></span>
+            <!-- /ko -->
+        </div>
+
+        <!-- ko if: description -->
+        <div class="description" data-bind="text: description, highlight"></div>
+        <!-- /ko -->
+
+        <!-- ko if: rating -->
+        <div data-bind="html: rating"></div>
+        <!-- /ko -->
+
+        <!-- ko if: stock_status -->
+        <span class="stock_status" data-bind="text: stock_status, processStockStatus"></span>
+        <!-- /ko -->
+
+        <form data-role="tocart-form" class="to-cart"
+              data-bind="visible: cart.visible, attr:{action: cart.params.action}, afterRender: $parents[2].afterRender"
+              method="post">
+            <input type="hidden" name="product" data-bind="value: cart.params.data.product">
+            <input type="hidden" name="uenc" data-bind="value: cart.params.data.uenc">
+            <input type="hidden" name="form_key" data-bind="value: $parents[2].form_key"/>
+            <button type="submit" class="action tocart primary">
+                <span data-bind="html: cart.label,event: { mousedown: $parents[2].onSubmit }"></span>
+            </button>
+        </form>
+    </div>
+
+    <div class="store">
+        <div data-bind="html: price" class="price"></div>
+    </div>
+    <!-- /ko -->
+</script>
+<script id="magento_cms_page" type="text/x-custom-template">
+    <a class="title" data-bind="text: name, attr: {href: url}, highlight"></a>
+</script>
+<script id="magento_catalog_categoryproduct" type="text/x-custom-template">
+    <a class="title" data-bind="text: name, attr: {href: url}, highlight"></a>
+</script>
+<script id="magento_search_query" type="text/x-custom-template">
+    <a class="title" data-bind="text: query_text, attr: {href: url}, highlight"></a> <span class="num_results"
+                                                                                           data-bind="text: num_results"></span>
+</script>
+<script id="external_wordpress_post" type="text/x-custom-template">
+    <a class="title" data-bind="text: name, attr: {href: url}, highlight"></a>
+</script>
+<script id="magefan_blog_post" type="text/x-custom-template">
+    <a class="title" data-bind="text: name, attr: {href: url}, highlight"></a>
+</script>
+<script id="magento_catalog_attribute" type="text/x-custom-template">
+    <a class="title" data-bind="text: name, attr: {href: url}, highlight"></a>
+</script>
+<script id="mageplaza_blog_post" type="text/x-custom-template">
+    <a class="title" data-bind="text: name, attr: {href: url}, highlight"></a>
+</script>
+<script id="mirasvit_blog_post" type="text/x-custom-template">
+    <a class="title" data-bind="text: name, attr: {href: url}, highlight"></a>
+</script>
+<script id="mirasvit_gry_registry" type="text/x-custom-template">
+    <a class="title" data-bind="text: title, attr: {href: url}, highlight"></a>
+    <p data-bind="text: name, highlight"></p>
+</script>
+<script id="mirasvit_kb_article" type="text/x-custom-template">
+    <a class="title" data-bind="text: name, attr: {href: url}, highlight"></a>
+</script>
+<script id="ves_blog_post" type="text/x-custom-template">
+    <a class="title" data-bind="text: name, attr: {href: url}, highlight"></a>
+</script>
+<script id="amasty_blog_post" type="text/x-custom-template">
+    <a class="title" data-bind="text: name, attr: {href: url}, highlight"></a>
+</script>
+<script id="aheadworks_blog_post" type="text/x-custom-template">
+    <a class="title" data-bind="text: name, attr: {href: url}, highlight"></a>
+</script>
+<script id="fishpig_glossary_word" type="text/x-custom-template">
+    <a class="title" data-bind="text: name, attr: {href: url}, highlight"></a>
+</script>
+<script id="blackbird_contentmanager_content" type="text/x-custom-template">
+    <a class="title" data-bind="text: name, attr: {href: url}, highlight"></a>
+</script>
+<script>
+        require([
+                'jquery',
+                'Mirasvit_SearchAutocomplete/js/autocomplete',
+                'Mirasvit_SearchAutocomplete/js/typeahead'
+            ], function ($, autocomplete, typeahead) {
+                var selector = 'input#search, input#mobile_search, .minisearch input[type="text"]';
+
+                $(document).ready(function () {
+                    $('#search_mini_form').prop("minSearchLength", 10000);
+
+                    var $input = $(selector);
+
+                    $input.each(function (index, searchInput) {
+                        
+                        new autocomplete($(searchInput)).init({"query":"","priceFormat":{"pattern":"LKR%s","precision":2,"requiredPrecision":2,"decimalSymbol":".","groupSymbol":",","groupLength":3,"integerRequired":false},"minSearchLength":2,"url":"https:\/\/www.healthguard.lk\/searchautocomplete\/ajax\/suggest\/","storeId":"1","delay":300,"layout":"1column","popularTitle":"Hot Searches","popularSearches":[],"isTypeaheadEnabled":"0","typeaheadUrl":"https:\/\/www.healthguard.lk\/searchautocomplete\/ajax\/typeahead\/","minSuggestLength":2});
+                    });
+                });
+            }
+        );
+    </script>
+<div class="page-wrapper"><header class="page-header"><div class="header fixed-header content header-wrapper"><div class="container"><div class="row"><div class="menu-trigger">
+<div class="menu menu--close5">
+<div class="menu__icon">
+<div class="menu__line menu__line--1"></div>
+<div class="menu__line menu__line--2"></div>
+<div class="menu__line menu__line--3"></div>
+<div class="menu__line menu__line--4"></div>
+<div class="menu__line menu__line--5"></div>
+</div>
+</div>
+</div>
+<a class="logo" id="branding" href="https://www.healthguard.lk/" title="Healthguard">
+<img src="https://www.healthguard.lk/pub/static/version1668449764/frontend/Antyra/antyra/en_US/images/logo.svg" title="Healthguard" alt="Healthguard" class="img-fluid" />
+</a><div class="search-box">
+<form class="form minisearch" id="search_mini_form" action="https://www.healthguard.lk/catalogsearch/result/" method="get">
+<input id="search" data-mage-init="{&quot;quickSearch&quot;:{
+                                &quot;formSelector&quot;:&quot;#search_mini_form&quot;,
+                                &quot;url&quot;:&quot;https://www.healthguard.lk/search/ajax/suggest/&quot;,
+                                &quot;destinationSelector&quot;:&quot;#search_autocomplete&quot;}
+                           }" type="text" name="q" value placeholder="Search entire store here..." class="input-text form-control" maxlength="128" role="combobox" aria-haspopup="false" aria-autocomplete="both" autocomplete="off" />
+<div id="search_autocomplete" class="search-autocomplete"></div>
+<button type="submit" title="Search" class="action search search-icon">
+<svg aria-hidden="true">
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use>
+</svg>
+</button>
+</form>
+</div>
+<div class="menu-container">
+<div id="inner">
+<div class="btn-parent">
+<div class="call-btn altwhatsapp">
+<span class="altwhatsapp">
+<svg aria-hidden="true">
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-call"></use>
+</svg>
+</span>
+<a href="tel:+94764477999">+94 76 447 7999</a> <a href="tel:+94764477888">+94 76 447 7888</a></div>
+</div>
+<div class="main-menu menu-wrapper">
+<ul class="sm-simple">
+<li class="has-submenu"><a href="/all-products/pharma">Medicine</a>
+<div class="mega-menu"><a class="title" href="/all-products/pharma/cardiovascular-system">Heart</a> <a class="title" href="/all-products/pharma/central-nervous-system">central nervous system</a> <a class="title" href="/all-products/pharma/ear-nose-oropharynx">Ear, Nose, Throat</a> <a class="title" href="/all-products/pharma/endocryne-system">Diabetes</a> <a class="title" href="/all-products/pharma/eye">eye</a> <a class="title" href="/all-products/pharma/gastro-intestinal-system">gastro intestinal system</a> <a class="title" href="/all-products/pharma/infections">infections</a> <a class="title" href="/all-products/pharma/malignant-disease-immunosuppression">malignant disease &amp; immunosuppressions</a> <a class="title" href="/all-products/pharma/musculoskeletal-joint-diseases">Muscle &amp; Joint</a> <a class="title" href="/all-products/pharma/nutrition-blood">Vitamins &amp; Minerals</a> <a class="title" href="/all-products/pharma/obsterics-gynaecology-urinary-tract">obsterics &amp; gynaecology &amp; urinary tract</a> <a class="title" href="/all-products/pharma/respiratory-system">Respiratory</a> <a class="title" href="/all-products/pharma/skin-pharma">skin (pharma)</a>
+<div class="img-holder"><img class="img-fluid" src="https://www.healthguard.lk/pub/media/Home/top_navigation/HG-prama_small_1_.jpg" alt /> <img class="img-fluid" src="https://www.healthguard.lk/pub/media/Home/top_navigation/HG-prama_1_.jpg" alt /></div>
+</div>
+</li>
+<li class="has-submenu"><a href="/all-products/medical-devices">Medical Devices</a>
+<div class="mega-menu"><a class="title" href="/health/first-aid">first aid</a> <a class="title" href="/health/health-devices">health devices</a><a class="title" href="/health/supports-braces">supports &amp; braces</a>
+<div style="height: 80px;"></div>
+<div class="img-holder"><img class="img-fluid" src="https://www.healthguard.lk/pub/media/Home/top_navigation/medicaldevices-1_small_1_.jpg" alt /> <img class="img-fluid" src="https://www.healthguard.lk/pub/media/Home/top_navigation/medicaldevices-2_1_.jpg" alt /></div>
+</div>
+</li>
+<li class="has-submenu"><a href="/health">Wellness</a>
+<div class="mega-menu"><a class="title" href="/mother-baby">Mother &amp; Baby</a>  <a class="title" href="/health/cough-cold-allergy">cough, cold &amp; allergy </a><a class="title" href="/health/diet-nutrition">diet &amp; nutrition</a>  <a class="title" href="/health/beauty-supplements">beauty supplements</a><a class="title" href="/health/adult-diabetic-care">adult &amp; diabetic care</a>  <a class="title" href="/health/preventive-care">preventive care</a><a class="title" href="/health/pain-fever">pain &amp; fever</a><a class="title" href="/health/eyes-ears">eyes &amp; ears</a><a class="title" href="/health/traditional-remedies">traditional remedies</a><a class="title" href="/health/stomach-digestion">stomach &amp; digestion</a><a class="title" href="/health/pet-care">pet care</a><a class="title" href="/health/mosquito-protection">mosquito protection</a><a class="title" href="/health/sexual-health">sexual health</a>
+<div class="img-holder"><img class="img-fluid" src="https://www.healthguard.lk/pub/media/Home/top_navigation/wellness-1_small_1_.jpg" alt /> <img class="img-fluid" src="https://www.healthguard.lk/pub/media/Home/top_navigation/wellness-2_1_.jpg" alt /></div>
+</div>
+</li>
+<li class="has-submenu"><a href="/personal-care">personal care</a>
+<div class="mega-menu"><a class="title" href="/hair-care/nourishment">nourishment</a> <a class="title" href="/hair-care/accessories">accessories</a> <a class="title" href="/skin-care/care">Skin care</a> <a class="title" href="/personal-care/hand-foot-care">hand &amp; foot care</a> <a class="title" href="/personal-care/body-care">body care</a> <a class="title" href="/personal-care/womens-personal-care">womens personal care</a> <a class="title" href="/personal-care/oral-care">oral care</a>
+<div class="img-holder"><img class="img-fluid" src="https://www.healthguard.lk/pub/media/Home/top_navigation/personalcare-1_small_1_.jpg" alt /> <img class="img-fluid" src="https://www.healthguard.lk/pub/media/Home/top_navigation/personalcare-2_1_.jpg" alt /></div>
+</div>
+</li>
+<li><a href="/gnc">GNC</a></li>
+<li><a href="/swisse">SWISSE</a></li>
+<li><a href="/all-products/black-friday-2023">Promotions</a></li>
+</ul> </div>
+<div class="top-menu clearfix  menu-wrapper">
+
+
+
+
+
+
+
+
+
+<ul>
+<li><a href="https://www.healthguard.lk/customer/account/login/">My Account</a></li>
+<li class="link-with-icon"><a title="stores" href="/stores/">Branch Network<span> <svg aria-hidden="true">
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-location"></use>
+</svg> </span></a></li>
+</ul> </ul>
+
+<div class="whatsapp">
+<span>
+<svg aria-hidden="true">
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-call"></use>
+</svg>
+</span>
+<a href="tel:+94764477999">+94 76 447 7999</a> <a href="tel:+94764477888">+94 76 447 7888</a> </div>
+</div>
+
+</div>
+
+</div>
+
+<script>
+    /* smart menu */
+    require(['jquery', 'jquery.bootstrap', 'custom'],
+        function ($) {
+
+
+            $(document).ready(function () {
+                /* smooth scroll */
+
+
+                if ($('.sm-simple').length) {
+                    if (window.matchMedia("(min-width: 1200px)").matches) {
+                        $('<span class="sub-arrow"><svg aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-down-arrow"></use></svg></span>').appendTo(".has-submenu > a");
+                    } else {
+                        $('<span class="sub-arrow"><svg aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-down-arrow"></use></svg></span>').insertBefore(".mega-menu");
+                        $('.sm-simple .sub-arrow').click(function () {
+                            $(this).toggleClass('highlighted');
+                            $(this).next('.mega-menu').toggleClass('showme');
+                        });
+                    }
+                }
+
+                var previous = 0;
+
+                $(window).scroll(function (e) {
+                    if (window.matchMedia("(max-width: 1200px)").matches) {
+                        if (!$('.menu').hasClass('open')) {
+                            var current = $(this).scrollTop();
+
+                            if (current > previous && current > 150) {
+                                $('.fixed-header').addClass('hide');
+                            } else {
+                                $('.fixed-header').removeClass('hide');
+                            }
+
+                            previous = current;
+                        }
+                    }
+                });
+
+                /* animation args */
+                animargs = {
+                    top: "toggle",
+                    opacity: "toggle"
+                }
+                /* main navigation */
+                if (window.matchMedia("(max-width: 1200px)").matches) {
+                    hamburgerdrop('.menu', '.menu-container', animargs);
+                    smoothscroll('.page-anchors a', 0, 800); /* @clickelm , @offset , @speed */
+                } else {
+                    smoothscroll('.page-anchors a', 134, 800); /* @clickelm , @offset , @speed */
+                }
+                if (window.matchMedia("(max-width: 767px)").matches) {
+                    hamburgerdrop('.trigger-refine', '.accordion-parent', animargs);
+                    hamburgerdrop('.service-menu', '.page-anchors', animargs);
+                }
+            });
+        });
+</script></div><div class="cart minicart-wrapper">
+<a href="https://www.healthguard.lk/customer/account/login/" class="my-account">Sign In</a>
+<div class="cart-holder clearfix" data-block="minicart">
+<a class="cart-holder action showcart" href="https://www.healthguard.lk/checkout/cart/" data-bind="scope: 'minicart_content'">
+<span class="cart-icon">
+<svg aria-hidden="true">
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
+</svg>
+</span>
+<span class="counter qty empty" data-bind="css: { empty: !!getCartParam('summary_count') == false }, blockLoader: isLoading">
+<span class="counter-number count"><!-- ko text: getCartParam('summary_count') --><!-- /ko --></span>
+</span>
+</a>
+<div class="block block-minicart" data-role="dropdownDialog" data-mage-init="{&quot;dropdownDialog&quot;:{
+                &quot;appendTo&quot;:&quot;[data-block=minicart]&quot;,
+                &quot;triggerTarget&quot;:&quot;.showcart&quot;,
+                &quot;timeout&quot;: &quot;2000&quot;,
+                &quot;closeOnMouseLeave&quot;: false,
+                &quot;closeOnEscape&quot;: true,
+                &quot;triggerClass&quot;:&quot;active&quot;,
+                &quot;parentClass&quot;:&quot;active&quot;,
+                &quot;buttons&quot;:[]}}">
+<div id="minicart-content-wrapper" data-bind="scope: 'minicart_content'">
+<!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+<div id="lof_overlay_minicart" class="lof_overlay minicart_loader" style="display: none;">
+<img src="https://www.healthguard.lk/pub/static/version1668449764/frontend/Antyra/antyra/en_US/images/loader-1.gif" alt="Loading...">
+</div>
+</div>
+</div>
+</div>
+<script>
+    window.checkout = {"shoppingCartUrl":"https:\/\/www.healthguard.lk\/checkout\/cart\/","checkoutUrl":"https:\/\/www.healthguard.lk\/checkout\/","updateItemQtyUrl":"https:\/\/www.healthguard.lk\/checkout\/sidebar\/updateItemQty\/","removeItemUrl":"https:\/\/www.healthguard.lk\/checkout\/sidebar\/removeItem\/","imageTemplate":"Magento_Catalog\/product\/image_with_borders","baseUrl":"https:\/\/www.healthguard.lk\/","minicartMaxItemsVisible":5,"websiteId":"1","maxItemsToDisplay":10,"customerLoginUrl":"https:\/\/www.healthguard.lk\/customer\/account\/login\/referer\/aHR0cHM6Ly93d3cuaGVhbHRoZ3VhcmQubGsvYWxsLXByb2R1Y3RzL3BlcnNvbmFsLWNhcmUvaGFuZC1mb290LWNhcmUvYmFzaWNhcmUtbmFpbC1zY2lzc2VyLWN1cnZlZC0xMDIx\/","isRedirectRequired":false,"autocomplete":"off","captcha":{"user_login":{"isCaseSensitive":false,"imageHeight":50,"imageSrc":"","refreshUrl":"https:\/\/www.healthguard.lk\/captcha\/refresh\/","isRequired":false}}};
+</script>
+<script type="text/x-magento-init">
+    {
+        "[data-block='minicart']": {
+            "Magento_Ui/js/core/app": {"components":{"minicart_content":{"children":{"subtotal.container":{"children":{"subtotal":{"children":{"subtotal.totals":{"config":{"display_cart_subtotal_incl_tax":0,"display_cart_subtotal_excl_tax":1,"template":"Magento_Tax\/checkout\/minicart\/subtotal\/totals"},"component":"Magento_Tax\/js\/view\/checkout\/minicart\/subtotal\/totals","children":{"subtotal.totals.msrp":{"component":"Magento_Msrp\/js\/view\/checkout\/minicart\/subtotal\/totals","config":{"displayArea":"minicart-subtotal-hidden","template":"Magento_Msrp\/checkout\/minicart\/subtotal\/totals"}}}}},"component":"uiComponent","config":{"template":"Magento_Checkout\/minicart\/subtotal"}}},"component":"uiComponent","config":{"displayArea":"subtotalContainer"}},"item.renderer":{"component":"uiComponent","config":{"displayArea":"defaultRenderer","template":"Magento_Checkout\/minicart\/item\/default"},"children":{"item.image":{"component":"Magento_Catalog\/js\/view\/image","config":{"template":"Magento_Catalog\/product\/image","displayArea":"itemImage"}},"checkout.cart.item.price.sidebar":{"component":"uiComponent","config":{"template":"Magento_Checkout\/minicart\/item\/price","displayArea":"priceSidebar"}}}},"extra_info":{"component":"uiComponent","config":{"displayArea":"extraInfo"}},"promotion":{"component":"uiComponent","config":{"displayArea":"promotion"}}},"config":{"itemRenderer":{"default":"defaultRenderer","simple":"defaultRenderer","virtual":"defaultRenderer"},"template":"Magento_Checkout\/minicart\/content"},"component":"Magento_Checkout\/js\/view\/minicart"}},"types":[]}        },
+        "*": {
+            "Magento_Ui/js/block-loader": "https://www.healthguard.lk/pub/static/version1668449764/frontend/Antyra/antyra/en_US/images/loader-1.gif"
+        }
+    }
+
+
+</script>
+
+<div class="upload-pr">
+<a class="action-primary" href="/pres/customer/index/">Upload Prescription</a>
+</div>
+</div></div></header><div class="container">
+<div class="row">
+<div class="col-lg-10 offset-lg-1">
+<div class="row">
+<nav class="breadcrumbs"></nav>
+</div>
+</div>
+</div>
+</div>
+<script type="text/x-magento-init">
+        {
+            ".breadcrumbs": {"breadcrumbs":{"categoryUrlSuffix":"","userCategoryPathInUrl":1,"product":"BASICARE NAIL SCISSER-CURVED 1021\n"}}        }
+</script>
+<main id="maincontent" class="page-main"><a id="contentarea" tabindex="-1"></a>
+<div class="page messages"><div data-placeholder="messages"></div>
+</div><div class="container columns"><div class="row">
+<div class="col-lg-10 offset-lg-1">
+<div class="row">
+<div class="col-md-12">
+<div data-bind="scope: 'messages'">
+<!-- ko if: cookieMessages && cookieMessages.length > 0 -->
+<div role="alert" data-bind="foreach: { data: cookieMessages, as: 'message' }" class="messages">
+<div data-bind="attr: {
+            class: 'alert alert-' + message.type + ' ' + message.type + ' message',
+            'data-ui-id': 'message-' + message.type
+        }">
+<div data-bind="html: message.text"></div>
+</div>
+</div>
+<!-- /ko -->
+<!-- ko if: messages().messages && messages().messages.length > 0 -->
+<div role="alert" data-bind="foreach: { data: messages().messages, as: 'message' }" class="messages">
+<div data-bind="attr: {
+            class: 'alert alert-' + message.type + ' ' + message.type + ' message',
+            'data-ui-id': 'message-' + message.type
+        }">
+<div data-bind="html: message.text"></div>
+</div>
+</div>
+<!-- /ko -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                        "messages": {
+                            "component": "Magento_Theme/js/view/messages"
+                        }
+                    }
+                }
+            }
+    }
+
+</script>
+<div class="row column main"><div class="col-lg-10 offset-lg-1"><div class="row"><div class="col-lg-6"><div class="product media"><a id="gallery-prev-area" tabindex="-1"></a>
+<div class="action-skip-wrapper"><a class="action skip gallery-next-area" href="#gallery-next-area"><span> Skip to the end of the images gallery</span></a>
+</div><style>
+            .fotorama-item .fotorama__nav--thumbs .fotorama__nav__frame {
+                padding: 2px;
+                height: 110px
+            }
+            
+            .fotorama-item .fotorama__thumb-border {
+                height: 110px;
+                border-width: 2px;
+                margin-top: 2px
+            }
+            @media only screen and (max-width: 767px) {
+                .fotorama__nav__frame--thumb{display: none;}
+                .fotorama__thumb-border{display: none;}
+                .fotorama__arr--prev{display: none;}
+            }
+        </style>
+<div class="gallery-placeholder fotorama-holder _block-content-loading" data-gallery-role="gallery-placeholder">
+<div class="fotorama-item" data-gallery-role="gallery">
+<div data-gallery-role="fotorama__focusable-start" tabindex="-1"></div>
+<div class="fotorama__wrap fotorama__wrap--css3 fotorama__wrap--slide fotorama__wrap--toggle-arrows">
+<div class="fotorama__stage" data-fotorama-stage="fotorama__stage" style>
+<div class="fotorama__arr fotorama__arr--prev" tabindex="0" role="button" aria-label="Previous" data-gallery-role="arrow">
+<div class="fotorama__arr__arr"></div>
+</div>
+<div class="fotorama__stage__shaft" tabindex="0" data-gallery-role="stage-shaft">
+<div class="fotorama__stage__frame fotorama__active fotorama_vertical_ratio fotorama__loaded fotorama__loaded--img" aria-hidden="false" data-active="true" style="left: 0px;" href="https://www.healthguard.lk/pub/media/catalog/product/cache/207e23213cf636ccdef205098cf3c8a3/i/m/img_5133_copy.jpg">
+<img src="https://www.healthguard.lk/pub/media/catalog/product/cache/207e23213cf636ccdef205098cf3c8a3/i/m/img_5133_copy.jpg" alt="BASICARE NAIL SCISSER-CURVED 1021" class="fotorama__img img-fluid" aria-hidden="false">
+<div class="fotorama__caption" aria-hidden="true">
+<div class="fotorama__caption__wrap">BASICARE NAIL SCISSER-CURVED 1021</div>
+</div>
+</div>
+</div>
+<div class="fotorama__arr fotorama__arr--next fotorama__arr--disabled" tabindex="-1" role="button" aria-label="Next" data-gallery-role="arrow">
+<div class="fotorama__arr__arr"></div>
+</div>
+<div class="fotorama__video-close"></div>
+<div class="fotorama__zoom-in" data-gallery-role="fotorama__zoom-in" aria-label="Zoom in" role="button" tabindex="0"></div>
+<div class="fotorama__zoom-out" data-gallery-role="fotorama__zoom-out" aria-label="Zoom out" role="button" tabindex="0"></div>
+
+</div>
+<div class="fotorama__nav-wrap" data-gallery-role="nav-wrap">
+<div class="fotorama__nav fotorama__nav--thumbs">
+<div class="fotorama__fullscreen-icon" data-gallery-role="fotorama__fullscreen-icon" tabindex="0" aria-label="Exit fullscreen" role="button"></div>
+<div class="fotorama__thumb__arr fotorama__thumb__arr--left fotorama__arr--disabled" role="button" aria-label="Previous" data-gallery-role="arrow" tabindex="-1">
+<div class="fotorama__thumb--icon"></div>
+</div>
+<div class="fotorama__nav__shaft">
+<div class="fotorama__thumb-border" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px); width: 1px; height: 110px;"></div>
+</div>
+<div class="fotorama__thumb__arr fotorama__thumb__arr--right fotorama__arr--disabled" role="button" aria-label="Next" data-gallery-role="arrow" tabindex="-1">
+<div class="fotorama__thumb--icon"></div>
+</div>
+</div>
+</div>
+</div>
+<div data-gallery-role="fotorama__focusable-end" tabindex="-1"></div>
+</div>
+<div class="magnifier-preview" data-gallery-role="magnifier" id="preview"></div>
+</div>
+<script>
+    var config = {
+            "width": 700,
+            "thumbheight": 110,
+            "navtype": "slides",
+            "height": 700        },
+        thumbBarHeight = 0,
+        loader = document.querySelectorAll('[data-gallery-role="gallery-placeholder"] [data-role="loader"]')[0];
+
+    if (config.navtype === 'horizontal') {
+        thumbBarHeight = config.thumbheight;
+    }
+require(['jquery'], function($){ 
+     var width = $('.fotorama-item').width();
+     var ratio = config.width/config.height ;
+     var height = Math.round(width/ratio);
+     $('.fotorama__stage').css({'width': width, 'height': height});
+ });
+</script>
+<script type="text/x-magento-init">
+    {
+        "[data-gallery-role=gallery-placeholder]": {
+            "Xumulus_FastGalleryLoad/js/gallery/custom_gallery": {
+                "mixins":["magnifier/magnify"],
+                "magnifierOpts": {"fullscreenzoom":"20","top":"","left":"","width":"","height":"","eventType":"hover","enabled":false,"mode":"outside"},
+                "data": [{"thumb":"https:\/\/www.healthguard.lk\/pub\/media\/catalog\/product\/cache\/a32785f299d1d6627cb18126779d91a2\/i\/m\/img_5133_copy.jpg","img":"https:\/\/www.healthguard.lk\/pub\/media\/catalog\/product\/cache\/207e23213cf636ccdef205098cf3c8a3\/i\/m\/img_5133_copy.jpg","full":"https:\/\/www.healthguard.lk\/pub\/media\/catalog\/product\/cache\/74c1057f7991b4edb2bc7bdaa94de933\/i\/m\/img_5133_copy.jpg","caption":"BASICARE NAIL SCISSER-CURVED 1021","position":"1","isMain":true,"type":"image","videoUrl":null},{"thumb":"https:\/\/www.healthguard.lk\/pub\/media\/catalog\/product\/cache\/a32785f299d1d6627cb18126779d91a2\/i\/m\/img_5134_copy.jpg","img":"https:\/\/www.healthguard.lk\/pub\/media\/catalog\/product\/cache\/207e23213cf636ccdef205098cf3c8a3\/i\/m\/img_5134_copy.jpg","full":"https:\/\/www.healthguard.lk\/pub\/media\/catalog\/product\/cache\/74c1057f7991b4edb2bc7bdaa94de933\/i\/m\/img_5134_copy.jpg","caption":"BASICARE NAIL SCISSER-CURVED 1021\n","position":"2","isMain":false,"type":"image","videoUrl":null}],
+                "options": {
+                    "nav": "thumbs",
+                                            "loop": 1,
+                                                                "keyboard": 1,
+                                                                "arrows": 1,
+                                                                "allowfullscreen": 1,
+                                                            "width": "700",
+                    "thumbwidth": "88",
+                                            "thumbheight": 110,
+                                                                "height": 700,
+                                                                "transitionduration": 500,
+                                        "transition": "slide",
+                                            "navarrows": 1,
+                                        "navtype": "slides",
+                    "navdir": "horizontal"
+                },
+                "fullscreen": {
+                    "nav": "thumbs",
+                                            "loop": 1,
+                                        "navdir": "horizontal",
+                                        "navtype": "slides",
+                                            "arrows": 1,
+                                                                                    "transitionduration": 500,
+                                        "transition": "slide"
+                },
+                "breakpoints": {"mobile":{"conditions":{"max-width":"767px"},"options":{"options":{"nav":"dots"}}}}            }
+        }
+    }
+</script>
+<script type="text/x-magento-init">
+    {
+        "[data-gallery-role=gallery-placeholder]": {
+            "Magento_ProductVideo/js/fotorama-add-video-events": {
+                "videoData": [{"mediaType":"image","videoUrl":null,"isBase":true},{"mediaType":"image","videoUrl":null,"isBase":false}],
+                "videoSettings": [{"playIfBase":"0","showRelated":"0","videoAutoRestart":"0"}],
+                "optionsVideoData": []            }
+        }
+    }
+</script>
+<div class="action-skip-wrapper"><a class="action skip gallery-prev-area" href="#gallery-prev-area"><span> Skip to the beginning of the images gallery</span></a>
+</div><a id="gallery-next-area" tabindex="-1"></a>
+</div></div><div class="col-lg-6 product-individual"><div class="description"><div class="product-info-main">
+<div class="parent-wrapper login-header">
+<h3 class="page-title">
+<span class="base" data-ui-id="page-title-wrapper" itemprop="name">BASICARE NAIL SCISSER-CURVED 1021
+</span> </h3>
+<div class="rating-wrapper">
+<div class="rating-result">
+<span style="width:100%"></span>
+</div>
+<span class="count">(100)</span>
+</div>
+</div>
+<div class="product-info-stock-sku">
+<div class="availability stock unavailable" title="Availability">
+Availability : <span class="out-stock"> Out of stock</span>
+</div>
+<div class="availability">
+BASICARE NAIL SCISSER-CURVED 1021</div>
+<div class="availability only" title="Only 0 left">
+Only <strong>0</strong> left </div>
+<div class="product attribute sku">
+<strong class="type">SKU</strong> <div class="value" itemprop="sku">025510</div>
+</div>
+<script type="text/x-magento-init">
+{
+    "#store-information-button": {
+        "Magedelight_Storepickup/js/product/view/list" : {}
+    }
+}
+</script></div>
+<div class="product-info-price"><div class="price-box price-final_price" data-role="priceBox" data-product-id="2980" data-price-box="product-id-2980">
+<div class="price-block">
+<span class="special-price">
+<span class="price-container price-final_price tax weee" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+<span id="product-price-2980" data-price-amount="690" data-price-type="finalPrice" class="price-wrapper "><span class="price">LKR690.00</span></span>
+<meta itemprop="price" content="690" />
+<meta itemprop="priceCurrency" content="LKR" />
+</span>
+</span>
+</div>
+</div></div>
+<div class="product-add-form">
+<form data-product-sku="025510" action="https://www.healthguard.lk/checkout/cart/add/uenc/aHR0cHM6Ly93d3cuaGVhbHRoZ3VhcmQubGsvYWxsLXByb2R1Y3RzL3BlcnNvbmFsLWNhcmUvaGFuZC1mb290LWNhcmUvYmFzaWNhcmUtbmFpbC1zY2lzc2VyLWN1cnZlZC0xMDIx/product/2980/" method="post" id="product_addtocart_form">
+<input type="hidden" name="product" value="2980" />
+<input type="hidden" name="selected_configurable_option" value />
+<input type="hidden" name="related_product" id="related-products-field" value />
+<input type="hidden" name="item" value="2980" />
+<input name="form_key" type="hidden" value="FUEHgAdy7iFp7zhr" />
+<script type="text/x-magento-init">
+   {
+       "#product_addtocart_form": {
+	   "Magento_Catalog/product/view/validation": {
+	       "radioCheckboxClosest": ".nested"
+	   }
+       }
+   }
+
+    </script>
+<script type="text/x-magento-init">
+   {
+       "#product_addtocart_form": {
+	   "catalogAddToCart": {
+	       "bindSubmit": false
+	   }
+       }
+   }
+
+    </script>
+</form>
+</div>
+<script>
+    require([
+        'jquery',
+        'priceBox'
+    ], function($){
+        var dataPriceBoxSelector = '[data-role=priceBox]',
+            dataProductIdSelector = '[data-product-id=2980]',
+            priceBoxes = $(dataPriceBoxSelector + dataProductIdSelector);
+
+        priceBoxes = priceBoxes.filter(function(index, elem){
+            return !$(elem).find('.price-from').length;
+        });
+
+        priceBoxes.priceBox({'priceConfig': {"productId":"2980","priceFormat":{"pattern":"LKR%s","precision":2,"requiredPrecision":2,"decimalSymbol":".","groupSymbol":",","groupLength":3,"integerRequired":false}}});
+    });
+</script>
+<div class="sharethis product-social-links"><div class="product-addto-links wishlist" data-role="add-to-links">
+<a href="#" class="action towishlist" data-post="{&quot;action&quot;:&quot;https:\/\/www.healthguard.lk\/wishlist\/index\/add\/&quot;,&quot;data&quot;:{&quot;product&quot;:&quot;2980&quot;,&quot;uenc&quot;:&quot;aHR0cHM6Ly93d3cuaGVhbHRoZ3VhcmQubGsvYWxsLXByb2R1Y3RzL3BlcnNvbmFsLWNhcmUvaGFuZC1mb290LWNhcmUvYmFzaWNhcmUtbmFpbC1zY2lzc2VyLWN1cnZlZC0xMDIx&quot;}}" data-action="add-to-wishlist">Add to Wish List</a>
+<script type="text/x-magento-init">
+    {
+        "body": {
+            "addToWishlist": {"productType":"simple"}        }
+    }
+</script>
+</div>
+<a href="https://www.healthguard.lk/sendfriend/product/send/id/2980/cat_id/128/" class="action mailto friend mail">
+<svg aria-hidden="true">
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-mail"></use>
+</svg>
+</a>
+
+<a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.healthguard.lk%2Fbasicare-nail-scisser-curved-1021&t=BASICARE+NAIL+SCISSER-CURVED+1021%0A" onclick="javascript:window.open(this.href,&quot;&quot;,&quot;width=640,height=480,left=0,top=0,location=no,status=yes,scrollbars=yes,resizable=yes&quot;);return false" title="Share on FaceBook">
+<svg aria-hidden="true">
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use>
+</svg>
+</a>
+
+<a class="twitter" href="https://twitter.com/home/?status=https%3A%2F%2Fwww.healthguard.lk%2Fbasicare-nail-scisser-curved-1021(BASICARE+NAIL+SCISSER-CURVED+1021%0A)" onclick="javascript:window.open(this.href,&quot;&quot;,&quot;width=640,height=480,left=0,top=0,location=no,status=yes,scrollbars=yes,resizable=yes&quot;);return false" title="Share on Twitter">
+<svg aria-hidden="true">
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
+</svg>
+</a>
+</div>
+<div class="accordion-parent" style="padding-bottom: 0;">
+<div class="custom-accordion-block hidden">
+<span class="label">Details</span>
+<div class="control-group">
+<div class="value">BASICARE NAIL SCISSER-CURVED 1021</div>
+</div>
+</div>
+<div class="custom-accordion-block hidden">
+<span class="label">Delivery and Returns</span>
+<div class="control-group">
+<p>Estimated between Thu. Jan. 31 and Sat. Feb. 16</p>
+<p><small>Includes international tracking</small></p> </div>
+</div>
+<div class="custom-accordion-block hidden">
+<span class="label">Payments</span>
+<div class="control-group">
+<p>Estimated between Thu. Jan. 31 and Sat. Feb. 16</p>
+<p><small>Includes international tracking</small></p> </div>
+</div>
+</div>
+</div> <div class="product info detailed">
+<div class="product data items" data-mage-init="{&quot;accordion&quot;:{&quot;openedState&quot;:&quot;active&quot;}}">
+<div class="custom-accordion-block hidden data item title" aria-labeledby="tab-label-additional-title" data-role="collapsible" id="tab-label-additional">
+<a class="data switch" tabindex="-1" data-toggle="switch" href="#additional" id="tab-label-additional-title" style="display: none;">
+<span class="label"> More Information </span>
+</a>
+</div>
+<div class="data item content" id="additional" data-role="content">
+<div class="accordion-parent">
+<div class="custom-accordion-block hidden" style>
+<span class="label" style="border-bottom: 0;">More Details</span>
+<div class="control-group">
+<div class="additional-attributes-wrapper table-wrapper">
+<div class="table-responsive">
+<table class="data table-striped table additional-attributes" id="product-attribute-specs-table">
+<tbody>
+<tr>
+<th scope="row">New Product</th>
+<td class="data" data-th="New Product">No</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><input name="form_key" type="hidden" value="FUEHgAdy7iFp7zhr" /><script type="text/x-magento-init">
+{"*":{"Magento_Customer\/js\/section-config":{"sections":{"stores\/store\/switch":"*","directory\/currency\/switch":"*","*":["messages"],"customer\/account\/logout":["recently_viewed_product","recently_compared_product"],"customer\/account\/loginpost":"*","customer\/account\/createpost":"*","customer\/account\/editpost":"*","customer\/ajax\/login":["checkout-data","cart"],"catalog\/product_compare\/add":["compare-products"],"catalog\/product_compare\/remove":["compare-products"],"catalog\/product_compare\/clear":["compare-products"],"sales\/guest\/reorder":["cart"],"sales\/order\/reorder":["cart"],"checkout\/cart\/add":["cart"],"checkout\/cart\/delete":["cart"],"checkout\/cart\/updatepost":["cart"],"checkout\/cart\/updateitemoptions":["cart"],"checkout\/cart\/couponpost":["cart"],"checkout\/cart\/estimatepost":["cart"],"checkout\/cart\/estimateupdatepost":["cart"],"checkout\/onepage\/saveorder":["cart","checkout-data","last-ordered-items","checkout-fields"],"checkout\/sidebar\/removeitem":["cart"],"checkout\/sidebar\/updateitemqty":["cart"],"rest\/*\/v1\/carts\/*\/payment-information":["cart","checkout-data","last-ordered-items","instant-purchase"],"rest\/*\/v1\/guest-carts\/*\/payment-information":["cart","checkout-data"],"rest\/*\/v1\/guest-carts\/*\/selected-payment-method":["cart","checkout-data"],"rest\/*\/v1\/carts\/*\/selected-payment-method":["cart","checkout-data","instant-purchase"],"paypal\/express\/placeorder":["cart","checkout-data"],"paypal\/payflowexpress\/placeorder":["cart","checkout-data"],"authorizenet\/directpost_payment\/place":["cart","checkout-data"],"customer\/address\/*":["instant-purchase"],"customer\/account\/*":["instant-purchase"],"vault\/cards\/deleteaction":["instant-purchase"],"multishipping\/checkout\/overviewpost":["cart"],"review\/product\/post":["review"],"wishlist\/index\/add":["wishlist"],"wishlist\/index\/remove":["wishlist"],"wishlist\/index\/updateitemoptions":["wishlist"],"wishlist\/index\/update":["wishlist"],"wishlist\/index\/cart":["wishlist","cart"],"wishlist\/index\/fromcart":["wishlist","cart"],"wishlist\/index\/allcart":["wishlist","cart"],"wishlist\/shared\/allcart":["wishlist","cart"],"wishlist\/shared\/cart":["cart"],"braintree\/paypal\/placeorder":["cart","checkout-data"],"sociallogin\/popup\/create":["checkout-data","cart"],"buynow\/cart\/add":["cart"]},"clientSideSections":["checkout-data","cart-data"],"baseUrls":["https:\/\/www.healthguard.lk\/","http:\/\/www.healthguard.lk\/"]}}}</script>
+<script type="text/x-magento-init">
+{"*":{"Magento_Customer\/js\/customer-data":{"sectionLoadUrl":"https:\/\/www.healthguard.lk\/customer\/section\/load\/","expirableSectionLifetime":60,"expirableSectionNames":["cart"],"cookieLifeTime":"3600","updateSessionUrl":"https:\/\/www.healthguard.lk\/customer\/account\/updateSession\/"}}}</script>
+<script type="text/x-magento-init">
+{"*":{"Magento_Customer\/js\/invalidation-processor":{"invalidationRules":{"website-rule":{"Magento_Customer\/js\/invalidation-rules\/website-rule":{"scopeConfig":{"websiteId":1}}}}}}}</script>
+<script type="text/x-magento-init">
+    {
+        "body": {
+            "pageCache": {"url":"https:\/\/www.healthguard.lk\/page_cache\/block\/render\/id\/2980\/category\/128\/","handles":["default","catalog_product_view","catalog_product_view_type_simple","catalog_product_view_id_2980","catalog_product_view_sku_025510"],"originalRequest":{"route":"catalog","controller":"product","action":"view","uri":"\/all-products\/personal-care\/hand-foot-care\/basicare-nail-scisser-curved-1021"},"versionCookieName":"private_content_version"}        }
+    }
+</script>
+<script type="text/x-magento-init">
+    {
+        "body": {
+            "requireCookie": {"noCookieUrl":"https:\/\/www.healthguard.lk\/cookie\/index\/noCookies\/","triggers":[".action.towishlist"]}        }
+    }
+</script>
+<script type="text/x-magento-init">
+    {
+        "*": {
+                "Magento_Catalog/js/product/view/provider": {
+                    "data": {"items":{"2980":{"add_to_cart_button":{"post_data":"{\"action\":\"https:\\\/\\\/www.healthguard.lk\\\/checkout\\\/cart\\\/add\\\/uenc\\\/%25uenc%25\\\/product\\\/2980\\\/\",\"data\":{\"product\":\"2980\",\"uenc\":\"%uenc%\"}}","url":"https:\/\/www.healthguard.lk\/checkout\/cart\/add\/uenc\/%25uenc%25\/product\/2980\/","required_options":false},"add_to_compare_button":{"post_data":null,"url":"{\"action\":\"https:\\\/\\\/www.healthguard.lk\\\/catalog\\\/product_compare\\\/add\\\/\",\"data\":{\"product\":\"2980\",\"uenc\":\"aHR0cHM6Ly93d3cuaGVhbHRoZ3VhcmQubGsvYWxsLXByb2R1Y3RzL3BlcnNvbmFsLWNhcmUvaGFuZC1mb290LWNhcmUvYmFzaWNhcmUtbmFpbC1zY2lzc2VyLWN1cnZlZC0xMDIx\"}}","required_options":null},"price_info":{"final_price":690,"max_price":690,"max_regular_price":690,"minimal_regular_price":690,"special_price":null,"minimal_price":690,"regular_price":690,"formatted_prices":{"final_price":"<span class=\"price\">LKR690.00<\/span>","max_price":"<span class=\"price\">LKR690.00<\/span>","minimal_price":"<span class=\"price\">LKR690.00<\/span>","max_regular_price":"<span class=\"price\">LKR690.00<\/span>","minimal_regular_price":null,"special_price":null,"regular_price":"<span class=\"price\">LKR690.00<\/span>"},"extension_attributes":{"msrp":{"msrp_price":"<span class=\"price\">LKR0.00<\/span>","is_applicable":"","is_shown_price_on_gesture":"1","msrp_message":"","explanation_message":"Our price is lower than the manufacturer&#039;s &quot;minimum advertised price.&quot; As a result, we cannot show you the price in catalog or the product page. <br><br> You have no obligation to purchase the product once you know the price. You can simply remove the item from your cart."},"tax_adjustments":{"final_price":690,"max_price":690,"max_regular_price":690,"minimal_regular_price":690,"special_price":690,"minimal_price":690,"regular_price":690,"formatted_prices":{"final_price":"<span class=\"price\">LKR690.00<\/span>","max_price":"<span class=\"price\">LKR690.00<\/span>","minimal_price":"<span class=\"price\">LKR690.00<\/span>","max_regular_price":"<span class=\"price\">LKR690.00<\/span>","minimal_regular_price":null,"special_price":"<span class=\"price\">LKR690.00<\/span>","regular_price":"<span class=\"price\">LKR690.00<\/span>"}},"weee_attributes":[],"weee_adjustment":"<span class=\"price\">LKR690.00<\/span>"}},"images":[{"url":"https:\/\/www.healthguard.lk\/pub\/media\/catalog\/product\/cache\/2765542505660baab28ecd555e27366e\/i\/m\/img_5133_copy.jpg","code":"recently_viewed_products_grid_content_widget","height":300,"width":240,"label":"BASICARE NAIL SCISSER-CURVED 1021","resized_width":240,"resized_height":300},{"url":"https:\/\/www.healthguard.lk\/pub\/media\/catalog\/product\/cache\/7890263f8cc2b5a0499bf0617b669975\/i\/m\/img_5133_copy.jpg","code":"recently_viewed_products_list_content_widget","height":340,"width":270,"label":"BASICARE NAIL SCISSER-CURVED 1021","resized_width":270,"resized_height":340},{"url":"https:\/\/www.healthguard.lk\/pub\/media\/catalog\/product\/cache\/d7d52afd56287491cb7a52758a71b450\/i\/m\/img_5133_copy.jpg","code":"recently_viewed_products_images_names_widget","height":90,"width":75,"label":"BASICARE NAIL SCISSER-CURVED 1021","resized_width":75,"resized_height":90},{"url":"https:\/\/www.healthguard.lk\/pub\/media\/catalog\/product\/cache\/2765542505660baab28ecd555e27366e\/i\/m\/img_5133_copy.jpg","code":"recently_compared_products_grid_content_widget","height":300,"width":240,"label":"BASICARE NAIL SCISSER-CURVED 1021","resized_width":240,"resized_height":300},{"url":"https:\/\/www.healthguard.lk\/pub\/media\/catalog\/product\/cache\/7890263f8cc2b5a0499bf0617b669975\/i\/m\/img_5133_copy.jpg","code":"recently_compared_products_list_content_widget","height":340,"width":270,"label":"BASICARE NAIL SCISSER-CURVED 1021","resized_width":270,"resized_height":340},{"url":"https:\/\/www.healthguard.lk\/pub\/media\/catalog\/product\/cache\/d7d52afd56287491cb7a52758a71b450\/i\/m\/img_5133_copy.jpg","code":"recently_compared_products_images_names_widget","height":90,"width":75,"label":"BASICARE NAIL SCISSER-CURVED 1021","resized_width":75,"resized_height":90}],"url":"https:\/\/www.healthguard.lk\/basicare-nail-scisser-curved-1021","id":2980,"name":"BASICARE NAIL SCISSER-CURVED 1021\n","type":"simple","is_salable":"","store_id":1,"currency_code":"LKR","extension_attributes":{"review_html":"    <div class=\"rating-wrapper\">\n        <div class=\"rating-result\">\n            <span style=\"width:100%\"><\/span>\n        <\/div>\n        <span class=\"count\">(100)<\/span>\n    <\/div>\n","wishlist_button":{"post_data":null,"url":"{\"action\":\"https:\\\/\\\/www.healthguard.lk\\\/wishlist\\\/index\\\/add\\\/\",\"data\":{\"product\":\"2980\",\"uenc\":\"aHR0cHM6Ly93d3cuaGVhbHRoZ3VhcmQubGsvYWxsLXByb2R1Y3RzL3BlcnNvbmFsLWNhcmUvaGFuZC1mb290LWNhcmUvYmFzaWNhcmUtbmFpbC1zY2lzc2VyLWN1cnZlZC0xMDIx\"}}","required_options":null}}}},"store":"1","currency":"LKR"}            }
+        }
+    }
+</script>
+<script data-role="msrp-popup-template" type="text/x-magento-template">
+    <div id="map-popup-click-for-price" class="map-popup">
+        <div class="popup-header">
+            <strong class="title" id="map-popup-heading-price"></strong>
+        </div>
+        <div class="popup-content">
+            <div class="map-info-price" id="map-popup-content">
+                <div class="price-box">
+                    <div class="map-msrp" id="map-popup-msrp-box">
+                        <span class="label">Price</span>
+                        <span class="old-price map-old-price" id="map-popup-msrp">
+                            <span class="price"></span>
+                        </span>
+                    </div>
+                    <div class="map-price" id="map-popup-price-box">
+                        <span class="label">Actual Price</span>
+                        <span id="map-popup-price" class="actual-price"></span>
+                    </div>
+                </div>
+                <form action="" method="POST" id="product_addtocart_form_from_popup" class="map-form-addtocart">
+                    <input type="hidden" name="product" class="product_id" value="" id="map-popup-product-id"/>
+                    <button type="button"
+                            title="Add to Cart"
+                            class="action tocart primary"
+                            id="map-popup-button">
+                        <span>Add to Cart</span>
+                    </button>
+                    <div class="additional-addtocart-box">
+                                            </div>
+                </form>
+            </div>
+            <div class="map-text" id="map-popup-text">
+                Our price is lower than the manufacturer&#039;s &quot;minimum advertised price.&quot; As a result, we cannot show you the price in catalog or the product page. <br><br> You have no obligation to purchase the product once you know the price. You can simply remove the item from your cart.            </div>
+        </div>
+    </div>
+    </script>
+<script data-role="msrp-info-template" type="text/x-magento-template">
+    <div id="map-popup-what-this" class="map-popup">
+        <div class="popup-header">
+            <strong class="title" id="map-popup-heading-what-this"></strong>
+        </div>
+        <div class="popup-content">
+            <div class="map-help-text" id="map-popup-text-what-this">
+                Our price is lower than the manufacturer&#039;s &quot;minimum advertised price.&quot; As a result, we cannot show you the price in catalog or the product page. <br><br> You have no obligation to purchase the product once you know the price. You can simply remove the item from your cart.            </div>
+        </div>
+    </div>
+    </script>
+</div></div><div class="container-fluid full-carousel">
+</div><div class="container-fluid review-and-rating"><div class="row">
+<div class="container">
+<div class="description">
+<div id="product-review-container" data-role="product-review"></div>
+<div class="container-fluid review-and-rating block review-list" id="customer-reviews">
+<div class="row">
+<div class="container">
+<div class=" block review-add">
+<div class="block-title"><strong>Write Your Own Review</strong></div>
+<div class="form-wrapper block-content">
+<form action="https://www.healthguard.lk/review/product/post/id/2980/" class="review-form" method="post" id="review-form" enctype="multipart/form-data" data-role="product-review-form" data-bind="scope: 'review-form'">
+<input name="form_key" type="hidden" value="FUEHgAdy7iFp7zhr" /> <fieldset class="fieldset review-fieldset" data-hasrequired>
+<legend class="legend review-legend">
+<span>You're reviewing:</span><strong>BASICARE NAIL SCISSER-CURVED 1021
+</strong>
+</legend>
+<br/>
+<span id="input-message-box"></span>
+<div class="form-group field review-field-ratings">
+<label><span class="required">*</span>Your Rating </label><br/>
+<div class="control-review">
+<div class="nested" id="product-review-table">
+<div class="field choice review-field-rating">
+<div class="control-review review-control-vote">
+<input type="radio" name="ratings[4]" id="Rating_1" value="16" class="radio" data-validate="{'rating-required':true}" aria-labelledby="Rating_rating_label Rating_1_label" />
+<label class="rating-1" for="Rating_1" title="1&#x20;star" id="Rating_1_label">
+<span>1 star</span>
+</label>
+<input type="radio" name="ratings[4]" id="Rating_2" value="17" class="radio" data-validate="{'rating-required':true}" aria-labelledby="Rating_rating_label Rating_2_label" />
+<label class="rating-2" for="Rating_2" title="2&#x20;stars" id="Rating_2_label">
+<span>2 stars</span>
+</label>
+<input type="radio" name="ratings[4]" id="Rating_3" value="18" class="radio" data-validate="{'rating-required':true}" aria-labelledby="Rating_rating_label Rating_3_label" />
+<label class="rating-3" for="Rating_3" title="3&#x20;stars" id="Rating_3_label">
+<span>3 stars</span>
+</label>
+<input type="radio" name="ratings[4]" id="Rating_4" value="19" class="radio" data-validate="{'rating-required':true}" aria-labelledby="Rating_rating_label Rating_4_label" />
+<label class="rating-4" for="Rating_4" title="4&#x20;stars" id="Rating_4_label">
+<span>4 stars</span>
+</label>
+<input type="radio" name="ratings[4]" id="Rating_5" value="20" class="radio" data-validate="{'rating-required':true}" aria-labelledby="Rating_rating_label Rating_5_label" />
+<label class="rating-5" for="Rating_5" title="5&#x20;stars" id="Rating_5_label">
+<span>5 stars</span>
+</label>
+</div>
+</div>
+</div>
+<input type="hidden" name="validate_rating" class="validate-rating" value />
+</div>
+</div>
+<div class="field review-field-nickname" style="display: none;">
+<label for="nickname_field" class="label"><span>Nickname</span></label>
+<div class="control">
+<input type="text" name="nickname" id="nickname_field" class="input-text" value="empty" data-bind="value: nickname()" />
+</div>
+</div>
+<div class="field review-field-summary" style="display: none">
+<label for="summary_field" class="label"><span>Summary</span></label>
+<div class="control">
+<input type="text" name="title" id="summary_field" class="input-text" value="blank  data" data-validate="{required:false}" />
+</div>
+</div>
+<div class="field review-field-text required" style="display: none;">
+<label for="review_field" class="label"><span>Review</span></label>
+<div class="control">
+<textarea name="detail" id="review_field" cols="5" rows="3" data-validate="{required:false}">no data</textarea>
+</div>
+</div>
+<div class="field review-field-advantages" style="display: none;">
+<label for="advantages_field" class="label"><span>What I like about this product</span></label>
+<div class="control">
+<input type="text" name="advantages" id="advantages_field" class="input-text" data-validate="{required:false}" data-bind="value: review().advantages" />
+</div>
+</div>
+<div class="field review-field-disadvantages" style="display: none;">
+<label for="disadvantages_field" class="label"><span>What I don't like about this product</span></label>
+<div class="control">
+<input type="text" name="disadvantages" id="disadvantages_field" class="input-text" data-validate="{required:false}" data-bind="value: review().disadvantages" />
+</div>
+</div>
+</fieldset>
+<div class="form-group actions-toolbar review-form-actions">
+<button type="submit" class="action submit primary def-btn">Submit Review <svg aria-hidden="true">
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-right-arrow"></use>
+</svg>
+</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+            function addField() {
+                var controlElement = document.getElementById('control');
+                var fieldIncrement = controlElement.childElementCount;
+
+                var div = document.createElement("div");
+                div.id = "row_" + fieldIncrement;
+                div.classList.add("row_image");
+                div.setAttribute("data-repeat-index", fieldIncrement);
+
+                var input = document.createElement("input");
+                input.type = "file";
+                input.name = "image_" + fieldIncrement;
+                var deleteButton = document.createElement("a");
+                deleteButton.classList.add("remove_button", "general_button");
+                deleteButton.setAttribute('onclick', 'deleteField(this)');
+
+                controlElement.appendChild(div);
+                div.appendChild(input);
+                div.appendChild(deleteButton);
+            }
+
+            function deleteField(button) {
+
+                if (button.parentElement.getAttribute('data-repeat-index') == 0) {
+                    document.getElementById("image_field").value = "";
+                } else {
+                    button.parentElement.remove();
+                }
+            }
+        </script>
+<script type="text/x-magento-init">
+{
+    "[data-role=product-review-form]": {
+        "Magento_Ui/js/core/app": {"components":{"review-form":{"component":"Magento_Review\/js\/view\/review"}}}    },
+    "#review-form": {
+        "Magento_Review/js/error-placement": {},
+        "Magento_Review/js/validate-review": {}
+    }
+}
+
+        </script>
+</div>
+</div>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Review/js/process-reviews": {
+                "productReviewUrl": "https\u003A\u002F\u002Fwww.healthguard.lk\u002Freview\u002Fproduct\u002FlistAjax\u002Fid\u002F2980\u002F",
+                "reviewsTabSelector": "#tab-label-reviews"
+            }
+        }
+    }
+</script>
+</div>
+</div>
+</div></div></main><footer class="page-footer"> <footer>
+<div class="newsletter block">
+<div class="container">
+<div class="img-holder">
+<img class="img-fluid" src="https://www.healthguard.lk/pub/media/Home/trans-subscribe3_1_.png" alt />
+</div>
+<div class="form-parent">
+<h4> Sign up today</h4>
+<form class="form subscribe" novalidate action="https://www.healthguard.lk/newsletter/subscriber/new/" method="post" data-msg-required="Invalid email address." data-mage-init="{&quot;validation&quot;: {&quot;errorClass&quot;: &quot;mage-error&quot;}}" id="newsletter-validate-detail">
+<div class="form-group required">
+<input name="email" type="email" id="newsletter" placeholder="Enter your email address" data-mage-init="{&quot;mage/trim-input&quot;:{}}" data-validate="{required:true, 'validate-email':true}" class="form-control" />
+</div>
+<div class="actions btn-parent">
+<button class="primary def-btn dark-purple action subscribe" title="Subscribe" type="submit">
+Subscribe
+<svg aria-hidden="true">
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-right-arrow"></use>
+</svg>
+</button>
+</div>
+</form>
+</div>
+
+</div>
+</div>
+<script type="text/x-magento-init">
+    {
+        "#newsletter-validate-detail": {
+            "validation": {}
+        }
+    }
+</script>
+
+<div class="light-bg">
+<div class="container">
+<div class="row">
+<a href="#" id="footer-branding">
+<img src="https://www.healthguard.lk/pub/media/ezgif.com-gif-maker.png" alt="Healthguard logo" class="img-fluid" />
+</a>
+<div class="bottom-block col-md-12">
+<div class="row">
+
+<div class="footer-menu-parent">
+<ul class="sm-simple">
+<li class="has-submenu"><a href="#">Product Range</a>
+<div class="mega-menu">
+<ul class="submenu">
+<li><a href="/health">Health</a></li>
+<li><a href="/skin-care">Skin Care</a></li>
+<li><a href="/hair-care">Hair Care</a></li>
+<li><a href="/personal-care">Personal Care</a></li>
+<li><a href="/mother-baby">Mother &amp; Baby</a></li>
+<li><a href="/men-s">Men's</a></li>
+<li><a href="/cosmetics-fragrances">Cosmetics &amp; Fragrances</a></li>
+</ul>
+</div>
+</li>
+<li class="has-submenu"><a href="#">Information</a>
+<div class="mega-menu">
+<ul class="submenu">
+<li><a href="/about-us">About Us</a></li>
+<li><a href="/privacy-policy">Privacy Policy</a></li>
+<li><a href="/terms-conditions">Terms &amp; Conditions</a></li>
+</ul>
+</div>
+</li>
+<li class="has-submenu"><a href="#">Customer Service</a>
+<div class="mega-menu">
+<ul class="submenu">
+<li><a href="#">FAQ</a></li>
+<li><a href="/contact-us">Contact Us</a></li>
+<li><a href="/stores/">Store Locator</a></li>
+</ul>
+</div>
+</li>
+</ul>
+<div class="payment-option">
+<div class="box"><img class="img-fluid" src="https://www.healthguard.lk/pub/media/footer/cash_on_delivery_ico.png" alt /></div>
+<div class="box"><img class="img-fluid" src="https://www.healthguard.lk/pub/media/footer/visa_1_.png" alt /></div>
+<div class="box"><img src="https://www.healthguard.lk/pub/media/footer/master-card_2__1_.png" alt /></div>
+</div>
+
+</div>
+
+<div class="contact-wrapper">
+<div class="contact-card" style="background-image : url(https://www.healthguard.lk/pub/static/version1668449764/frontend/Antyra/antyra/en_US/images/contact-card.jpg);">
+<span class="call-hotline">Call Our Hotline</span>
+<div class="call-btn">
+<a href="tel:+94764477999">+94 76 447 7999</a><br/><a href="tel:+94764477888">+94 76 447 7888</a> </div>
+<span class="open-hours">
+. </span>
+</div>
+
+<div class="smo-address">
+<div class="smo">
+<a href=" https://www.facebook.com/healthguard.sl/">
+<svg aria-hidden="true">
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use>
+</svg>
+</a>
+<a href="https://twitter.com/healthguard_lk">
+<svg aria-hidden="true">
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
+</svg>
+</a>
+<a href="https://www.instagram.com/healthguardpharmacylimited/">
+<svg aria-hidden="true">
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-instagram"></use>
+</svg>
+</a> </div>
+<h4>Contact Us</h4>
+<p>No 139/A, Dharmapala Mawatha,<br/>Colombo 07, Sri Lanka</p>
+<p><a href="/cdn-cgi/l/email-protection#6e01000207000b1d1a011c0b2e1d1b001d0607000b0601020a0700091d400205"><span class="__cf_email__" data-cfemail="a5cacbc9cccbc0d6d1cad7c0e5d6d0cbd6cdcccbc0cdcac9c1cccbc2d68bc9ce">[email&#160;protected]</span></a></p> </div>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="container-fluid dark-bg">
+<div class="row">
+<div class="container">
+<span class="copyright">&copy;
+2024. All Rights Reserved</span>
+<span class="credit">Concept and Design by <a href="https://www.antyrasolutions.com/" target="_blank">Antyra
+Solutions</a></span>
+</div>
+</div>
+</div>
+</footer>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+<symbol id="icon-call" viewBox="0 0 401.998 401.998">
+<path d="M401.129,311.475c-1.137-3.426-8.371-8.473-21.697-15.129c-3.61-2.098-8.754-4.949-15.41-8.566
+		c-6.662-3.617-12.709-6.95-18.13-9.996c-5.432-3.045-10.521-5.995-15.276-8.846c-0.76-0.571-3.139-2.234-7.136-5
+		c-4.001-2.758-7.375-4.805-10.14-6.14c-2.759-1.327-5.473-1.995-8.138-1.995c-3.806,0-8.56,2.714-14.268,8.135
+		c-5.708,5.428-10.944,11.324-15.7,17.706c-4.757,6.379-9.802,12.275-15.126,17.7c-5.332,5.427-9.713,8.138-13.135,8.138
+		c-1.718,0-3.86-0.479-6.427-1.424c-2.566-0.951-4.518-1.766-5.858-2.423c-1.328-0.671-3.607-1.999-6.845-4.004
+		c-3.244-1.999-5.048-3.094-5.428-3.285c-26.075-14.469-48.438-31.029-67.093-49.676c-18.649-18.658-35.211-41.019-49.676-67.097
+		c-0.19-0.381-1.287-2.19-3.284-5.424c-2-3.237-3.333-5.518-3.999-6.854c-0.666-1.331-1.475-3.283-2.425-5.852
+		s-1.427-4.709-1.427-6.424c0-3.424,2.713-7.804,8.138-13.134c5.424-5.327,11.326-10.373,17.7-15.128
+		c6.379-4.755,12.275-9.991,17.701-15.699c5.424-5.711,8.136-10.467,8.136-14.273c0-2.663-0.666-5.378-1.997-8.137
+		c-1.332-2.765-3.378-6.139-6.139-10.138c-2.762-3.997-4.427-6.374-4.999-7.139c-2.852-4.755-5.799-9.846-8.848-15.271
+		c-3.049-5.424-6.377-11.47-9.995-18.131c-3.615-6.658-6.468-11.799-8.564-15.415C98.986,9.233,93.943,1.997,90.516,0.859
+		C89.183,0.288,87.183,0,84.521,0c-5.142,0-11.85,0.95-20.129,2.856c-8.282,1.903-14.799,3.899-19.558,5.996
+		c-9.517,3.995-19.604,15.605-30.264,34.826C4.863,61.566,0.01,79.271,0.01,96.78c0,5.135,0.333,10.131,0.999,14.989
+		c0.666,4.853,1.856,10.326,3.571,16.418c1.712,6.09,3.093,10.614,4.137,13.56c1.045,2.948,2.996,8.229,5.852,15.845
+		c2.852,7.614,4.567,12.275,5.138,13.988c6.661,18.654,14.56,35.307,23.695,49.964c15.03,24.362,35.541,49.539,61.521,75.521
+		c25.981,25.98,51.153,46.49,75.517,61.526c14.655,9.134,31.314,17.032,49.965,23.698c1.714,0.568,6.375,2.279,13.986,5.141
+		c7.614,2.854,12.897,4.805,15.845,5.852c2.949,1.048,7.474,2.43,13.559,4.145c6.098,1.715,11.566,2.905,16.419,3.576
+		c4.856,0.657,9.853,0.996,14.989,0.996c17.508,0,35.214-4.856,53.105-14.562c19.219-10.656,30.826-20.745,34.823-30.269
+		c2.102-4.754,4.093-11.273,5.996-19.555c1.909-8.278,2.857-14.985,2.857-20.126C401.99,314.814,401.703,312.819,401.129,311.475z" />
+</symbol>
+<symbol id="icon-down-arrow" viewBox="0 0 129 129">
+<path d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z" />
+</symbol>
+<symbol id="icon-left-arrow" viewBox="0 0 511.991 511.991">
+<path d="M153.433,255.991L381.037,18.033c4.063-4.26,3.917-11.01-0.333-15.083c-4.229-4.073-10.979-3.896-15.083,0.333
+			L130.954,248.616c-3.937,4.125-3.937,10.625,0,14.75L365.621,508.7c2.104,2.188,4.896,3.292,7.708,3.292
+			c2.646,0,5.313-0.979,7.375-2.958c4.25-4.073,4.396-10.823,0.333-15.083L153.433,255.991z" />
+</symbol>
+<symbol id="icon-right-arrow" viewBox="0 0 511.995 511.995">
+<path d="M381.039,248.62L146.373,3.287c-4.083-4.229-10.833-4.417-15.083-0.333c-4.25,4.073-4.396,10.823-0.333,15.083
+			L358.56,255.995L130.956,493.954c-4.063,4.26-3.917,11.01,0.333,15.083c2.063,1.979,4.729,2.958,7.375,2.958
+			c2.813,0,5.604-1.104,7.708-3.292L381.039,263.37C384.977,259.245,384.977,252.745,381.039,248.62z" />
+</symbol>
+<symbol id="icon-edit" viewBox="0 0 485.219 485.22">
+<path d="M467.476,146.438l-21.445,21.455L317.35,39.23l21.445-21.457c23.689-23.692,62.104-23.692,85.795,0l42.886,42.897
+		C491.133,84.349,491.133,122.748,467.476,146.438z M167.233,403.748c-5.922,5.922-5.922,15.513,0,21.436
+		c5.925,5.955,15.521,5.955,21.443,0L424.59,189.335l-21.469-21.457L167.233,403.748z M60,296.54c-5.925,5.927-5.925,15.514,0,21.44
+		c5.922,5.923,15.518,5.923,21.443,0L317.35,82.113L295.914,60.67L60,296.54z M338.767,103.54L102.881,339.421
+		c-11.845,11.822-11.815,31.041,0,42.886c11.85,11.846,31.038,11.901,42.914-0.032l235.886-235.837L338.767,103.54z
+		 M145.734,446.572c-7.253-7.262-10.749-16.465-12.05-25.948c-3.083,0.476-6.188,0.919-9.36,0.919
+		c-16.202,0-31.419-6.333-42.881-17.795c-11.462-11.491-17.77-26.687-17.77-42.887c0-2.954,0.443-5.833,0.859-8.703
+		c-9.803-1.335-18.864-5.629-25.972-12.737c-0.682-0.677-0.917-1.596-1.538-2.338L0,485.216l147.748-36.986
+		C147.097,447.637,146.36,447.193,145.734,446.572z" />
+</symbol>
+<symbol id="icon-delete" viewBox="0 0 268.476 268.476">
+<path style="fill-rule:evenodd;clip-rule:evenodd;" d="M63.119,250.254c0,0,3.999,18.222,24.583,18.222h93.072
+		c20.583,0,24.582-18.222,24.582-18.222l18.374-178.66H44.746L63.119,250.254z M170.035,98.442c0-4.943,4.006-8.949,8.949-8.949
+		c4.943,0,8.95,4.006,8.95,8.949l-8.95,134.238c0,4.943-4.007,8.949-8.949,8.949c-4.942,0-8.949-4.007-8.949-8.949L170.035,98.442z
+		 M125.289,98.442c0-4.943,4.007-8.949,8.949-8.949c4.943,0,8.949,4.006,8.949,8.949v134.238c0,4.943-4.006,8.949-8.949,8.949
+		c-4.943,0-8.949-4.007-8.949-8.949V98.442z M89.492,89.492c4.943,0,8.949,4.006,8.949,8.949l8.95,134.238
+		c0,4.943-4.007,8.949-8.95,8.949c-4.942,0-8.949-4.007-8.949-8.949L80.543,98.442C80.543,93.499,84.55,89.492,89.492,89.492z
+		 M218.36,35.811h-39.376V17.899C178.984,4.322,174.593,0,161.086,0L107.39,0C95.001,0,89.492,6.001,89.492,17.899v17.913H50.116
+		c-7.914,0-14.319,6.007-14.319,13.43c0,7.424,6.405,13.431,14.319,13.431H218.36c7.914,0,14.319-6.007,14.319-13.431
+		C232.679,41.819,226.274,35.811,218.36,35.811z M161.086,35.811h-53.695l0.001-17.913h53.695V35.811z" />
+</symbol>
+<symbol id="icon-mail" viewBox="0 0 483.3 483.3">
+<path d="M424.3,57.75H59.1c-32.6,0-59.1,26.5-59.1,59.1v249.6c0,32.6,26.5,59.1,59.1,59.1h365.1c32.6,0,59.1-26.5,59.1-59.1
+			v-249.5C483.4,84.35,456.9,57.75,424.3,57.75z M456.4,366.45c0,17.7-14.4,32.1-32.1,32.1H59.1c-17.7,0-32.1-14.4-32.1-32.1v-249.5
+			c0-17.7,14.4-32.1,32.1-32.1h365.1c17.7,0,32.1,14.4,32.1,32.1v249.5H456.4z" />
+<path d="M304.8,238.55l118.2-106c5.5-5,6-13.5,1-19.1c-5-5.5-13.5-6-19.1-1l-163,146.3l-31.8-28.4c-0.1-0.1-0.2-0.2-0.2-0.3
+			c-0.7-0.7-1.4-1.3-2.2-1.9L78.3,112.35c-5.6-5-14.1-4.5-19.1,1.1c-5,5.6-4.5,14.1,1.1,19.1l119.6,106.9L60.8,350.95
+			c-5.4,5.1-5.7,13.6-0.6,19.1c2.7,2.8,6.3,4.3,9.9,4.3c3.3,0,6.6-1.2,9.2-3.6l120.9-113.1l32.8,29.3c2.6,2.3,5.8,3.4,9,3.4
+			c3.2,0,6.5-1.2,9-3.5l33.7-30.2l120.2,114.2c2.6,2.5,6,3.7,9.3,3.7c3.6,0,7.1-1.4,9.8-4.2c5.1-5.4,4.9-14-0.5-19.1L304.8,238.55z" />
+</symbol>
+<symbol id="icon-pinterest" viewBox="0 0 612 612">
+<path d="M306,0C137.004,0,0,137.004,0,306c0,168.995,137.004,306,306,306c168.995,0,306-137.005,306-306
+		C612,137.004,474.995,0,306,0z M334.152,398.662c-22.616,0-43.897-12.49-51.213-26.678c0,0-12.157,49.294-14.744,58.808
+		c-4.34,16.079-12.713,32.131-20.475,44.844c-11.071,14.465-23.84,3.728-25.37-9.459c-0.5-14.688,0.028-32.074,3.672-47.902
+		c4.034-17.358,26.956-116.586,26.956-116.586s-6.704-13.659-6.704-33.855c0-31.713,17.999-55.386,40.42-55.386
+		c19.055,0,28.263,14.633,28.263,32.13c0,19.556-12.212,48.821-18.499,75.916c-5.258,22.7,11.155,41.199,33.076,41.199
+		c39.696,0,66.458-52.076,66.458-113.749c0-46.901-30.935-81.98-87.21-81.98c-63.565,0-103.178,48.403-103.178,102.454
+		c0,18.638,5.369,31.796,13.826,41.95c3.867,4.674,4.423,6.565,3.004,11.935c-1.001,3.95-3.31,13.408-4.256,17.163
+		c-1.391,5.425-5.703,7.345-10.488,5.342c-29.292-12.213-42.923-44.955-42.923-81.73c0-60.783,50.212-133.667,149.773-133.667
+		c80.005,0,132.665,59.114,132.665,122.567C447.232,335.96,401.527,398.662,334.152,398.662z" />
+</symbol>
+<symbol id="icon-filter" viewBox="0 0 480.3 480.3">
+<path d="M254.15,234.1V13.5c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v220.6c-31.3,6.3-55,34-55,67.2s23.7,60.9,55,67.2v98.2
+			c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5v-98.2c31.3-6.3,55-34,55-67.2C309.15,268.2,285.55,240.4,254.15,234.1z M240.65,342.8
+			c-22.9,0-41.5-18.6-41.5-41.5s18.6-41.5,41.5-41.5s41.5,18.6,41.5,41.5S263.55,342.8,240.65,342.8z" />
+<path d="M88.85,120.9V13.5c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v107.4c-31.3,6.3-55,34-55,67.2s23.7,60.9,55,67.2v211.4
+			c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5V255.2c31.3-6.3,55-34,55-67.2S120.15,127.2,88.85,120.9z M75.35,229.6
+			c-22.9,0-41.5-18.6-41.5-41.5s18.6-41.5,41.5-41.5s41.5,18.6,41.5,41.5S98.15,229.6,75.35,229.6z" />
+<path d="M418.45,120.9V13.5c0-7.5-6-13.5-13.5-13.5s-13.5,6-13.5,13.5v107.4c-31.3,6.3-55,34-55,67.2s23.7,60.9,55,67.2v211.5
+			c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5V255.2c31.3-6.3,55-34,55-67.2S449.85,127.2,418.45,120.9z M404.95,229.6
+			c-22.9,0-41.5-18.6-41.5-41.5s18.6-41.5,41.5-41.5s41.5,18.6,41.5,41.5S427.85,229.6,404.95,229.6z" />
+</symbol>
+<symbol id="icon-search" viewBox="0 0 250.313 250.313">
+<path d="M244.186,214.604l-54.379-54.378c-0.289-0.289-0.628-0.491-0.93-0.76
+		c10.7-16.231,16.945-35.66,16.945-56.554C205.822,46.075,159.747,0,102.911,0S0,46.075,0,102.911
+		c0,56.835,46.074,102.911,102.91,102.911c20.895,0,40.323-6.245,56.554-16.945c0.269,0.301,0.47,0.64,0.759,0.929l54.38,54.38
+		c8.169,8.168,21.413,8.168,29.583,0C252.354,236.017,252.354,222.773,244.186,214.604z M102.911,170.146
+		c-37.134,0-67.236-30.102-67.236-67.235c0-37.134,30.103-67.236,67.236-67.236c37.132,0,67.235,30.103,67.235,67.236
+		C170.146,140.044,140.043,170.146,102.911,170.146z" />
+</symbol>
+<symbol id="icon-location" viewBox="0 0 430.114 430.114">
+<path d="M356.208,107.051c-1.531-5.738-4.64-11.852-6.94-17.205C321.746,23.704,261.611,0,213.055,0
+		C148.054,0,76.463,43.586,66.905,133.427v18.355c0,0.766,0.264,7.647,0.639,11.089c5.358,42.816,39.143,88.32,64.375,131.136
+		c27.146,45.873,55.314,90.999,83.221,136.106c17.208-29.436,34.354-59.259,51.17-87.933c4.583-8.415,9.903-16.825,14.491-24.857
+		c3.058-5.348,8.9-10.696,11.569-15.672c27.145-49.699,70.838-99.782,70.838-149.104v-20.262
+		C363.209,126.938,356.581,108.204,356.208,107.051z M214.245,199.193c-19.107,0-40.021-9.554-50.344-35.939
+		c-1.538-4.2-1.414-12.617-1.414-13.388v-11.852c0-33.636,28.56-48.932,53.406-48.932c30.588,0,54.245,24.472,54.245,55.06
+		C270.138,174.729,244.833,199.193,214.245,199.193z" />
+</symbol>
+<symbol id="icon-close" viewBox="0 0 64 64">
+<path d="M28.941,31.786L0.613,60.114c-0.787,0.787-0.787,2.062,0,2.849c0.393,0.394,0.909,0.59,1.424,0.59   c0.516,0,1.031-0.196,1.424-0.59l28.541-28.541l28.541,28.541c0.394,0.394,0.909,0.59,1.424,0.59c0.515,0,1.031-0.196,1.424-0.59   c0.787-0.787,0.787-2.062,0-2.849L35.064,31.786L63.41,3.438c0.787-0.787,0.787-2.062,0-2.849c-0.787-0.786-2.062-0.786-2.848,0   L32.003,29.15L3.441,0.59c-0.787-0.786-2.061-0.786-2.848,0c-0.787,0.787-0.787,2.062,0,2.849L28.941,31.786z" />
+</symbol>
+<symbol id="icon-tick" viewBox="0 0 510 510">
+<path d="M150.45,206.55l-35.7,35.7L229.5,357l255-255l-35.7-35.7L229.5,285.6L150.45,206.55z M459,255c0,112.2-91.8,204-204,204
+			S51,367.2,51,255S142.8,51,255,51c20.4,0,38.25,2.55,56.1,7.65l40.801-40.8C321.3,7.65,288.15,0,255,0C114.75,0,0,114.75,0,255
+			s114.75,255,255,255s255-114.75,255-255H459z" />
+</symbol>
+<symbol id="icon-upload" viewBox="0 0 73.17 73.169">
+<path d="M61.463,5.777H11.708C5.25,5.777,0,10.862,0,17.12v33.071c0,6.251,5.25,11.336,11.708,11.336
+				c2.154,0,3.899-1.693,3.899-3.775c0-2.092-1.745-3.783-3.899-3.783c-2.155,0-3.9-1.692-3.9-3.776V17.12
+				c0-2.084,1.745-3.783,3.9-3.783h49.755c2.15,0,3.903,1.699,3.903,3.783v33.071c0,2.084-1.753,3.775-3.903,3.775
+				c-2.154,0-3.904,1.692-3.904,3.783c0,2.084,1.75,3.776,3.904,3.776c6.457,0,11.707-5.085,11.707-11.336V17.12
+				C73.17,10.862,67.92,5.777,61.463,5.777z M40.105,23.784c-0.728-0.843-1.795-1.331-2.922-1.347
+				c-1.1-0.061-2.217,0.437-2.969,1.256L17.413,41.828c-1.046,1.129-1.294,2.745-0.636,4.114c0.658,1.376,2.102,2.278,3.655,2.188
+				l4.735-0.136v15.622c0,2.084,1.748,3.776,3.903,3.776h15.073c1.034,0,2.026-0.398,2.76-1.105c0.73-0.706,1.145-1.67,1.145-2.671
+				l-0.004-15.621l4.693,0.135c1.505,0.062,2.959-0.789,3.63-2.136c0.669-1.339,0.466-2.934-0.523-4.077L40.105,23.784z" />
+</symbol>
+<symbol id="icon-cart" viewBox="0 0 475.084 475.085">
+<path d="M365.446,401.998c0,10.092,3.579,18.702,10.711,25.834c7.132,7.139,15.749,10.711,25.845,10.711
+			c10.081,0,18.698-3.572,25.83-10.711c7.139-7.132,10.711-15.742,10.711-25.834s-3.568-18.702-10.711-25.841
+			c-7.132-7.132-15.749-10.704-25.83-10.704c-10.096,0-18.713,3.572-25.845,10.704C369.025,383.296,365.446,391.906,365.446,401.998
+			z" />
+<path d="M469.658,78.51c-3.618-3.617-7.898-5.426-12.848-5.426H113.918c-0.193-1.331-0.621-3.756-1.287-7.277
+			c-0.666-3.523-1.188-6.329-1.569-8.425c-0.383-2.087-1.093-4.611-2.142-7.561c-1.047-2.952-2.284-5.286-3.711-6.995
+			c-1.425-1.718-3.328-3.189-5.708-4.43c-2.378-1.233-5.092-1.853-8.136-1.853H18.276c-4.952,0-9.234,1.812-12.85,5.424
+			C1.809,45.583,0,49.868,0,54.816s1.809,9.231,5.426,12.847c3.619,3.617,7.902,5.424,12.85,5.424h58.237l50.532,234.976
+			c-0.378,0.76-2.329,4.373-5.852,10.848c-3.521,6.475-6.328,12.135-8.42,16.988c-2.093,4.859-3.14,8.616-3.14,11.279
+			c0,4.948,1.809,9.232,5.424,12.854c3.621,3.606,7.902,5.421,12.851,5.421h18.272h255.815h18.261c4.948,0,9.232-1.814,12.847-5.421
+			c3.62-3.621,5.427-7.905,5.427-12.854c0-4.949-1.807-9.233-5.427-12.847c-3.614-3.614-7.898-5.428-12.847-5.428h-262.66
+			c4.57-9.138,6.854-15.222,6.854-18.268c0-1.909-0.238-4.004-0.715-6.283s-1.047-4.805-1.713-7.569
+			c-0.667-2.752-1.093-4.799-1.283-6.133l298.077-34.831c4.753-0.575,8.658-2.614,11.703-6.14c3.046-3.518,4.565-7.562,4.565-12.133
+			V91.363C475.082,86.415,473.278,82.132,469.658,78.51z" />
+<path d="M109.632,401.998c0,10.092,3.567,18.702,10.706,25.834c7.141,7.139,15.75,10.711,25.841,10.711
+			c10.085,0,18.699-3.572,25.835-10.711c7.139-7.132,10.71-15.742,10.71-25.834s-3.568-18.702-10.71-25.841
+			c-7.137-7.132-15.75-10.704-25.835-10.704c-10.09,0-18.704,3.572-25.841,10.704C113.203,383.296,109.632,391.906,109.632,401.998z
+			" />
+</symbol>
+<symbol id="icon-whatsapp-color" viewBox="0 0 512 512">
+<path d="m10.894531 512c-2.875 0-5.671875-1.136719-7.746093-3.234375-2.734376-2.765625-3.789063-6.78125-2.761719-10.535156l33.285156-121.546875c-20.722656-37.472656-31.648437-79.863282-31.632813-122.894532.058594-139.941406 113.941407-253.789062 253.871094-253.789062 67.871094.0273438 131.644532 26.464844 179.578125 74.433594 47.925781 47.972656 74.308594 111.742187 74.289063 179.558594-.0625 139.945312-113.945313 253.800781-253.867188 253.800781 0 0-.105468 0-.109375 0-40.871093-.015625-81.390625-9.976563-117.46875-28.84375l-124.675781 32.695312c-.914062.238281-1.84375.355469-2.761719.355469zm0 0" fill="#e5e5e5" />
+<path d="m10.894531 501.105469 34.46875-125.871094c-21.261719-36.839844-32.445312-78.628906-32.429687-121.441406.054687-133.933594 109.046875-242.898438 242.976562-242.898438 64.992188.027344 125.996094 25.324219 171.871094 71.238281 45.871094 45.914063 71.125 106.945313 71.101562 171.855469-.058593 133.929688-109.066406 242.910157-242.972656 242.910157-.007812 0 .003906 0 0 0h-.105468c-40.664063-.015626-80.617188-10.214844-116.105469-29.570313zm134.769531-77.75 7.378907 4.371093c31 18.398438 66.542969 28.128907 102.789062 28.148438h.078125c111.304688 0 201.898438-90.578125 201.945313-201.902344.019531-53.949218-20.964844-104.679687-59.09375-142.839844-38.132813-38.160156-88.832031-59.1875-142.777344-59.210937-111.394531 0-201.984375 90.566406-202.027344 201.886719-.015625 38.148437 10.65625 75.296875 30.875 107.445312l4.804688 7.640625-20.40625 74.5zm0 0" fill="#fff" />
+<path d="m19.34375 492.625 33.277344-121.519531c-20.53125-35.5625-31.324219-75.910157-31.3125-117.234375.050781-129.296875 105.273437-234.488282 234.558594-234.488282 62.75.027344 121.644531 24.449219 165.921874 68.773438 44.289063 44.324219 68.664063 103.242188 68.640626 165.898438-.054688 129.300781-105.28125 234.503906-234.550782 234.503906-.011718 0 .003906 0 0 0h-.105468c-39.253907-.015625-77.828126-9.867188-112.085938-28.539063zm0 0" fill="#64b161" />
+<g fill="#fff">
+<path d="m10.894531 501.105469 34.46875-125.871094c-21.261719-36.839844-32.445312-78.628906-32.429687-121.441406.054687-133.933594 109.046875-242.898438 242.976562-242.898438 64.992188.027344 125.996094 25.324219 171.871094 71.238281 45.871094 45.914063 71.125 106.945313 71.101562 171.855469-.058593 133.929688-109.066406 242.910157-242.972656 242.910157-.007812 0 .003906 0 0 0h-.105468c-40.664063-.015626-80.617188-10.214844-116.105469-29.570313zm134.769531-77.75 7.378907 4.371093c31 18.398438 66.542969 28.128907 102.789062 28.148438h.078125c111.304688 0 201.898438-90.578125 201.945313-201.902344.019531-53.949218-20.964844-104.679687-59.09375-142.839844-38.132813-38.160156-88.832031-59.1875-142.777344-59.210937-111.394531 0-201.984375 90.566406-202.027344 201.886719-.015625 38.148437 10.65625 75.296875 30.875 107.445312l4.804688 7.640625-20.40625 74.5zm0 0" />
+<path d="m195.183594 152.246094c-4.546875-10.109375-9.335938-10.3125-13.664063-10.488282-3.539062-.152343-7.589843-.144531-11.632812-.144531-4.046875 0-10.625 1.523438-16.1875 7.597657-5.566407 6.074218-21.253907 20.761718-21.253907 50.632812 0 29.875 21.757813 58.738281 24.792969 62.792969 3.035157 4.050781 42 67.308593 103.707031 91.644531 51.285157 20.226562 61.71875 16.203125 72.851563 15.191406 11.132813-1.011718 35.917969-14.6875 40.976563-28.863281 5.0625-14.175781 5.0625-26.324219 3.542968-28.867187-1.519531-2.527344-5.566406-4.046876-11.636718-7.082032-6.070313-3.035156-35.917969-17.726562-41.484376-19.75-5.566406-2.027344-9.613281-3.035156-13.660156 3.042969-4.050781 6.070313-15.675781 19.742187-19.21875 23.789063-3.542968 4.058593-7.085937 4.566406-13.15625 1.527343-6.070312-3.042969-25.625-9.449219-48.820312-30.132812-18.046875-16.089844-30.234375-35.964844-33.777344-42.042969-3.539062-6.070312-.058594-9.070312 2.667969-12.386719 4.910156-5.972656 13.148437-16.710937 15.171875-20.757812 2.023437-4.054688 1.011718-7.597657-.503906-10.636719-1.519532-3.035156-13.320313-33.058594-18.714844-45.066406zm0 0" fill-rule="evenodd" />
+</symbol>
+<symbol id="icon-right-arrow" viewBox="0 0 129 129">
+<path d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z" />
+</symbol>
+<symbol id="icon-right-pointer" viewBox="0 0 31.49 31.49">
+<path d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111
+	C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587
+	c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z" />
+</symbol>
+<symbol id="icon-instagram" viewBox="0 0 169.063 169.063">
+<path d="M122.406,0H46.654C20.929,0,0,20.93,0,46.655v75.752c0,25.726,20.929,46.655,46.654,46.655h75.752
+		c25.727,0,46.656-20.93,46.656-46.655V46.655C169.063,20.93,148.133,0,122.406,0z M154.063,122.407
+		c0,17.455-14.201,31.655-31.656,31.655H46.654C29.2,154.063,15,139.862,15,122.407V46.655C15,29.201,29.2,15,46.654,15h75.752
+		c17.455,0,31.656,14.201,31.656,31.655V122.407z" />
+<path d="M84.531,40.97c-24.021,0-43.563,19.542-43.563,43.563c0,24.02,19.542,43.561,43.563,43.561s43.563-19.541,43.563-43.561
+		C128.094,60.512,108.552,40.97,84.531,40.97z M84.531,113.093c-15.749,0-28.563-12.812-28.563-28.561
+		c0-15.75,12.813-28.563,28.563-28.563s28.563,12.813,28.563,28.563C113.094,100.281,100.28,113.093,84.531,113.093z" />
+<path d="M129.921,28.251c-2.89,0-5.729,1.17-7.77,3.22c-2.051,2.04-3.23,4.88-3.23,7.78c0,2.891,1.18,5.73,3.23,7.78
+		c2.04,2.04,4.88,3.22,7.77,3.22c2.9,0,5.73-1.18,7.78-3.22c2.05-2.05,3.22-4.89,3.22-7.78c0-2.9-1.17-5.74-3.22-7.78
+		C135.661,29.421,132.821,28.251,129.921,28.251z" />
+</symbol>
+<symbol id="icon-facebook" viewBox="0 0 470.513 470.513">
+<path d="M271.521,154.17v-40.541c0-6.086,0.28-10.8,0.849-14.13c0.567-3.335,1.857-6.615,3.859-9.853
+		c1.999-3.236,5.236-5.47,9.706-6.708c4.476-1.24,10.424-1.858,17.85-1.858h40.539V0h-64.809c-37.5,0-64.433,8.897-80.803,26.691
+		c-16.368,17.798-24.551,44.014-24.551,78.658v48.82h-48.542v81.086h48.539v235.256h97.362V235.256h64.805l8.566-81.086H271.521z" />
+</symbol>
+<symbol id="icon-twitter" viewBox="0 0 612 612">
+<path d="M612,116.258c-22.525,9.981-46.694,16.75-72.088,19.772c25.929-15.527,45.777-40.155,55.184-69.411
+			c-24.322,14.379-51.169,24.82-79.775,30.48c-22.907-24.437-55.49-39.658-91.63-39.658c-69.334,0-125.551,56.217-125.551,125.513
+			c0,9.828,1.109,19.427,3.251,28.606C197.065,206.32,104.556,156.337,42.641,80.386c-10.823,18.51-16.98,40.078-16.98,63.101
+			c0,43.559,22.181,81.993,55.835,104.479c-20.575-0.688-39.926-6.348-56.867-15.756v1.568c0,60.806,43.291,111.554,100.693,123.104
+			c-10.517,2.83-21.607,4.398-33.08,4.398c-8.107,0-15.947-0.803-23.634-2.333c15.985,49.907,62.336,86.199,117.253,87.194
+			c-42.947,33.654-97.099,53.655-155.916,53.655c-10.134,0-20.116-0.612-29.944-1.721c55.567,35.681,121.536,56.485,192.438,56.485
+			c230.948,0,357.188-191.291,357.188-357.188l-0.421-16.253C573.872,163.526,595.211,141.422,612,116.258z" />
+</symbol>
+<symbol id="icon-youtube" viewBox="0 0 310 310">
+<path d="M297.917,64.645c-11.19-13.302-31.85-18.728-71.306-18.728H83.386c-40.359,0-61.369,5.776-72.517,19.938
+		C0,79.663,0,100.008,0,128.166v53.669c0,54.551,12.896,82.248,83.386,82.248h143.226c34.216,0,53.176-4.788,65.442-16.527
+		C304.633,235.518,310,215.863,310,181.835v-53.669C310,98.471,309.159,78.006,297.917,64.645z M199.021,162.41l-65.038,33.991
+		c-1.454,0.76-3.044,1.137-4.632,1.137c-1.798,0-3.592-0.484-5.181-1.446c-2.992-1.813-4.819-5.056-4.819-8.554v-67.764
+		c0-3.492,1.822-6.732,4.808-8.546c2.987-1.814,6.702-1.938,9.801-0.328l65.038,33.772c3.309,1.718,5.387,5.134,5.392,8.861
+		C204.394,157.263,202.325,160.684,199.021,162.41z" />
+</symbol>
+</svg></footer><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/x-magento-init">
+        {
+            "*": {
+                "Magento_Ui/js/core/app": {
+                    "components": {
+                        "storage-manager": {
+                            "component": "Magento_Catalog/js/storage-manager",
+                            "appendTo": "",
+                            "storagesConfiguration" :
+                                         {"recently_viewed_product":{"requestConfig":{"syncUrl":"https:\/\/www.healthguard.lk\/catalog\/product\/frontend_action_synchronize\/"},"lifetime":"1000","allowToSendRequest":null},"recently_compared_product":{"requestConfig":{"syncUrl":"https:\/\/www.healthguard.lk\/catalog\/product\/frontend_action_synchronize\/"},"lifetime":"1000","allowToSendRequest":null},"product_data_storage":{"updateRequestConfig":{"url":"https:\/\/www.healthguard.lk\/rest\/default\/V1\/products-render-info"},"allowToSendRequest":null}}                        }
+                    }
+                }
+            }
+        }
+</script>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TWPSZ29"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+<script> (function(d, u, ac) {
+    var s = d.createElement('script');
+    s.type = 'text/javascript';
+    s.src = 'https://a.omappapi.com/app/js/api.min.js';
+    s.async = true;
+    s.dataset.user = u;
+    s.dataset.account = ac;
+    d.getElementsByTagName('head')[0].appendChild(s);
+})(document, 70549, 79287); </script>
+
+<div class="pr-btn">
+<a href="https://www.healthguard.lk/pres/customer/index/" title="Prescription">
+<svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="-17 0 512 512" width="512px" class><g><path d="m265 191.34375h34v30h-34zm0 0" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFFFFF" /><path d="m80.667969 191.34375h157.667969v30h-157.667969zm0 0" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFFFFF" /><path d="m265 255.34375h34v30h-34zm0 0" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFFFFF" /><path d="m80.667969 255.34375h157.667969v30h-157.667969zm0 0" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFFFFF" /><path d="m265 319.34375h34v30h-34zm0 0" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFFFFF" /><path d="m80.667969 319.34375h157.667969v30h-157.667969zm0 0" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFFFFF" /><path d="m80.667969 383.34375h157.667969v30h-157.667969zm0 0" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFFFFF" /><path d="m412.671875 383.34375h-31.671875v-292.789062l-90.554688-90.554688h-290.445312v512h412.671875c35.46875 0 64.328125-28.859375 64.328125-64.328125 0-35.472656-28.859375-64.328125-64.328125-64.328125zm-66.652344-285.34375h-66.019531v-66.019531zm-316.019531-68h220v98h101v255.34375h-31.671875c-35.46875 0-64.328125 28.855469-64.328125 64.328125 0 12.613281 3.664062 24.386719 9.964844 34.328125h-234.964844zm289.328125 452c-18.929687 0-34.328125-15.398438-34.328125-34.328125s15.398438-34.328125 34.328125-34.328125h31.671875v68.65625zm93.34375 0h-31.671875v-68.65625h31.671875c18.929687 0 34.328125 15.398438 34.328125 34.328125s-15.398438 34.328125-34.328125 34.328125zm0 0" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFFFFF" /><path d="m125 149.5h30v-27.25h27.25v-30h-27.25v-27.25h-30v27.25h-27.25v30h27.25zm0 0" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFFFFF" /></g> </svg>
+</a>
+</div>
+</div> <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-93bf9b0831430eaf4c8","applicationID":"568418858","transactionName":"NQYEYBcHXkRRUkIIDAxMJ1cRD19ZH1JXFQIODAEbFRRfU0VSQk4VCwYR","queueTime":0,"applicationTime":3153,"atts":"GUEHFl8dTUo=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

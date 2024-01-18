@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <title>login page</title>
+    <link rel="stylesheet" href="login.css">
+
+
+
+</head>
+
+<body>
+
+    <form action="http://localhost/New%20Web/register.php" method="post">
+        <header>
+            <nav>
+                <div class="logo">
+                   <a href="HomePage.html"> <img src="image/logo.jpg" alt="Healthcare Pharmacy"></a>
+                </div>
+                <div class="logo-text">
+                    <p>QUEENSWAY</p>
+                </div>
+                
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit">Search</button>
+                </div>
+                
+                <!-- <button class="upload-button">Upload Prescription</button> -->
+                <div class="nav-buttons">
+    
+                    
+                    <a href="#"><img src="image/carticon.jpg"></a>
+                    <span>0</span>
+                </div>
+            </nav>
+        </header>
+        <!-- Rest of your website content -->
+    
+        <header2>
+            <nav class="top-nav">
+                <div class="nav-links">
+                    <ul>
+                        <li class="mega-menu">
+                            <a href="#">Medicine <span class="arrow">&#9662;</span></a>
+    
+                            <div class="mega-content">
+                                <ul>
+                                    <a class="a2" href="blank.html">HEART</a>
+                                    <a class="a2" href="blank.html">CENTRAL NERVOUS SYSTEM</a>
+                                    <a class="a2" href="blank.html"> EAR, NOSE, THROAT</a>
+                                    <a class="a2" href="blank.html"> DIABETES</a>
+                                    <a class="a2 " href="blank.html">EYE</a>
+                                    <a class="a2" href="blank.html"> GASTRO INTESTINAL SYSTEM</a>
+                                    <a class="a2" href="blank.html">MALIGNANT DISEASE & IMMUNOSUPPRESSIONS</a>
+                                    <!-- Add more subcategories if needed -->
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mega-menu">
+                            <a href="#">Medical Devices <span class="arrow">&#9662;</span></a>
+                            <div class="mega-content">
+                                <ul>
+                                    <a class="a2" href="blank.html">FIRST AID</a>
+                                    <a class="a2" href="blank.html">HEALTH DEVICES</a>
+                                    <a class="a2" href="blank.html"> SUPPORTS & BRACES</a>
+    
+                                    <!-- Add more subcategories if needed -->
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mega-menu">
+                            <a href="#">Wellness <span class="arrow">&#9662;</span></a>
+    
+                            <div class="mega-content">
+                                <ul>
+                                    <a class="a2" href="blank.html">EYES & EARS</a>
+                                    <a class="a2" href="blank.html">COUGH, COLD & ALLERGY</a>
+                                    <a class="a2" href="blank.html">DIET & NUTRITION</a>
+                                    <a class="a2" href="blank.html"> BEAUTY SUPPLEMENTS</a>
+                                    <a class="a2 " href="blank.html">ADULT & DIABETIC CARE</a>
+                                    <a class="a2" href="blank.html"> PREVENTIVE CARE</a>
+                                    <a class="a2" href="blank.html">PAIN & FEVER</a>
+                                    <!-- Add more subcategories if needed -->
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="mega-menu">
+                            <a href="#">Personal Care <span class="arrow">&#9662;</span></a>
+                            <div class="mega-content">
+                                <ul>
+                                    <a class="a2" href="blank.html">NOURISHMENT</a>
+                                    <a class="a2" href="blank.html">ACCESSORIES</a>
+                                    <a class="a2" href="blank.html">SKIN CARE</a>
+                                    <a class="a2" href="blank.html"> HAND & FOOT CARE</a>
+                                </ul>
+                            </div>
+                        </li>
+                        <div class="words">
+                            <li><a href="blank.html">GSE</a></li>
+                            <li><a href="blank.html">SWISSE</a></li>
+                            <li><a href="blank.html">PROMOTIONS</a></li>
+    
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+        </header2>
+
+        <div id="reg">
+            <br>
+            <ul>
+                <label class="la1"> Is this your first time ?</label>
+                <br>
+                <br>
+                <br>
+
+                <label class="la2">Fill in following information to upload Prescription.</label>
+                <br><br>
+                <label class="la3">First Name :</label><br>
+                <input type="text" class="c1" name="Fname" placeholder="......." required>
+                <br><br> <br> <br>
+                <label class="la3">Last Name :</label><br>
+                <input type="text" class="c1" name="Lname" placeholder="......." required>
+                <br><br><br><br>
+
+                <label class="la3">Telephone Number:</label><br>
+                <input type="tel" class="c1" name="telephone" required>
+                <br><br> <br> <br>
+
+                <label class="la3">E mail :</label><br>
+                <input type="email" class="c1" name="email" required>
+                <br><br> <br> <br>
+
+                <label class="la3">Street Address :</label><br>
+                <input type="text" class="c1" name="sadd" placeholder="......." required>
+                <br><br><br><br>
+                <label class="la3">City :</label><br>
+                <input type="text" class="c1" name="city" placeholder="......." required>
+                <br><br><br><br>
+
+                <label class="la3">Password :</label><br>
+                <input type="password" class="c1" id="password" name="password" placeholder="......" required>
+                <br><br><br><br>
+
+                <label class="la3">Confirm Password :</label><br>
+                <input type="password" class="c1" id="cpassword" name="cpassword" placeholder="......" required>
+                <br><br><br><br>
+
+                <span id="message"></span><br><br>
+                <input type="submit" id="btn1" onclick="comparePasswords()">
+
+
+                <script>
+                   
+
+                    
+
+                    function comparePasswords() {
+
+                        var password = document.getElementById("password").value;
+                        var cpassword = document.getElementById("cpassword").value;
+                        var message = document.getElementById("message");
+
+                        if (password === cpassword) {
+                            message.innerHTML = "Passwords match!";
+                            message.style.color = "green";
+
+
+                        } else {
+                            message.innerHTML = "Passwords do not match!";
+                            message.style.color = "red";
+                        }
+                    }
+
+
+                    document.getElementById("password").addEventListener("input", comparePasswords);
+                    document.getElementById("cpassword").addEventListener("input", comparePasswords);
+                </script>
+
+            </ul>
+
+
+
+
+
+
+
+        </div>
+    </form>
+
+    <form action="http://localhost/NEW%20WEB/select.php" method="post">
+
+        <div class="reg2">
+            <ul>
+                <label class="la4">Alredy User :</label>
+                <br><br><br>
+                <label class="la5">If you have an account with us, log in using your email address.</label>
+                <br><br><br>
+                <lable class="la5">Email / Phone number *</lable><br>
+                <input type="email" name="regemail" class="c1" required>
+                <br><br> <br><br>
+                <label class="la5">Password *</label><br>
+                <input type="password" name="regpassword" class="c1" required><br><br><br><br>
+                <input type="submit" id="signin" name="signin">
+
+
+
+            
+
+            </ul>
+        </div>
+
+    </form>
+
+</body>
+
+</html>

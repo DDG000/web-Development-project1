@@ -1,0 +1,316 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 40px; /* Adjust the maximum width of your logo */
+}
+.logo-text{
+  padding-left: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  color: #D9D9D9;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin: 0 20px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.nav-buttons button,
+.nav-buttons a {
+  padding: 8px 12px;
+  margin-left: 10px;
+  border: none;
+  background-color: #180d43; /* Adjust the background color as per your design */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.upload-button {
+  position: relative;
+  background-color: #fabf3d;
+  border-radius: 30px;
+  padding: 10px 20px;
+  color: #4228c8;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  right: 25%;
+}
+.upload-button:hover{
+ background-color: #18c66c;
+}
+.btn {
+  background-color: #fabf3d;
+  border-radius: 30px;
+  padding: 10px 20px;
+  color: #4228c8;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 22%;
+}
+.btn:hover {
+  background-color: rgb(231, 240, 231);
+} 
+.nav-buttons img {
+  max-width: 30px; /* Adjust the maximum width of your cart icon */
+}
+
+.top-nav {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.logo img {
+max-width: 100px; /* Adjust the maximum width of your logo */
+}
+
+.search-bar {
+display: flex;
+align-items: center;
+flex: 1;
+margin: 0 80px;
+
+}
+
+.search-bar input {
+flex: 1;
+padding: 8px;
+border: 1px solid #ccc;
+border-radius: 30px;
+}
+
+.search-bar button {
+padding: 8px 12px;
+border: none;
+background-color: #0277bd; /* Button color */
+color: #fff;
+border-radius: 4px;
+margin-left: 5px; /* Adjust the margin as needed */
+cursor: pointer;
+}
+
+.nav-links ul {
+display: flex;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.nav-links li {
+position: relative;
+}
+
+.nav-links a {
+padding: 8px 12px;
+text-decoration: none;
+color: #333; /* Link color */
+}
+
+header {
+  background-color: #180d43; /* Adjust the background color as per your design */
+  padding: 10px 20px;
+}
+
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#71cee8;
+}
+
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #333; /* Link color */
+}
+
+.mega-menu {
+  position: relative;
+}
+
+.mega-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  background-color: #26c6da; /* Adjust the background color */
+  padding: 10px;
+  min-width: 700px;
+  z-index: 1;
+  text-align: left;
+}
+.words{
+  position: relative;
+  display: flex;
+  top: 3px;
+}
+
+.mega-menu:hover .mega-content {
+  display: block;
+}
+
+.nav-links li:hover > a {
+  color: #ddd; /* Adjust the background color on hover */
+}
+.arrow {
+  margin-left: 5px; /* Adjust spacing */
+}
+
+/* Style for the arrow */
+.arrow {
+  font-size: 20px; /* Adjust size if needed */
+  display: inline-block;
+  transform: translateY(-1px); /* Adjust vertical alignment */
+}
+.mega-content ul{
+  flex-direction: column;
+}
+.mega-content ul a:hover{
+  color: #e2d1d1;
+}
+
+
+/* carsolue */
+/* carsolue */
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+.cart-icon{
+position: relative;
+display: flex;
+text-align: center;
+text-decoration: none;
+padding-left: 180px;
+
+}
+
+#reg{
+  
+     background: #200E3A;
+      border-radius: 16px;
+      width: 600px;
+height: 1000px;
+flex-shrink: 0;
+float: right;
+transform: translate(-20%, 10%);
+
+
+}
+.la1{
+
+    color: #F9F1F1;
+    font-family: 'Roboto', sans-serif;
+font-size: 24px;
+font-style: bold;
+font-weight: 400;
+line-height: normal;
+inline-size: 150px;
+
+}
+.la2{
+
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.la3{
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+
+}
+.c1{
+    width: 300px;
+height: 20px;
+flex-shrink: 0;
+    background: #D9D9D9;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    float:left;
+    
+
+}
+#btn1{
+
+background-color: #FFB84C;
+width: 200px;
+height: 50px;
+
+}
+
+.reg2{
+
+  
+    background:#f6f3f4;
+    border-radius: 16px;
+    width: 600px;
+height: 600px;
+flex-shrink: 0;
+float: left;
+transform: translate(15%, 16%);
+
+}
+
+.la4{
+    color: #060202;
+    font-family: 'Roboto', sans-serif;
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+
+}
+
+.la5{
+
+    color: #060202;
+    font-family: 'Roboto', sans-serif;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+}
+#signin{
+
+    background-color: #FFB84C;
+    width: 200px;
+    height: 50px;
+
+}
+
+
