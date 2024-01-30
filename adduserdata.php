@@ -6,6 +6,7 @@ $first_Name = $_POST['Fname'];
 $last_Name = $_POST['Lname'];
 $telephone = $_POST['telephone'];
 $email = $_POST['email'];
+$role = $_POST['job']; 
 $street_Address = $_POST['sadd'];
 $city = $_POST['city'];
 $userPassword = $_POST["password"];
@@ -38,9 +39,10 @@ try {
     // Get the last inserted ID from customer_information1
     $customerId = $connection->insert_id;
 
-    // Insert into Job_roles
-    $role = "customer";  // Replace with the actual role you want to insert
-    $insertJobRolesSQL = "INSERT INTO job_role2 (ID, role) VALUES (?, ?)";
+  
+   
+    if( $role === "Employee"){
+    $insertJobRolesSQL = "INSERT INTO job_roles (ID, role) VALUES (?, ?)";
     $insertJobRolesStatement = $connection->prepare($insertJobRolesSQL);
     $insertJobRolesStatement->bind_param("is", $customerId, $role);
 
@@ -51,8 +53,41 @@ try {
     // Commit the transaction
     $connection->commit();
 
-    echo '<script>alert("Account Created Successfully. Please use Already User Menu to log in.");</script>';
-    echo '<script>window.location.href = "login.html";</script>';
+    echo '<script>alert("Account Created Successfully.");</script>';
+    echo '<script>window.location.href = "adduser.php";</script>';
+}
+
+elseif( $role === "Manager"){
+    $insertJobRolesSQL = "INSERT INTO job_roles (ID, role) VALUES (?, ?)";
+    $insertJobRolesStatement = $connection->prepare($insertJobRolesSQL);
+    $insertJobRolesStatement->bind_param("is", $customerId, $role);
+
+    if (!$insertJobRolesStatement->execute()) {
+        throw new Exception("Error inserting into Job_roles: " . $insertJobRolesStatement->error);
+    }
+
+    // Commit the transaction
+    $connection->commit();
+
+    echo '<script>alert("Account Created Successfully.");</script>';
+    echo '<script>window.location.href = "adduser.php";</script>';
+}
+
+elseif( $role === "Admin"){
+    $insertJobRolesSQL = "INSERT INTO job_roles (ID, role) VALUES (?, ?)";
+    $insertJobRolesStatement = $connection->prepare($insertJobRolesSQL);
+    $insertJobRolesStatement->bind_param("is", $customerId, $role);
+
+    if (!$insertJobRolesStatement->execute()) {
+        throw new Exception("Error inserting into Job_roles: " . $insertJobRolesStatement->error);
+    }
+
+    // Commit the transaction
+    $connection->commit();
+
+    echo '<script>alert("Account Created Successfully. ");</script>';
+    echo '<script>window.location.href = "adduser.php";</script>';
+}
 } catch (Exception $e) {
     // Rollback the transaction on exception
     $connection->rollback();

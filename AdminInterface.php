@@ -91,7 +91,7 @@ if ($stmt) {
     <header>
         <nav>
             <div class="logo">
-               <a href="HomePage.html"> <img src="image/logo.jpg" alt="Healthcare Pharmacy"></a>
+               <a href="HomePageEmp.php"> <img src="image/logo.jpg" alt="Healthcare Pharmacy"></a>
             </div>
             <div class="logo-text">
                 <p>QUEENSWAY</p>
@@ -188,7 +188,8 @@ if ($stmt) {
         <h1>QUEENSWAY</h1>
         <div class="text">
   <ul style="text-align: left; ">
-     <li><p style="color:#3280274; font-weight: bold;">Hello .. <?php echo $first_Name; ?></p>   
+     <li><p style="color:#3280274; font-weight: bold;">Hello .. <?php echo ucfirst($first_Name); ?>
+</p>   
     <li><p style="color: #337ab7;font-weight: bold; ">ID: <?php echo $customerId; ?></p></li>
     
      </li> <li><p style="color: #337ab7;font-weight: bold;">Position: <?php echo $role; ?></p></li>
@@ -242,9 +243,9 @@ if ($stmt) {
         </div>
         <div class="circle">
             <div class="txt"> USER MANAGEMENT</div>
-            <div class="image">
+           <a href="user_management.php"> <div class="image">
                 <img src="./Web/img10.png" width="150px" height="40px"></div>
-        </div>
+        </div></a>
         <div class="circle">
             <div class="txt">CONTENT MANAGEMENT</div>
             <div class="image">

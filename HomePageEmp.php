@@ -13,7 +13,7 @@ if (!isset($_SESSION['customerId']) || !is_numeric($_SESSION['customerId'])) {
 $customerId = $_SESSION['customerId'];
 
 // Prepare SQL statement with placeholder for customerId
-$sql = "SELECT role FROM job_role2 WHERE ID = ?";
+$sql = "SELECT role FROM job_roles WHERE ID = ?";
 $stmt = $connection->prepare($sql);
 
 // Bind parameter and execute
@@ -28,11 +28,6 @@ if ($stmt) {
     // Close statement
     $stmt->close();
 
-    // Check role and redirect if not "customer"
-    if ($role !== "customer") {
-        header("Location: HomePage.html");
-        exit();
-    }
 } if (!isset($_SESSION['customerId']) || !is_numeric($_SESSION['customerId'])) {
     header("Location: error.php?message=Invalid customer ID");
     exit();
@@ -81,7 +76,7 @@ if ($stmt) {
     <header>
         <nav>
             <div class="logo">
-           <a href="HomePage2.php">     <img src="image/logo.jpg" alt="Healthcare Pharmacy"></a>
+           <a href="HomePageEmp.php">     <img src="image/logo.jpg" alt="Healthcare Pharmacy"></a>
             </div>
             <div class="logo-text">
                 <p class="logo-text">QUEENSWAY</p>

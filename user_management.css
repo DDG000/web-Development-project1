@@ -1,0 +1,98 @@
+.box{
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    padding: 100px;
+    border-radius: 12px;
+    background: #0F2167;
+    height: 900px;
+    width: 1050px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: baseline;
+   
+}
+
+.one {
+    /* General styling for the container */
+    height: 500px;
+    width: 800px;
+    padding: 80px; /* Add some padding around the content */
+    border: 20px solid #71e7db; /* Add a light gray border */
+    border-radius: 5px; /* Round the corners slightly */
+    background-color: #62caf3; /* Set a light gray background color */
+  }
+
+ 
+  .one p {
+    /* General styling for paragraphs */
+    font-size: 20px; /* Set a base font size */
+    line-height: 1.5; /* Adjust line height for readability */
+    color: #eaf0ea;
+  }
+  
+  .one p:first-of-type { /* Target the first paragraph specifically */
+    margin-top: 0; /* Remove top margin for the first paragraph */
+    font-size: 18px; /* Make the greeting text slightly larger */
+  }
+  
+  /* Color adjustments (optional) */
+  .one p:first-of-type {
+    color: #eaf0ea; /* Adjust the greeting text color as needed */
+  }
+  
+  .one p:not(:first-of-type) {
+    color: #e5eaef; /* Adjust the ID and position text color as needed */
+  }
+  .logo img {
+    width: 100px; /* Adjust the maximum width of your logo */
+    transform: translate(900px,-900px);
+  }
+  .logo-text{
+  
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    color: #f1eaea;
+
+    transform: translate(520px,-500px);
+  }
+  .circle{
+    background-color: white;
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    font-size: 10px;
+    line-height: 90px;
+    margin: 37px;
+    float: left;
+    transform: translate(100px,-500px);
+
+}
+.txt {
+    color: white;
+    font-size: 25px;
+    text-align: 150px;
+    line-height: 450px;
+    transform: translate(10px,40px);
+}
+
+.image {
+    height: 210px;
+    width: 220px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 450px;
+    float: left;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 10px;
+}
