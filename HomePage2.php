@@ -12,7 +12,11 @@ if (!isset($_SESSION['customerId']) || !is_numeric($_SESSION['customerId'])) {
 }
 $customerId = $_SESSION['customerId'];
 
+<<<<<<< HEAD
 
+=======
+// Prepare SQL statement with placeholder for customerId
+>>>>>>> 51e389bd0ea242df003b8c097566a2a1c7d34bcd
 $sql = "SELECT role FROM job_role2 WHERE ID = ?";
 $stmt = $connection->prepare($sql);
 
@@ -178,6 +182,10 @@ if ($stmt) {
     <div class="text">
   <ul style="text-align: left; ">
      <li><p style="color:#3280274; font-weight: bold;">Hello .. <?php echo ucfirst($first_Name); ?>
+<<<<<<< HEAD
+=======
+</p>   
+>>>>>>> 51e389bd0ea242df003b8c097566a2a1c7d34bcd
     <li><p style="color: #337ab7;font-weight: bold; ">ID: <?php echo $customerId; ?></p></li>
     
      </li> <li><p style="color: #337ab7;font-weight: bold;">Position: <?php echo $role; ?></p></li>

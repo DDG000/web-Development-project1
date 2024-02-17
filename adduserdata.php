@@ -20,6 +20,7 @@ if ($emailCheckResult->num_rows > 0) {
     exit();
 }
 
+<<<<<<< HEAD
 $hashedPassword = password_hash($userPassword, PASSWORD_BCRYPT);
 
 
@@ -27,6 +28,16 @@ $connection->begin_transaction();
 
 try {
    
+=======
+// Hash the password
+$hashedPassword = password_hash($userPassword, PASSWORD_BCRYPT);
+
+// Start a transaction
+$connection->begin_transaction();
+
+try {
+    // Insert into customer_information1
+>>>>>>> 51e389bd0ea242df003b8c097566a2a1c7d34bcd
     $insertSQL = "INSERT INTO customer_information1 (first_Name, last_Name, telephone, email, street_Address, city, password) VALUES (?, ?, ?, ?, ?, ?, ?)";
     $insertStatement = $connection->prepare($insertSQL);
     $insertStatement->bind_param("sssssss", $first_Name, $last_Name, $telephone, $email, $street_Address, $city, $hashedPassword);
@@ -35,7 +46,11 @@ try {
         throw new Exception("Error inserting into customer_information1: " . $insertStatement->error);
     }
 
+<<<<<<< HEAD
    
+=======
+    // Get the last inserted ID from customer_information1
+>>>>>>> 51e389bd0ea242df003b8c097566a2a1c7d34bcd
     $customerId = $connection->insert_id;
 
   
@@ -49,7 +64,11 @@ try {
         throw new Exception("Error inserting into Job_roles: " . $insertJobRolesStatement->error);
     }
 
+<<<<<<< HEAD
   
+=======
+    // Commit the transaction
+>>>>>>> 51e389bd0ea242df003b8c097566a2a1c7d34bcd
     $connection->commit();
 
     echo '<script>alert("Account Created Successfully.");</script>';
@@ -65,6 +84,10 @@ elseif( $role === "Manager"){
         throw new Exception("Error inserting into Job_roles: " . $insertJobRolesStatement->error);
     }
 
+<<<<<<< HEAD
+=======
+    // Commit the transaction
+>>>>>>> 51e389bd0ea242df003b8c097566a2a1c7d34bcd
     $connection->commit();
 
     echo '<script>alert("Account Created Successfully.");</script>';
@@ -80,22 +103,38 @@ elseif( $role === "Admin"){
         throw new Exception("Error inserting into Job_roles: " . $insertJobRolesStatement->error);
     }
 
+<<<<<<< HEAD
   
+=======
+    // Commit the transaction
+>>>>>>> 51e389bd0ea242df003b8c097566a2a1c7d34bcd
     $connection->commit();
 
     echo '<script>alert("Account Created Successfully. ");</script>';
     echo '<script>window.location.href = "adduser.php";</script>';
 }
 } catch (Exception $e) {
+<<<<<<< HEAD
   
+=======
+    // Rollback the transaction on exception
+>>>>>>> 51e389bd0ea242df003b8c097566a2a1c7d34bcd
     $connection->rollback();
     echo "Transaction failed: " . $e->getMessage();
 }
 
+<<<<<<< HEAD
 
 $insertStatement->close();
 $insertJobRolesStatement->close();
 
 
+=======
+// Close prepared statements
+$insertStatement->close();
+$insertJobRolesStatement->close();
+
+// Close the database connection
+>>>>>>> 51e389bd0ea242df003b8c097566a2a1c7d34bcd
 $connection->close();
 ?>

@@ -125,7 +125,11 @@ if ($result->num_rows > 0) {
         
                 <li><a href="#" class="logout">
                     <i class="fas fa-sign-out-alt"></i>
+<<<<<<< HEAD
                     <a href="user_management.php"><img src="image/back1.jpg"  style="width: 50px;height: 50px;float: left; "></a> 
+=======
+                    <span class="nav-item">Back</span>
+>>>>>>> 51e389bd0ea242df003b8c097566a2a1c7d34bcd
                 </a></li>
             </ul>
         </nav>
@@ -152,7 +156,11 @@ if ($result->num_rows > 0) {
                                 <th> Last Name</th>
                                 <th>Position</th>
 
+<<<<<<< HEAD
                                 <th>Remove</th>
+=======
+                                <th>Delete</th>
+>>>>>>> 51e389bd0ea242df003b8c097566a2a1c7d34bcd
                             </tr>
                         </thead>
                         <tbody>
@@ -167,7 +175,11 @@ if ($result->num_rows > 0) {
                                         <td>" . $row["last_Name"] . "</td>
                                         <td>" . $row["role"] . "</td>
                                       
+<<<<<<< HEAD
                                         <td><button onclick=\"deleteRow(" . $row["id"] . ")\">Remove</button></td>
+=======
+                                        <td><button onclick=\"deleteRow(" . $row["id"] . ")\">Delete</button></td>
+>>>>>>> 51e389bd0ea242df003b8c097566a2a1c7d34bcd
                                     </tr>
                                 </form>
                             ";
@@ -179,20 +191,34 @@ if ($result->num_rows > 0) {
                 </div>
             </section>
         </section>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 51e389bd0ea242df003b8c097566a2a1c7d34bcd
     </div>
 
     <script>
         function deleteRow(id) {
     if (confirm("Are you sure you want to delete this record?")) {
+<<<<<<< HEAD
 
+=======
+        // Send an AJAX request to the server to delete the record
+        // Assuming you have a PHP file (e.g., delete_record.php) to handle the deletion
+        // Adjust the URL and data sent in the request accordingly
+>>>>>>> 51e389bd0ea242df003b8c097566a2a1c7d34bcd
         $.ajax({
             type: "POST",
             url: "delete_user.php",
             data: { id: id },
             success: function(response) {
+<<<<<<< HEAD
               
                 alert(response); 
+=======
+                // Handle the response, e.g., remove the row from the table
+                alert(response); // Show a message returned from the server
+>>>>>>> 51e389bd0ea242df003b8c097566a2a1c7d34bcd
             },
             error: function(error) {
                 console.error("Error deleting record: " + error);
@@ -215,6 +241,10 @@ if ($result->num_rows > 0) {
 </html>
 
 <?php
+<<<<<<< HEAD
 
+=======
+// Close connection
+>>>>>>> 51e389bd0ea242df003b8c097566a2a1c7d34bcd
 $connection->close();
 ?>

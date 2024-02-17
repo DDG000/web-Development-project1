@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 
 session_start();
 
@@ -6,26 +7,51 @@ session_start();
 include 'config.php';
 
 
+=======
+// Start the session
+session_start();
+
+// Include database configuration (assuming valid details in config.php)
+include 'config.php';
+
+// Verify and sanitize customerId (replace with appropriate validation logic)
+>>>>>>> 51e389bd0ea242df003b8c097566a2a1c7d34bcd
 if (!isset($_SESSION['customerId']) || !is_numeric($_SESSION['customerId'])) {
     header("Location: error.php?message=Invalid customer ID");
     exit();
 }
 $customerId = $_SESSION['customerId'];
 
+<<<<<<< HEAD
 
 $sql = "SELECT role FROM job_roles WHERE ID = ?";
 $stmt = $connection->prepare($sql);
 
 
+=======
+// Prepare SQL statement with placeholder for customerId
+$sql = "SELECT role FROM job_roles WHERE ID = ?";
+$stmt = $connection->prepare($sql);
+
+// Bind parameter and execute
+>>>>>>> 51e389bd0ea242df003b8c097566a2a1c7d34bcd
 if ($stmt) {
     $stmt->bind_param("i", $customerId);
     $stmt->execute();
 
+<<<<<<< HEAD
     
     $stmt->bind_result($role);
     $stmt->fetch();
 
     
+=======
+    // Bind result
+    $stmt->bind_result($role);
+    $stmt->fetch();
+
+    // Close statement
+>>>>>>> 51e389bd0ea242df003b8c097566a2a1c7d34bcd
     $stmt->close();
 
 } if (!isset($_SESSION['customerId']) || !is_numeric($_SESSION['customerId'])) {
@@ -34,24 +60,43 @@ if ($stmt) {
 }
 $customerId = $_SESSION['customerId'];
 
+<<<<<<< HEAD
 
 $stmt = $connection->prepare("SELECT role, first_Name FROM job_roles INNER JOIN customer_information1 ON job_roles.ID = customer_information1.ID WHERE job_roles.ID = ?");
 
 
+=======
+// Prepare SQL statement with placeholder for customerId
+$stmt = $connection->prepare("SELECT role, first_Name FROM job_roles INNER JOIN customer_information1 ON job_roles.ID = customer_information1.ID WHERE job_roles.ID = ?");
+
+// Bind parameter and execute
+>>>>>>> 51e389bd0ea242df003b8c097566a2a1c7d34bcd
 if ($stmt) {
     $stmt->bind_param("i", $customerId);
     $stmt->execute();
 
+<<<<<<< HEAD
   
     $stmt->bind_result($role, $first_Name);
     $stmt->fetch();
 
  
+=======
+    // Bind result
+    $stmt->bind_result($role, $first_Name);
+    $stmt->fetch();
+
+    // Close statement
+>>>>>>> 51e389bd0ea242df003b8c097566a2a1c7d34bcd
     $stmt->close();
 }
 
 
+<<<<<<< HEAD
 
+=======
+// Proceed with actions for a customer
+>>>>>>> 51e389bd0ea242df003b8c097566a2a1c7d34bcd
 // ...
 ?>
 
@@ -73,6 +118,7 @@ if ($stmt) {
 </head>
 
 <body>
+<<<<<<< HEAD
 
 
 <header>
@@ -96,12 +142,36 @@ if ($stmt) {
 
                
                 <a href="logout.php"><img src="image/logout.jpg"></a>
+=======
+    <header>
+        <nav>
+            <div class="logo">
+           <a href="HomePageEmp.php">     <img src="image/logo.jpg" alt="Healthcare Pharmacy"></a>
+            </div>
+            <div class="logo-text">
+                <p class="logo-text">QUEENSWAY</p>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </div>
+            <button value="Upload New Prescription" class="btn" onclick="loadprescription()">Upload New Prescription</button>
+            <!-- <button class="upload-button">Upload Prescription</button> -->
+            <div class="nav-buttons">
+
+            <a href="logout.php"><img src="image/logout.jpg"></a>
+                <a href="#"><img src="image/carticon.jpg"></a>
+>>>>>>> 51e389bd0ea242df003b8c097566a2a1c7d34bcd
                 <span>0</span>
             </div>
         </nav>
     </header>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 51e389bd0ea242df003b8c097566a2a1c7d34bcd
     <header2>
         <nav class="top-nav">
             <div class="nav-links">
@@ -111,8 +181,13 @@ if ($stmt) {
 
                         <div class="mega-content">
                             <ul>
+<<<<<<< HEAD
                                 <a class="a2" href="searchcg.php?search=HEART">HEART</a>
                                 <a class="a2"  href="searchcg.php?search=CENTRAL NERVOUS SYSTEM">CENTRAL NERVOUS SYSTEM</a>
+=======
+                                <a class="a2" href="">HEART</a>
+                                <a class="a2" href="blank.html">CENTRAL NERVOUS SYSTEM</a>
+>>>>>>> 51e389bd0ea242df003b8c097566a2a1c7d34bcd
                                 <a class="a2" href="blank.html"> EAR, NOSE, THROAT</a>
                                 <a class="a2" href="blank.html"> DIABETES</a>
                                 <a class="a2 " href="blank.html">EYE</a>
@@ -126,7 +201,11 @@ if ($stmt) {
                         <a href="#">Medical Devices <span class="arrow">&#9662;</span></a>
                         <div class="mega-content">
                             <ul>
+<<<<<<< HEAD
                                 <a class="a2" href="searchcg.php?search=FIRST AID">FIRST AID</a>
+=======
+                                <a class="a2" href="blank.html">FIRST AID</a>
+>>>>>>> 51e389bd0ea242df003b8c097566a2a1c7d34bcd
                                 <a class="a2" href="blank.html">HEALTH DEVICES</a>
                                 <a class="a2" href="blank.html"> SUPPORTS & BRACES</a>
 
@@ -139,7 +218,11 @@ if ($stmt) {
 
                         <div class="mega-content">
                             <ul>
+<<<<<<< HEAD
                                 <a class="a2" href="searchcg.php?search=EYES & EARS">EYES & EARS</a>
+=======
+                                <a class="a2" href="blank.html">EYES & EARS</a>
+>>>>>>> 51e389bd0ea242df003b8c097566a2a1c7d34bcd
                                 <a class="a2" href="blank.html">COUGH, COLD & ALLERGY</a>
                                 <a class="a2" href="blank.html">DIET & NUTRITION</a>
                                 <a class="a2" href="blank.html"> BEAUTY SUPPLEMENTS</a>
@@ -153,7 +236,11 @@ if ($stmt) {
                         <a href="#">Personal Care <span class="arrow">&#9662;</span></a>
                         <div class="mega-content">
                             <ul>
+<<<<<<< HEAD
                                 <a class="a2" href="searchcg.php?search=NOURISHMENT">NOURISHMENT</a>
+=======
+                                <a class="a2" href="blank.html">NOURISHMENT</a>
+>>>>>>> 51e389bd0ea242df003b8c097566a2a1c7d34bcd
                                 <a class="a2" href="blank.html">ACCESSORIES</a>
                                 <a class="a2" href="blank.html">SKIN CARE</a>
                                 <a class="a2" href="blank.html"> HAND & FOOT CARE</a>
@@ -161,7 +248,11 @@ if ($stmt) {
                         </div>
                     </li>
                     <div class="words">
+<<<<<<< HEAD
                         <li><a href="searchcg.php?search=GSE">GSE</a></li>
+=======
+                        <li><a href="blank.html">GSE</a></li>
+>>>>>>> 51e389bd0ea242df003b8c097566a2a1c7d34bcd
                         <li><a href="blank.html">SWISSE</a></li>
                         <li><a href="blank.html">PROMOTIONS</a></li>
 
