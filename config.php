@@ -11,5 +11,5 @@ if($connection -> connect_error ){
     die("connection error");
 
 }
-echo "Connected successfully";
+
 ?>

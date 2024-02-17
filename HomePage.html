@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <title>Pharmacy Website</title>
     <link rel="stylesheet" href="HomePage.css">
-    <link rel="stylesheet" href="/Test.js">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -20,17 +19,22 @@
                 <a href="HomePage.html" class="logo-text">QUEENSWAY</a>
             </div>
 
+            <form action="http://localhost/New%20Web/search.php"  method="post">
+
             <div class="search-bar">
-                <input type="text" placeholder="Search...">
-                <button type="submit">Search</button>
+                <input type="text" name="search"   placeholder="Search...">
+                <button type="submit"  name ="sub">Search</button>
             </div>
+            </form>
             <input type="submit" value="Upload New Prescription" class="btn" onclick="loadprescription()">
             <!-- <button class="upload-button">Upload Prescription</button> -->
             <div class="nav-buttons">
 
                 <a href="login.html">Sign In</a>
-                <a href="#"><img src="image/carticon.jpg"></a>
-                <span>0</span>
+                <button id="toggle-cart">
+                    <img src="image/carticon.jpg" alt="Cart">
+                    <span id="cart-item-count">0</span> <!-- Cart product count -->
+                </button>
             </div>
         </nav>
     </header>
@@ -44,8 +48,8 @@
 
                         <div class="mega-content">
                             <ul>
-                                <a class="a2" href="">HEART</a>
-                                <a class="a2" href="blank.html">CENTRAL NERVOUS SYSTEM</a>
+                                <a class="a2" href="searchcg.php?search=HEART">HEART</a>
+                                <a class="a2"  href="searchcg.php?search=CENTRAL NERVOUS SYSTEM">CENTRAL NERVOUS SYSTEM</a>
                                 <a class="a2" href="blank.html"> EAR, NOSE, THROAT</a>
                                 <a class="a2" href="blank.html"> DIABETES</a>
                                 <a class="a2 " href="blank.html">EYE</a>
@@ -59,7 +63,7 @@
                         <a href="#">Medical Devices <span class="arrow">&#9662;</span></a>
                         <div class="mega-content">
                             <ul>
-                                <a class="a2" href="blank.html">FIRST AID</a>
+                                <a class="a2" href="searchcg.php?search=FIRST AID">FIRST AID</a>
                                 <a class="a2" href="blank.html">HEALTH DEVICES</a>
                                 <a class="a2" href="blank.html"> SUPPORTS & BRACES</a>
 
@@ -72,7 +76,7 @@
 
                         <div class="mega-content">
                             <ul>
-                                <a class="a2" href="blank.html">EYES & EARS</a>
+                                <a class="a2" href="searchcg.php?search=EYES & EARS">EYES & EARS</a>
                                 <a class="a2" href="blank.html">COUGH, COLD & ALLERGY</a>
                                 <a class="a2" href="blank.html">DIET & NUTRITION</a>
                                 <a class="a2" href="blank.html"> BEAUTY SUPPLEMENTS</a>
@@ -86,7 +90,7 @@
                         <a href="#">Personal Care <span class="arrow">&#9662;</span></a>
                         <div class="mega-content">
                             <ul>
-                                <a class="a2" href="blank.html">NOURISHMENT</a>
+                                <a class="a2" href="searchcg.php?search=NOURISHMENT">NOURISHMENT</a>
                                 <a class="a2" href="blank.html">ACCESSORIES</a>
                                 <a class="a2" href="blank.html">SKIN CARE</a>
                                 <a class="a2" href="blank.html"> HAND & FOOT CARE</a>
@@ -94,7 +98,7 @@
                         </div>
                     </li>
                     <div class="words">
-                        <li><a href="blank.html">GSE</a></li>
+                        <li><a href="searchcg.php?search=GSE">GSE</a></li>
                         <li><a href="blank.html">SWISSE</a></li>
                         <li><a href="blank.html">PROMOTIONS</a></li>
 
@@ -204,62 +208,77 @@
             <img src="image/sustagen.jpeg" alt="Product 1">
             <h3>Sustagen</h3>
             <p>LKR 2999.00</p>
-            <button class="add-to-cart">Add to Cart</button>
+            <button class="add-to-cart" data-name="Sustagen" data-price="2999.00">Add to Cart</button>
         </div>
 
         <div class="grid-item">
             <img src="image/image2.jpeg" alt="Product 1">
             <h3>Multi Vitamin</h3>
             <p>LKR 900.00</p>
-            <button class="add-to-cart">Add to Cart</button>
+            <button class="add-to-cart" data-name="Multi Vitamin" data-price="900.00">Add to Cart</button>
         </div>
 
         <div class="grid-item">
             <img src="image/images 10.jpeg" alt="Product 1">
             <h3>Vitamin D</h3>
             <p>LKR 550.00</p>
-            <button class="add-to-cart">Add to Cart</button>
+            <button class="add-to-cart" data-name="Vitamin D" data-price="550.00">Add to Cart</button>
         </div>
 
         <div class="grid-item">
             <img src="image/images (1).jpeg" alt="Product 1">
             <h3>Vitamin B</h3>
             <p>LKR 380.00</p>
-            <button class="add-to-cart">Add to Cart</button>
+            <button class="add-to-cart" data-name="Vitamin B" data-price="380.00">Add to Cart</button>
         </div>
 
         <div class="grid-item">
             <img src="image/image5.jpg" alt="Product 1">
             <h3>Xpert</h3>
             <p>LKR 499.00</p>
-            <button class="add-to-cart">Add to Cart</button>
+            <button class="add-to-cart" data-name="Xpert" data-price="499.00">Add to Cart</button>
         </div>
 
         <div class="grid-item">
             <img src="image/dsc_0286-1_copy.jpg" alt="Product 1">
             <h3>Fish Oil</h3>
             <p>LKR 1299.00</p>
-            <button class="add-to-cart">Add to Cart</button>
+            <button class="add-to-cart" data-name="Fish Oil" data-price="1299.00">Add to Cart</button>
         </div>
 
         <div class="grid-item">
             <img src="image/image7.png" alt="Product 1">
             <h3>Metabolism</h3>
             <p>LKR 2200.00</p>
-            <button class="add-to-cart">Add to Cart</button>
+            <button class="add-to-cart" data-name="Metabolism" data-price="2200.00">Add to Cart</button>
         </div>
 
         <div class="grid-item">
             <img src="image/image8.jpg" alt="Product 1">
             <h3>Detol</h3>
             <p>LKR 485.00</p>
-            <button class="add-to-cart">Add to Cart</button>
+            <button class="add-to-cart" data-name="Detol" data-price="485.00">Add to Cart</button>
         </div>
 
 
     </div>
+    <aside class="cart-container" id="cart-container">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p class="totalamount">Total: LKR<span id="cart-total">0.00</span></p>
+        <br>
+        <button id="clear-cart">Clear Cart</button>
+        <button id="hide-cart">Hide Cart</button>
+       <a href="login.html"> <div>
+            <button id="checkout">Proceed To Checkout</button>
+        </div></a>
 
-    <script src="Test.js"></script>
+    </aside>
+
+    
+
+
+    <script src="script.js"></script>
 
     <!-- Product Item -->
 
@@ -330,7 +349,7 @@
     <script>
    function  loadprescription(){
 
-    window.location.href = "file:///C:/xampp/htdocs/New%20Web/login.html";
+    window.location.href = "login.html";
 
 
    }

@@ -1,34 +1,34 @@
 <?php
-// Start the session
+
 session_start();
 
-// Include database configuration (assuming valid details in config.php)
+
 include 'config.php';
 
-// Verify and sanitize customerId (replace with appropriate validation logic)
+
 if (!isset($_SESSION['customerId']) || !is_numeric($_SESSION['customerId'])) {
     header("Location: error.php?message=Invalid customer ID");
     exit();
 }
 $customerId = $_SESSION['customerId'];
 
-// Prepare SQL statement with placeholder for customerId
-$sql = "SELECT role FROM job_roles WHERE ID = ?";
+
+$sql = "SELECT role FROM job_role2 WHERE ID = ?";
 $stmt = $connection->prepare($sql);
 
-// Bind parameter and execute
+
 if ($stmt) {
     $stmt->bind_param("i", $customerId);
     $stmt->execute();
 
-    // Bind result
+   
     $stmt->bind_result($role);
     $stmt->fetch();
 
-    // Close statement
+   
     $stmt->close();
 
-    // Check role and redirect if not "customer"
+  
     if ($role !== "customer") {
         header("Location: HomePage.html");
         exit();
@@ -39,24 +39,24 @@ if ($stmt) {
 }
 $customerId = $_SESSION['customerId'];
 
-// Prepare SQL statement with placeholder for customerId
-$stmt = $connection->prepare("SELECT role, first_Name FROM job_roles INNER JOIN customer_information1 ON job_roles.ID = customer_information1.ID WHERE job_roles.ID = ?");
 
-// Bind parameter and execute
+$stmt = $connection->prepare("SELECT role, first_Name FROM job_role2 INNER JOIN customer_information1 ON job_role2.ID = customer_information1.ID WHERE job_role2.ID = ?");
+
+
 if ($stmt) {
     $stmt->bind_param("i", $customerId);
     $stmt->execute();
 
-    // Bind result
+ 
     $stmt->bind_result($role, $first_Name);
     $stmt->fetch();
 
-    // Close statement
+   
     $stmt->close();
 }
 
 
-// Proceed with actions for a customer
+
 // ...
 ?>
 
@@ -71,8 +71,7 @@ if ($stmt) {
 <head>
     <meta charset="UTF-8">
     <title>Pharmacy Website</title>
-    <link rel="stylesheet" href="HomePage2.css">
-    <link rel="stylesheet" href="/Test.js">
+    <link rel="stylesheet" href="HomePage.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -85,19 +84,25 @@ if ($stmt) {
             </div>
             <div class="logo-text">
                 <p class="logo-text">QUEENSWAY</p>
+                <a href="viewprofile.php"><h4>My Profile</h4></a>
             </div>
 
-            <div class="search-bar">
-                <input type="text" placeholder="Search...">
-                <button type="submit">Search</button>
-            </div>
+            <form action="http://localhost/New%20Web/search.php"  method="post">
+
+<div class="search-bar">
+    <input type="text" name="search"   placeholder="Search...">
+    <button type="submit"  name ="sub">Search</button>
+</div>
+</form>
             <button value="Upload New Prescription" class="btn" onclick="loadprescription()">Upload New Prescription</button>
             <!-- <button class="upload-button">Upload Prescription</button> -->
             <div class="nav-buttons">
 
             <a href="logout.php"><img src="image/logout.jpg"></a>
-                <a href="#"><img src="image/carticon.jpg"></a>
-                <span>0</span>
+            <button id="toggle-cart">
+                    <img src="image/carticon.jpg" alt="Cart">
+                    <span id="cart-item-count">0</span> <!-- Cart product count -->
+                </button>
             </div>
         </nav>
     </header>
@@ -111,8 +116,8 @@ if ($stmt) {
 
                         <div class="mega-content">
                             <ul>
-                                <a class="a2" href="">HEART</a>
-                                <a class="a2" href="blank.html">CENTRAL NERVOUS SYSTEM</a>
+                                <a class="a2" href="searchcg.php?search=HEART">HEART</a>
+                                <a class="a2"  href="searchcg.php?search=CENTRAL NERVOUS SYSTEM">CENTRAL NERVOUS SYSTEM</a>
                                 <a class="a2" href="blank.html"> EAR, NOSE, THROAT</a>
                                 <a class="a2" href="blank.html"> DIABETES</a>
                                 <a class="a2 " href="blank.html">EYE</a>
@@ -126,7 +131,7 @@ if ($stmt) {
                         <a href="#">Medical Devices <span class="arrow">&#9662;</span></a>
                         <div class="mega-content">
                             <ul>
-                                <a class="a2" href="blank.html">FIRST AID</a>
+                                <a class="a2" href="searchcg.php?search=FIRST AID">FIRST AID</a>
                                 <a class="a2" href="blank.html">HEALTH DEVICES</a>
                                 <a class="a2" href="blank.html"> SUPPORTS & BRACES</a>
 
@@ -139,7 +144,7 @@ if ($stmt) {
 
                         <div class="mega-content">
                             <ul>
-                                <a class="a2" href="blank.html">EYES & EARS</a>
+                                <a class="a2" href="searchcg.php?search=EYES & EARS">EYES & EARS</a>
                                 <a class="a2" href="blank.html">COUGH, COLD & ALLERGY</a>
                                 <a class="a2" href="blank.html">DIET & NUTRITION</a>
                                 <a class="a2" href="blank.html"> BEAUTY SUPPLEMENTS</a>
@@ -153,7 +158,7 @@ if ($stmt) {
                         <a href="#">Personal Care <span class="arrow">&#9662;</span></a>
                         <div class="mega-content">
                             <ul>
-                                <a class="a2" href="blank.html">NOURISHMENT</a>
+                                <a class="a2" href="searchcg.php?search=NOURISHMENT">NOURISHMENT</a>
                                 <a class="a2" href="blank.html">ACCESSORIES</a>
                                 <a class="a2" href="blank.html">SKIN CARE</a>
                                 <a class="a2" href="blank.html"> HAND & FOOT CARE</a>
@@ -161,7 +166,7 @@ if ($stmt) {
                         </div>
                     </li>
                     <div class="words">
-                        <li><a href="blank.html">GSE</a></li>
+                        <li><a href="searchcg.php?search=GSE">GSE</a></li>
                         <li><a href="blank.html">SWISSE</a></li>
                         <li><a href="blank.html">PROMOTIONS</a></li>
 
@@ -172,7 +177,7 @@ if ($stmt) {
     </header2>
     <div class="text">
   <ul style="text-align: left; ">
-     <li><p style="color:#3280274; font-weight: bold;">Hello .. <?php echo $first_Name; ?></p>   
+     <li><p style="color:#3280274; font-weight: bold;">Hello .. <?php echo ucfirst($first_Name); ?>
     <li><p style="color: #337ab7;font-weight: bold; ">ID: <?php echo $customerId; ?></p></li>
     
      </li> <li><p style="color: #337ab7;font-weight: bold;">Position: <?php echo $role; ?></p></li>
@@ -279,62 +284,77 @@ if ($stmt) {
             <img src="image/sustagen.jpeg" alt="Product 1">
             <h3>Sustagen</h3>
             <p>LKR 2999.00</p>
-            <button class="add-to-cart">Add to Cart</button>
+            <button class="add-to-cart" data-name="Sustagen" data-price="2999.00">Add to Cart</button>
         </div>
 
         <div class="grid-item">
             <img src="image/image2.jpeg" alt="Product 1">
             <h3>Multi Vitamin</h3>
             <p>LKR 900.00</p>
-            <button class="add-to-cart">Add to Cart</button>
+            <button class="add-to-cart" data-name="Multi Vitamin" data-price="900.00">Add to Cart</button>
         </div>
 
         <div class="grid-item">
             <img src="image/images 10.jpeg" alt="Product 1">
             <h3>Vitamin D</h3>
             <p>LKR 550.00</p>
-            <button class="add-to-cart">Add to Cart</button>
+            <button class="add-to-cart" data-name="Vitamin D" data-price="550.00">Add to Cart</button>
         </div>
 
         <div class="grid-item">
             <img src="image/images (1).jpeg" alt="Product 1">
             <h3>Vitamin B</h3>
             <p>LKR 380.00</p>
-            <button class="add-to-cart">Add to Cart</button>
+            <button class="add-to-cart" data-name="Vitamin B" data-price="380.00">Add to Cart</button>
         </div>
 
         <div class="grid-item">
             <img src="image/image5.jpg" alt="Product 1">
             <h3>Xpert</h3>
             <p>LKR 499.00</p>
-            <button class="add-to-cart">Add to Cart</button>
+            <button class="add-to-cart" data-name="Xpert" data-price="499.00">Add to Cart</button>
         </div>
 
         <div class="grid-item">
             <img src="image/dsc_0286-1_copy.jpg" alt="Product 1">
             <h3>Fish Oil</h3>
             <p>LKR 1299.00</p>
-            <button class="add-to-cart">Add to Cart</button>
+            <button class="add-to-cart" data-name="Fish Oil" data-price="1299.00">Add to Cart</button>
         </div>
 
         <div class="grid-item">
             <img src="image/image7.png" alt="Product 1">
             <h3>Metabolism</h3>
             <p>LKR 2200.00</p>
-            <button class="add-to-cart">Add to Cart</button>
+            <button class="add-to-cart" data-name="Metabolism" data-price="2200.00">Add to Cart</button>
         </div>
 
         <div class="grid-item">
             <img src="image/image8.jpg" alt="Product 1">
             <h3>Detol</h3>
             <p>LKR 485.00</p>
-            <button class="add-to-cart">Add to Cart</button>
+            <button class="add-to-cart" data-name="Detol" data-price="485.00">Add to Cart</button>
         </div>
 
 
     </div>
+    <aside class="cart-container" id="cart-container">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p class="totalamount">Total: LKR<span id="cart-total">0.00</span></p>
+        <br>
+        <button id="clear-cart">Clear Cart</button>
+        <button id="hide-cart">Hide Cart</button>
+        <div>
+            <button id="checkout">Proceed To Checkout</button>
+        </div>
 
-    <script src="Test.js"></script>
+    </aside>
+
+    
+
+
+  
 
     <!-- Product Item -->
 
@@ -398,6 +418,8 @@ if ($stmt) {
 
             </div>
         </div>
+
+        <script src="script3.js"></script>
     </footer>
     <!-- footer -->
 

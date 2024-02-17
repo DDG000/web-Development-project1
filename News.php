@@ -1,7 +1,7 @@
 <?php
 include 'config.php';
 
-// Include first_name in the SELECT statement
+
 $stmt = $connection->prepare("SELECT news.news_id, news.created_at, news.news, customer_information1.first_Name, news.ID, job_roles.role
                                  FROM news
                                  JOIN customer_information1 ON news.ID = customer_information1.id
@@ -10,7 +10,7 @@ $stmt = $connection->prepare("SELECT news.news_id, news.created_at, news.news, c
 $stmt->execute();
 $result = $stmt->get_result();
 
-// Fetch and store data in an array
+
 $data = [];
 if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
@@ -28,7 +28,7 @@ if ($result->num_rows > 0) {
     <head>
       <title>Job Dashboard | By Code Info</title>
      
-      <!-- Font Awesome Cdn Link -->
+     
       <link rel="stylesheet" href="News.css" />
       <meta http-equiv="refresh" content="30">
 

@@ -310,17 +310,20 @@ transform: translate(-20%, 1200%);
 }
 
 #btn{
-    transform: translate(-230%, 2200%);
+   
     background-color: #f0b511; /* Change this color to your desired color */
     color: rgb(6, 1, 1); /* Text color */
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
-    cursor: pointer
-
-
+    margin-left: 400px;
+    margin-top: 100px;
+cursor: pointer;
 }
 
+#btn:hover{
+  background-color: lime;
+}
 #h7{
 
     width: 844px;

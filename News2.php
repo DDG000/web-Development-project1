@@ -1,34 +1,32 @@
 <?php
-// Start the session
+
 session_start();
 
-// Include database configuration (assuming valid details in config.php)
+
 include 'config.php';
 
-// Verify and sanitize customerId (replace with appropriate validation logic)
 if (!isset($_SESSION['customerId']) || !is_numeric($_SESSION['customerId'])) {
     header("Location: error.php?message=Invalid customer ID");
     exit();
 }
 $customerId = $_SESSION['customerId'];
 
-// Prepare SQL statement with placeholder for customerId
+
 $stmt = $connection->prepare("SELECT role, first_Name FROM job_roles INNER JOIN customer_information1 ON job_roles.ID = customer_information1.ID WHERE job_roles.ID = ?");
 
 
 
 
 
-// Bind parameter and execute
 if ($stmt) {
     $stmt->bind_param("i", $customerId);
     $stmt->execute();
 
-    // Bind result
+  
     $stmt->bind_result($role, $first_Name);
     $stmt->fetch();
 
-    // Close statement
+    
     $stmt->close();
 }
 
@@ -66,7 +64,7 @@ if ($stmt) {
                     </a></li>
                     <li><a href="#" class="logout">
                         <i class="fas fa-sign-out-alt"></i>
-                        <span class="nav-item">Back</span>
+                        <a href="News.php"><img src="image/back1.jpg"  style="width: 50px;height: 50px;float: left; "></a>
                     </a></li>
                 </ul>
             </div>
@@ -111,6 +109,7 @@ if ($stmt) {
 
                     </div>
                 </form>
+
             </div>
         </section>
     </div>

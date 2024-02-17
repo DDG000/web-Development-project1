@@ -40,7 +40,7 @@ try {
 
     // Insert into Job_roles
     $role = "customer";  // Replace with the actual role you want to insert
-    $insertJobRolesSQL = "INSERT INTO job_roles (ID, role) VALUES (?, ?)";
+    $insertJobRolesSQL = "INSERT INTO job_role2 (ID, role) VALUES (?, ?)";
     $insertJobRolesStatement = $connection->prepare($insertJobRolesSQL);
     $insertJobRolesStatement->bind_param("is", $customerId, $role);
 

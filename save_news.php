@@ -21,14 +21,14 @@ if ($stmt) {
 
  
 } else {
-    // Handle error: SQL statement preparation failed
+   
     echo "Error preparing SQL statement.";
 }
 
-// Proceed with actions for a customer
+
 // ...
 
-// Insert news into the database
+
 $news = $_POST['message'];
 $insertSQL = "INSERT INTO news (ID, news) VALUES (?, ?)";
 $insertStatement = $connection->prepare($insertSQL);
@@ -38,6 +38,6 @@ if (!$insertStatement->execute()) {
 }
 echo '<script>alert("Massage sent successfully !");</script>';
 echo '<script>window.location.href = "News.php";</script>';
-// Close database connection (if not handled in config.php)
+
 $connection->close();
 ?>

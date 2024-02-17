@@ -1,14 +1,14 @@
 <?php
 include 'config.php';
 
-// Execute a query to select data based on the ID and join with customer_information1
+
 $sql = "SELECT prescription_records1.prescription_id, prescription_records1.created_at, prescription_records1.image,prescription_records1.name,prescription_records1.telephone
         FROM prescription_records1
         JOIN customer_information1 ON prescription_records1.customer_id = customer_information1.id";
 
 $result = $connection->query($sql);
 
-// Fetch and store data in an array
+
 $data = [];
 if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
@@ -22,8 +22,7 @@ if ($result->num_rows > 0) {
     <meta charset="UTF-8">
     <title>Attendance Dashboard | By Code Info</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- Font Awesome Cdn Link -->
-    <!-- Add jQuery library -->
+
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <meta http-equiv="refresh" content="60">
 </head>
@@ -54,6 +53,7 @@ if ($result->num_rows > 0) {
         
                 <li><a href="#" class="logout">
                     <i class="fas fa-sign-out-alt"></i>
+                    
                     <span class="nav-item">Back</span>
                 </a></li>
             </ul>
@@ -120,6 +120,7 @@ if ($result->num_rows > 0) {
                         ?>
                         </tbody>
                     </table>
+                    
                 </div>
             </section>
         </section>
@@ -128,16 +129,14 @@ if ($result->num_rows > 0) {
     <script>
         function deleteRow(prescription_id) {
     if (confirm("Are you sure you want to delete this record?")) {
-        // Send an AJAX request to the server to delete the record
-        // Assuming you have a PHP file (e.g., delete_record.php) to handle the deletion
-        // Adjust the URL and data sent in the request accordingly
+       
         $.ajax({
             type: "POST",
             url: "delete_prescription.php",
             data: { prescription_id: prescription_id },
             success: function(response) {
-                // Handle the response, e.g., remove the row from the table
-                alert(response); // Show a message returned from the server
+               
+                alert(response); 
             },
             error: function(error) {
                 console.error("Error deleting record: " + error);
@@ -160,6 +159,6 @@ if ($result->num_rows > 0) {
 </html>
 
 <?php
-// Close connection
+
 $connection->close();
 ?>

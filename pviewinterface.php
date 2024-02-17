@@ -128,7 +128,7 @@
       <nav  class="home">
         <a id="a" href="#">HOME</a>
 
-        <!-- Add more links as needed -->
+     
       </nav>
 
         <?php
@@ -146,7 +146,7 @@ if (mysqli_num_rows($result) > 0) {
             <div class="sidebar">
                 <ul class="sidebar-patient-list">
                     <li><?php echo $row["prescription_id"] . "<br>"; ?></li>
-                    <!-- Add more patients as needed -->
+                    
                 </ul>
             </div>
         </div>
@@ -165,11 +165,11 @@ if (mysqli_num_rows($result) > 0) {
     
           <h2   id="hh">Patient Details</h2>
           <table class="prescription-list">
-            <!-- Your prescription list content goes here -->
+           
           </table>
     
           <div class="details-container">
-            <!-- Details will be displayed here -->
+          
           </div>
         </div>
       </div>
@@ -182,34 +182,34 @@ if (mysqli_num_rows($result) > 0) {
     
           patientListItems.forEach(function (patientItem) {
             patientItem.addEventListener('click', function () {
-              // Remove the 'selected-patient' class from all items
+             
               patientListItems.forEach(function (item) {
                 item.classList.remove('selected-patient');
               });
     
-              // Add the 'selected-patient' class to the clicked item
+             
               patientItem.classList.add('selected-patient');
     
-              // Get the patient ID and name from the data attributes
+             
               var patientId = patientItem.getAttribute('data-patient-id');
               var patientName = patientItem.textContent;
     
-              // Update the patient name bar
+           
               selectedPatientName.textContent = patientName;
     
-              // Display patient details (replace this with your logic)
+             
               detailsContainer.innerHTML = '<h2>Patient Details</h2>' +
                 '<p>Patient ID: ' + patientId + '</p>' +
                 '<p>Other details go here.</p>';
                 document.addEventListener('DOMContentLoaded', function () {
-      // Assume customerId is known or obtained from somewhere
+     
       var customerId = patientItem.getAttribute('data-patient-id');;
 
-      // Fetch patient data from the server
+      
       fetch(`/get_patient.php?customerId=${customerId}`)
         .then(response => response.json())
         .then(data => {
-          // Update the dashboard with patient information
+          
           document.getElementById('firstName').textContent = data.first_name;
           document.getElementById('lastName').textContent = data.last_name;
           document.getElementById('telephoneNumber').textContent = data.telephone_number;
@@ -225,7 +225,7 @@ if (mysqli_num_rows($result) > 0) {
             });
           });
         });
-// Add this at the end of your existing script
+
 document.addEventListener('DOMContentLoaded', function () {
     var patientListItems = document.querySelectorAll('.sidebar-patient-list li');
     var selectedPatientName = document.getElementById('selected-patient-name');
@@ -233,22 +233,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
     patientListItems.forEach(function (patientItem) {
         patientItem.addEventListener('click', function () {
-            // Remove the 'selected-patient' class from all items
+            
             patientListItems.forEach(function (item) {
                 item.classList.remove('selected-patient');
             });
 
-            // Add the 'selected-patient' class to the clicked item
+            
             patientItem.classList.add('selected-patient');
 
-            // Get the patient ID and name from the data attributes
+          
             var patientId = patientItem.getAttribute('data-patient-id');
             var patientName = patientItem.textContent;
 
-            // Update the patient name bar
+          
             selectedPatientName.textContent = 'Selected Patient ID: ' + patientId;
 
-            // Display patient details (replace this with your logic)
+           
             detailsContainer.innerHTML = '<h2>Patient Details</h2>' +
                 '<p>Patient ID: ' + patientId + '</p>' +
                 '<p>Other details go here.</p>';

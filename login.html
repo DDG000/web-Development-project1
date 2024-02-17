@@ -18,31 +18,36 @@
 
 <body>
 
-    <form action="http://localhost/New%20Web/register.php" method="post">
+    <form action="register.php" method="post">
         <header>
             <nav>
                 <div class="logo">
-                   <a href="HomePage.html"> <img src="image/logo.jpg" alt="Healthcare Pharmacy"></a>
+                    <img src="image/logo.jpg" alt="Healthcare Pharmacy">
                 </div>
                 <div class="logo-text">
-                    <p>QUEENSWAY</p>
+                    <a href="HomePage.html" class="logo-text">QUEENSWAY</a>
                 </div>
-                
+    
+                <form action="http://localhost/New%20Web/search.php"  method="post">
+    
                 <div class="search-bar">
-                    <input type="text" placeholder="Search...">
-                    <button type="submit">Search</button>
+                    <input type="text" name="search"   placeholder="Search...">
+                    <button type="submit"  name ="sub">Search</button>
                 </div>
+                </form>
                 
-                <!-- <button class="upload-button">Upload Prescription</button> -->
+               
                 <div class="nav-buttons">
     
                     
-                    <a href="#"><img src="image/carticon.jpg"></a>
-                    <span>0</span>
+                    <button id="toggle-cart">
+                        
+                        <span id="cart-item-count">0</span>
+                    </button>
                 </div>
             </nav>
         </header>
-        <!-- Rest of your website content -->
+    
     
         <header2>
             <nav class="top-nav">
@@ -53,14 +58,14 @@
     
                             <div class="mega-content">
                                 <ul>
-                                    <a class="a2" href="blank.html">HEART</a>
-                                    <a class="a2" href="blank.html">CENTRAL NERVOUS SYSTEM</a>
+                                    <a class="a2" href="searchcg.php?search=HEART">HEART</a>
+                                    <a class="a2"  href="searchcg.php?search=CENTRAL NERVOUS SYSTEM">CENTRAL NERVOUS SYSTEM</a>
                                     <a class="a2" href="blank.html"> EAR, NOSE, THROAT</a>
                                     <a class="a2" href="blank.html"> DIABETES</a>
                                     <a class="a2 " href="blank.html">EYE</a>
                                     <a class="a2" href="blank.html"> GASTRO INTESTINAL SYSTEM</a>
                                     <a class="a2" href="blank.html">MALIGNANT DISEASE & IMMUNOSUPPRESSIONS</a>
-                                    <!-- Add more subcategories if needed -->
+    
                                 </ul>
                             </div>
                         </li>
@@ -68,11 +73,11 @@
                             <a href="#">Medical Devices <span class="arrow">&#9662;</span></a>
                             <div class="mega-content">
                                 <ul>
-                                    <a class="a2" href="blank.html">FIRST AID</a>
+                                    <a class="a2" href="searchcg.php?search=FIRST AID">FIRST AID</a>
                                     <a class="a2" href="blank.html">HEALTH DEVICES</a>
                                     <a class="a2" href="blank.html"> SUPPORTS & BRACES</a>
     
-                                    <!-- Add more subcategories if needed -->
+    
                                 </ul>
                             </div>
                         </li>
@@ -81,14 +86,13 @@
     
                             <div class="mega-content">
                                 <ul>
-                                    <a class="a2" href="blank.html">EYES & EARS</a>
+                                    <a class="a2" href="searchcg.php?search=EYES & EARS">EYES & EARS</a>
                                     <a class="a2" href="blank.html">COUGH, COLD & ALLERGY</a>
                                     <a class="a2" href="blank.html">DIET & NUTRITION</a>
                                     <a class="a2" href="blank.html"> BEAUTY SUPPLEMENTS</a>
                                     <a class="a2 " href="blank.html">ADULT & DIABETIC CARE</a>
                                     <a class="a2" href="blank.html"> PREVENTIVE CARE</a>
                                     <a class="a2" href="blank.html">PAIN & FEVER</a>
-                                    <!-- Add more subcategories if needed -->
                                 </ul>
                             </div>
                         </li>
@@ -96,7 +100,7 @@
                             <a href="#">Personal Care <span class="arrow">&#9662;</span></a>
                             <div class="mega-content">
                                 <ul>
-                                    <a class="a2" href="blank.html">NOURISHMENT</a>
+                                    <a class="a2" href="searchcg.php?search=NOURISHMENT">NOURISHMENT</a>
                                     <a class="a2" href="blank.html">ACCESSORIES</a>
                                     <a class="a2" href="blank.html">SKIN CARE</a>
                                     <a class="a2" href="blank.html"> HAND & FOOT CARE</a>
@@ -104,7 +108,7 @@
                             </div>
                         </li>
                         <div class="words">
-                            <li><a href="blank.html">GSE</a></li>
+                            <li><a href="searchcg.php?search=GSE">GSE</a></li>
                             <li><a href="blank.html">SWISSE</a></li>
                             <li><a href="blank.html">PROMOTIONS</a></li>
     
@@ -113,6 +117,7 @@
                 </div>
             </nav>
         </header2>
+        <a href="HomePage.html"><img src="image/back1.jpg"  style="width: 50px;height: 50px;"></a>
 
         <div id="reg">
             <br>
